@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'Youngjun Kim',
-    photo: '/myimage.jpg',
+    photo: '/media/myimage.jpg',
     bio: 'Wecode 4기 수강생 김영준 입니다.',
     contacts: {
       email: '',
