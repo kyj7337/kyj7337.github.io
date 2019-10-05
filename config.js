@@ -37,9 +37,9 @@ module.exports = {
       rss: '',
       vkontakte: '',
       linkedin: '#',
-      instagram: '#',
+      instagram: 'kim_young._.jun/?hl=ko',
       line: '',
-      gitlab: '',
+      gitlab: 'https://kyj7337.github.io',
       weibo: ''
     }
   }
