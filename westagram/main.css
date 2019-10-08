@@ -1,0 +1,381 @@
+html,body{
+    height:100%;
+    overflow:hidden;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+b{
+    font-weight: normal;
+    padding-left: 2px;
+    display: block;
+}
+a{
+    text-decoration: none;
+    padding-left: 10px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav_wrapper{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(219, 219, 219, 1);
+    height: 25px;
+    padding:26px 20px;
+}
+
+nav {
+    
+    position: inline;
+    max-width: 970px;
+    
+    height: 25px;
+    padding:0 20px;
+    margin:0 auto;
+    text-align: center;
+}
+.nav_left{
+    display:inline-block;
+    max-width: 377.5px;
+    height: 36px;
+    float: left;
+}
+.nav_right{
+    display: inline-block;
+    max-width:377.5px;
+    height: 24px;
+    padding-left: 24px;
+    float: right;
+}
+.search{
+    
+    display:inline-block;
+    max-width: 199px;
+    height:18px;
+    padding-top: 3px 10px 3px 26px;
+    border : solid 1px #dbdbdb;
+    color: #999;
+    z-index: 2;
+    border-radius: 3px;
+    text-align: center;
+    padding: 7px;
+   
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    top: 3;
+    left:45%;
+   
+    z-index: 2;
+
+    
+
+}
+.icon1{
+    width:24px;
+    height:24px;
+    border-right: 1px solid black;
+    padding-right: 16px;
+    padding-bottom: 4px;
+}
+.icon2,
+.icon3,
+.icon4 {
+    width: 24px;
+    height: 24px;
+    display:inline-block;
+    margin:0 auto;
+    float: left;
+}
+.logo{
+    width:103px;
+    height: 29px;
+    padding-left: 30px;
+    float:left;
+    position: absolute;
+    top:27px;
+}
+
+
+}
+#bar{
+    display:inline;
+    width:1px;
+    height:50px;
+   
+    
+    
+    
+}
+.main{
+    max-width:935px;
+    
+    padding-top: 60px;
+  margin-top: 77px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+   
+    
+}
+.div_feeds{
+    height: 100%;
+    width: 614px;
+    float:left;
+    border : solid 1px #dbdbdb;
+    
+    
+}
+.main_right{
+    max-width: 293px;
+    height: 100%;
+    right:0;
+    top:60px;
+    float:right;
+    margin-left: 20px;
+}
+
+.hargendaz{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    float:left;
+}
+.dot{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    float: right;
+    position: relative;
+   
+    
+}
+.article_name{
+    width: 582px;
+    height: 27px;
+    padding:16px;
+    line-height: 1px;
+    
+}
+#text{
+    display:inline;
+   line-height: 2;
+   width:300px;
+   
+}
+.main_image{
+    max-width:614px;
+    height: 614px;;
+}
+.replicon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    float: left;
+    padding-right: 16px;
+}
+.replicon_right{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    float:right;
+    margin-right: -16px;
+}
+.article_under{
+    display:block;
+    max-width: 568px;
+    height: 26px;
+    padding: 0 16px;
+    margin:0;
+    border: 
+}
+.count{
+    padding-top: 3px;
+    padding-left: 6px;
+    font-size: 14px;
+}
+.write{
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-bottom: 5px;
+}
+.gray{
+    color: #999999;
+}
+.gray_space{
+    color: #999999;
+    padding-left: 9px;
+    font-size: 13px;
+}
+.hearticon{
+    display: inline;
+    width:12px;
+    height: 11px;
+    float: right;
+    padding-right: 16px;
+}
+.myrepl{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 6px;
+}
+.reply{
+    border-top: 1px solid #dbdbdb;
+}
+.reply_input{
+    display:inline-block;
+    width: 500px;
+    height:18px;
+    padding-top: 3px 10px 3px 26px;
+    border : none;
+    color: #999;
+    padding-left: 9px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.post{
+    float:right;
+    background-color: white;
+    border: none;
+    padding: auto 0;
+    color: #c4e0fb;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.profileimage{
+    width: 48px;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding-left: 6px;
+    float:left;
+    position: relative;
+    
+   
+}
+
+.myname{
+    font-size: 12px;
+    color: #999;
+    line-height: 14px;
+    padding-left: 10px;
+}
+.profilesay{
+    margin-left: 14px;
+    height: 34px;
+    padding-top: 7px;
+}
+
+
+
+
+
+.main_right_top{
+    margin-top: 20px;
+    border: solid 1px #dbdbdb;
+    max-width: 291px;
+    height: 221px;
+    overflow: hidden;
+}
+
+
+
+
+
+.main_right_bottom{
+    border: solid 1px #dbdbdb;
+    max-width: 291px;
+    height: 195px;
+    margin: 12px 0;
+}
+.story{
+    display: inline;
+    color: #999999;
+    font-size: 14px;
+    line-height: 18px;
+    margin:-3px 0px -4px 0px;
+    
+}
+.main_right_top_1{
+    width: 259px;
+    height: 16px;
+    padding: 4px 16px;
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 6px;
+    
+}
+.all{
+    display: line;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.friendsprofile{
+    width: 34px;
+    height: 34px;
+    padding: 1px;
+    border: 2px solid #cd388f;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.friendstime{
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 10px;
+}
+.friendsprofilesay{
+    position: relative;
+    float: right;
+    margin-left: 3px;
+    height: 34px;
+    padding-top: 3px;
+    width: 210px;
+    
+}
+.friends{
+    float: left;
+    height: 52px;
+}
+
+.recommand{
+    width: 32px;
+    height: 32px;
+    padding: 1px;
+    border: 2px solid #efefef;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.recommandtime{
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 10px;
+    color: #999999;
+}
+.follow{
+    float: right;
+    position: relative;
+    margin-left: 30px;
+    margin-top: -10px;
+    color: #3897f0;
+    font-size: 12px;
+    font-weight: bold;
+}
+.information{
+    font-size: 11px;
+    color: #c7c7c7;
+    font-weight: 400;
+    line-height: 13px;
+    text-decoration: none;
+    display: inline;
+    margin: 
+}
