@@ -1,4 +1,928 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Nov 2019 06:49:50 GMT</lastBuildDate><item><title><![CDATA[Scrum 이란 ??]]></title><description><![CDATA[Agile Scrum]]></description><link>https://kyj7337.github.io/posts/Scrum</link><guid isPermaLink="false">https://kyj7337.github.io/posts/Scrum</guid><pubDate>Sun, 03 Nov 2019 12:40:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;software-development-methology&quot;&gt;&lt;a href=&quot;#software-development-methology&quot; aria-label=&quot;software development methology permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software Development Methology&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Nov 2019 09:14:17 GMT</lastBuildDate><item><title><![CDATA[삼항연산자 논리연산자 활용]]></title><description><![CDATA[토큰유무에 따라 다른 태그 보여지기]]></description><link>https://kyj7337.github.io/posts/apply</link><guid isPermaLink="false">https://kyj7337.github.io/posts/apply</guid><pubDate>Sat, 09 Nov 2019 20:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;삼항연산자와-논리연산자-활용&quot;&gt;&lt;a href=&quot;#%EC%82%BC%ED%95%AD%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90-%ED%99%9C%EC%9A%A9&quot; aria-label=&quot;삼항연산자와 논리연산자 활용 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;삼항연산자와 논리연산자 활용&lt;/h2&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0d5f64b6009cce7a5d7500ee3e47f467/0309e/AND1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAqUlEQVQoz81SsQrEIAzt//+Pu7ODS4viUrp1KUipWC3Yd0TwsL27oaXDBWKejxhfjA0etoaWfd9R4h2vazSlciHuWH32oHDbNizLAuccvPc5ruuKEAJijBnP85x5yiNM/IfCspmmCW3bQimFYRjQ9z2EEGCMgXOecdd1MMZAaw0pJcZxvNYyKaWLrLVZ4aWWKaaU3o9N+GzE1f51KL+mfJU7tPzoP/zrgi8qzWLR3k9GmwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/0d5f64b6009cce7a5d7500ee3e47f467/01472/AND1.webp 240w,
+/static/0d5f64b6009cce7a5d7500ee3e47f467/222bd/AND1.webp 480w,
+/static/0d5f64b6009cce7a5d7500ee3e47f467/620b9/AND1.webp 960w,
+/static/0d5f64b6009cce7a5d7500ee3e47f467/a1c21/AND1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/0d5f64b6009cce7a5d7500ee3e47f467/0783d/AND1.png 240w,
+/static/0d5f64b6009cce7a5d7500ee3e47f467/782f4/AND1.png 480w,
+/static/0d5f64b6009cce7a5d7500ee3e47f467/f570d/AND1.png 960w,
+/static/0d5f64b6009cce7a5d7500ee3e47f467/0309e/AND1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/0d5f64b6009cce7a5d7500ee3e47f467/f570d/AND1.png&quot;
+          alt=&quot;AND1&quot;
+          title=&quot;AND1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f286068f0e041a1a9237bdd147dd008b/0309e/AND2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABR0lEQVQoz5WSaY6CQBCF+/738ocXMAQSBaLgwqIii2xlvpoUYSaZZKaTR1U3r14t3W6328lms5HtditRFMl+v1d4nieHw0FRFIUMwyB93y94v9/f9gYH0X5im6ZRvF4v6bpOfTh/XY7PPM8yjqPUda12mib9iRB7QDKAf7lchM4ej4dySGwxjkqu16uUZam43++K2+0mSZJInufqk6yqKgU8zuCxRwOfZI75kC0IAgnDUM7ns86MVqkAImfYLMvk+Xzqf4AQlqRxHEvbtuIgpmkqx+NRQTuI0QICBNABFRFI0Ol00uSck4zL9H3/S5AqCKJ0sgPOEGM2XBZCVAOHAuDbaMxHXG+ZC8FZX4DBFtWuz+HaMzLfXoIKsmiTOdAOljHQFpZ3SVs2knWy9UJrEYREi4BZ8ETwseyB7S0G+xPLO/zv+i3mA5slUFMpqXG6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/f286068f0e041a1a9237bdd147dd008b/01472/AND2.webp 240w,
+/static/f286068f0e041a1a9237bdd147dd008b/222bd/AND2.webp 480w,
+/static/f286068f0e041a1a9237bdd147dd008b/620b9/AND2.webp 960w,
+/static/f286068f0e041a1a9237bdd147dd008b/a1c21/AND2.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/f286068f0e041a1a9237bdd147dd008b/0783d/AND2.png 240w,
+/static/f286068f0e041a1a9237bdd147dd008b/782f4/AND2.png 480w,
+/static/f286068f0e041a1a9237bdd147dd008b/f570d/AND2.png 960w,
+/static/f286068f0e041a1a9237bdd147dd008b/0309e/AND2.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/f286068f0e041a1a9237bdd147dd008b/f570d/AND2.png&quot;
+          alt=&quot;AND2&quot;
+          title=&quot;AND2&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/58bd84f86213dad73dee5efc48f39cc5/0309e/AND3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABaklEQVQoz4WQy07DMBRE83+ILRII8Vms+RkW0EBSqrSFisZxnJefseM2LSQxt6lYILXiyLLGluZezXic8wQnbds2ttmMWGs3v4Debrf7/f77FJ6UMs/zNE1RggkhWZ5jfBAACISQEKKua+fcMAzuL56WNVsT09hEtTgRyH4NXQcLm6YBjzEGBNzuFF4tVL5ck4pHhcLvOFV1Yy3Y5AiEOo44bdZCFfPPigvMRRUT0vCu62Gb1lopBX4zctrMGMMxKssiJRA8Q3nJKC1HsgwaOAAjoDModTtyFLvdzoNWXnx/Ops9PfthEEzfgiiKFovFfD4PgiAMw9VqBQuOU9IRGAo3fHqKqyLJCqFzpgXj6wxRwY22sA3SQtUQu+/7M4UZKlS6MZSzpKrQxzIsy5jRRIqSMU4pheTDGbw6vmeTS+3fyeCGTq6Efy1eb9njhfx8YLKlVQFmdwbPda3r6sMZtHPG9Xo88Ny5//gB9VJoAb8O3rwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/58bd84f86213dad73dee5efc48f39cc5/01472/AND3.webp 240w,
+/static/58bd84f86213dad73dee5efc48f39cc5/222bd/AND3.webp 480w,
+/static/58bd84f86213dad73dee5efc48f39cc5/620b9/AND3.webp 960w,
+/static/58bd84f86213dad73dee5efc48f39cc5/a1c21/AND3.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/58bd84f86213dad73dee5efc48f39cc5/0783d/AND3.png 240w,
+/static/58bd84f86213dad73dee5efc48f39cc5/782f4/AND3.png 480w,
+/static/58bd84f86213dad73dee5efc48f39cc5/f570d/AND3.png 960w,
+/static/58bd84f86213dad73dee5efc48f39cc5/0309e/AND3.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/58bd84f86213dad73dee5efc48f39cc5/f570d/AND3.png&quot;
+          alt=&quot;AND3&quot;
+          title=&quot;AND3&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2950d08dc81b5684ec9fcc789eb7eb35/0309e/AND4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABb0lEQVQoz2VRy26DMBDk/z+m6rWH9JhLlEsuIIIQz2CeAfNw/MIdcJVG6QgZa3dnd3bsaK2VUiUpsjy/4bilhJAsy8qylFIie7/fEamqCpG6rouiGIYBcWQdY8y6rpTyfpSkon6QTNPUdd08z2ZH0zR933POx3FalqVtW7SzLEvWrP5m5edMPibyxdg8TbOUwpIppeBjGjjogju625Rjf0a1qyAV8bLUHaffmRaYAIXZjYRRWjedUvKZcl7rpDZCGa1X8w/wRUiFRq9BB8s8LDiXYsN+5ahjjI3jSOmwObduRMTZDijfdo6iKAxDz/OCIHBd1/f9y+USxzH8xLZVXed5Pi8LYyBKuHU4HI7HI8zfyGCCBg664ElgCd4DAyEBZFTDeRgloVtr9MBTEVLiLTYybEQFTqvkuQ/EIwhv0Qs+P7jAB87pdDqfz7/kN2MtXoOQfb1e4zhKkiRNUywIXX9uv1W/wTrKheA7sM4z9QNw6XQlDBR7YQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/2950d08dc81b5684ec9fcc789eb7eb35/01472/AND4.webp 240w,
+/static/2950d08dc81b5684ec9fcc789eb7eb35/222bd/AND4.webp 480w,
+/static/2950d08dc81b5684ec9fcc789eb7eb35/620b9/AND4.webp 960w,
+/static/2950d08dc81b5684ec9fcc789eb7eb35/a1c21/AND4.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/2950d08dc81b5684ec9fcc789eb7eb35/0783d/AND4.png 240w,
+/static/2950d08dc81b5684ec9fcc789eb7eb35/782f4/AND4.png 480w,
+/static/2950d08dc81b5684ec9fcc789eb7eb35/f570d/AND4.png 960w,
+/static/2950d08dc81b5684ec9fcc789eb7eb35/0309e/AND4.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/2950d08dc81b5684ec9fcc789eb7eb35/f570d/AND4.png&quot;
+          alt=&quot;AND4&quot;
+          title=&quot;AND4&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5212224f69774b0e559defc8455d1045/0309e/AND5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACJ0lEQVQoz41QW4sSYRie/9DNgml5SHNrIex0F+xVF3vRxf6O7kwIgiC3QKHbSiJ2wdaZXNPAy2VhA0NW0E1HHR3TcXSOjsfV0XYO39enG0HQRQ/P+/LwfTzv+/BiWw+3bBaX68atDd/tO/d8Xq/b7XQ4rtit1qsWmzOT+cYwrWKxSFFUNput1+ulUglplmUhhFjk7evnzx4HX/jDr56GXwbCO4FQ8Eko6A8hsRNgmpQgiLVarVKplMvlC2e32+U4Ttd1zDR64umxQOZGSpttkrLwg+9QMt8wjZl+rgC9p/SH3W6H53lJkkRRHAwG2grLzdOhMKZzC47q8VW+XeyLdYmrSt3KUKZHPRoYs/ni53yuzlGpv/t0hclkguEE/iYS+ZJOJ1NpnPiME3HEGJFAjO7HYzg+Ho1QQk3/C4ZhLGNvbz/aWLfd9blvrrsc9stej/W62+J02uwO69raJY/nmqIoKOGFAaU1TXM5S9MAAFj+5CgZjybi+AERTR7EiI+7cXwvncIzXw8LuaPy98wnYr/VbDCtFkmS6GCFfP60UEAHQ1MwU+P6nfdC451ER6RqRGrv8rWoOT6E6jE0SAhHoiipsyknivVms8kwDYahWy1Zlpeb4bwBi5sw9wCSm/DkPuz4YT8B5T0ofAD9FND6KDMApkxRU5rWFUVnWb3T0VV1eW30A0wTFYDmSgAA/wCsuML5OZzN4GIBx2N4dgYNY2X+P4B/Pf4CPQISaB0Bd7AAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/5212224f69774b0e559defc8455d1045/01472/AND5.webp 240w,
+/static/5212224f69774b0e559defc8455d1045/222bd/AND5.webp 480w,
+/static/5212224f69774b0e559defc8455d1045/620b9/AND5.webp 960w,
+/static/5212224f69774b0e559defc8455d1045/a1c21/AND5.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/5212224f69774b0e559defc8455d1045/0783d/AND5.png 240w,
+/static/5212224f69774b0e559defc8455d1045/782f4/AND5.png 480w,
+/static/5212224f69774b0e559defc8455d1045/f570d/AND5.png 960w,
+/static/5212224f69774b0e559defc8455d1045/0309e/AND5.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/5212224f69774b0e559defc8455d1045/f570d/AND5.png&quot;
+          alt=&quot;AND5&quot;
+          title=&quot;AND5&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c4b53a50ee1bea46bcf51d17294cbd74/0309e/AND6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACiUlEQVQoz3WQ70sTcRzH798IMnVsp+3mmE77LaRghIaGNtcIbT0SiRLNErQyI6NHQVAP/DHXoyCwnZtZYMOcP1Byu50/tt12brl52+52++nObe3Xt6OeBb15vfnAh/f7yRu6oVBKamoRqQw+LRGJRDAMCwTlsuqaFBdLMDhJ4C6Hxb5ndhG4fXeLJLYJmwXHNrmoE4AchOo+TU5OaLUz77VajUYz9UczM5rVlWXTt1nj148xxpFkzH/hWEsyZI4HNrkQVvwVhlQqhVwuqb9UVyOrFsKVYqRCjMCwGCkXwidOlsKVkoN9fBczmZYXN9aXVk2LS8YF286W//BnLklCppWVWZ1Ob5jnjRo+GwzzBv0ciurROQOKol8W9BmOjgRw2oeF/duMD4sGd4vZAAAsyPqh6Xdvhh8NjI89HX8y9PLZyPDww4Gh/qGRwcdjI243wXg3bPiq12117Ky5nVvJmPcoehDyO0IBVzrmhHo62qqEJXKZSI6UVkuFiLic3+7ceWndmarNdWPw0Ea4PE4X6fNRDsLFQ5JugnDaHGQ8RED3OzsqTpVUIWJBWSm/tqCsTIJI6i+evVArxdaNeY4KBEM0TTNMiGXDHo+HJPe9Xq/T5Y7QdujVYH9bU0PLlcaWpsarjZebmxoUrc2q9tZu5bU9y/dUzE0dHgQoD+XzsAwVjTC5bCqZYBOJWCZBQmmKChDED4vVipst22t2pxXDrUGaTqWzAGR0H17f7VU96FP39aru9XT2qK9PvH0BQAzkIyAXhkChmEun44kjLs6CY6ZwHI5E2Hw+XywWs9ns9JSmXaG81aXu6r6tVt9Rdt4cHX2eTmcAAHwAAv8XXy4UCv88+U4+n+Mvz2/EwcYjRRPPugAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/c4b53a50ee1bea46bcf51d17294cbd74/01472/AND6.webp 240w,
+/static/c4b53a50ee1bea46bcf51d17294cbd74/222bd/AND6.webp 480w,
+/static/c4b53a50ee1bea46bcf51d17294cbd74/620b9/AND6.webp 960w,
+/static/c4b53a50ee1bea46bcf51d17294cbd74/a1c21/AND6.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/c4b53a50ee1bea46bcf51d17294cbd74/0783d/AND6.png 240w,
+/static/c4b53a50ee1bea46bcf51d17294cbd74/782f4/AND6.png 480w,
+/static/c4b53a50ee1bea46bcf51d17294cbd74/f570d/AND6.png 960w,
+/static/c4b53a50ee1bea46bcf51d17294cbd74/0309e/AND6.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/c4b53a50ee1bea46bcf51d17294cbd74/f570d/AND6.png&quot;
+          alt=&quot;AND6&quot;
+          title=&quot;AND6&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cdbe2fe1bfb847aef405a33db76ce791/0309e/AND7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABxUlEQVQoz2P4////379/X7x88eTJ47dv37x48fzevbsvX7789+/ffxgAKnj//t2bN68fPXr44f17oAhElgEi/ePnz2mz5vdNntHeO2n2/CV//vz5jwSAmhcuXdk9YVpH3+TZCxCyDBAzvnz56uwVbmLrKa9p7hEQ9evXL4jxENlfv3+HxqQZWbkp61q6+ob9/PkTIgvV/O3714SMGP8wXydPx/C41F+/fsPdBgS/f//OLMjxCgqwcXUNjk7+CTMapvnb57ScEL9QZ1df85CYxB8/wGZDLQdq/lZZFxkW5+IdbBkQEff9+w8UZ3/99j0uNdsvLNLewz8xoxBoFdhsqJ+Bnswvq/INjXLwDIhNzYN5ChxgX79+Xbt2bWVNXVllbWV1XV1D07p16yAeA2rbvXv3mjVrWlo7a+qa6hpaWts7V65cefHiRWhof/z4cdasWQsXLFiyePHiRQvnz583f/58iGagEzZu2LRg4cLlK1YAjdi4ceOGDRvmzZt/4sRJRFRBLPkLjgOIY4Emvnv3DkgC4wkeYRAA18IA13kNDJ48eXLr1q37YHDnzp0HDx48fPgQzHh48+ZNIBeoAOgciBEM/ykAAFpAHKrEtvw7AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/cdbe2fe1bfb847aef405a33db76ce791/01472/AND7.webp 240w,
+/static/cdbe2fe1bfb847aef405a33db76ce791/222bd/AND7.webp 480w,
+/static/cdbe2fe1bfb847aef405a33db76ce791/620b9/AND7.webp 960w,
+/static/cdbe2fe1bfb847aef405a33db76ce791/a1c21/AND7.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/cdbe2fe1bfb847aef405a33db76ce791/0783d/AND7.png 240w,
+/static/cdbe2fe1bfb847aef405a33db76ce791/782f4/AND7.png 480w,
+/static/cdbe2fe1bfb847aef405a33db76ce791/f570d/AND7.png 960w,
+/static/cdbe2fe1bfb847aef405a33db76ce791/0309e/AND7.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/cdbe2fe1bfb847aef405a33db76ce791/f570d/AND7.png&quot;
+          alt=&quot;AND7&quot;
+          title=&quot;AND7&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AWS 사용하여 react프로젝트 업로드]]></title><description><![CDATA[EC2 사용법]]></description><link>https://kyj7337.github.io/posts/AWS</link><guid isPermaLink="false">https://kyj7337.github.io/posts/AWS</guid><pubDate>Sat, 09 Nov 2019 18:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;aws-이용하여-업로드-&quot;&gt;&lt;a href=&quot;#aws-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EC%97%85%EB%A1%9C%EB%93%9C-&quot; aria-label=&quot;aws 이용하여 업로드  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AWS 이용하여 업로드 !!&lt;/h2&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/58873edc0bcc91bfc27f1df5a13cd645/0309e/AWS1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABD0lEQVQoz51SCQqEMBDr/78nIt4i3vd9gc6SgYq44sIOxGmlpEmmoq5rCoKA8jynsiwpTVPyPI+SJKEsy3gfRRHDdV1GGIYUxzH5vs//se/7nlBiWRZq25a6rjt//lvHcZCACtM0yXEcVrrvO23bxl0W1jj8C6wQH9i2LIvt2LbNHZYQwTzPr4q+CLFAflAIUhBVVcVomoYxDAPHIfs4jieB7LJYIYJVFIWHAAKQIVMAe5kxOoDcXwlBgPxgHTZxgZywvAAd6kB4tXwvJsTYoVDXdVJVlfd4OpLonuM1s0eFyE3TNDIMg1Viyuu6MtE0TafFK9GrQtjAQwaKomBSqMOwsJY274RPJX4deFPzVB9VWlQrCfEprQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/58873edc0bcc91bfc27f1df5a13cd645/01472/AWS1.webp 240w,
+/static/58873edc0bcc91bfc27f1df5a13cd645/222bd/AWS1.webp 480w,
+/static/58873edc0bcc91bfc27f1df5a13cd645/620b9/AWS1.webp 960w,
+/static/58873edc0bcc91bfc27f1df5a13cd645/a1c21/AWS1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/58873edc0bcc91bfc27f1df5a13cd645/0783d/AWS1.png 240w,
+/static/58873edc0bcc91bfc27f1df5a13cd645/782f4/AWS1.png 480w,
+/static/58873edc0bcc91bfc27f1df5a13cd645/f570d/AWS1.png 960w,
+/static/58873edc0bcc91bfc27f1df5a13cd645/0309e/AWS1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/58873edc0bcc91bfc27f1df5a13cd645/f570d/AWS1.png&quot;
+          alt=&quot;AWS1&quot;
+          title=&quot;AWS1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c7abde1b1d484d7f3791a3fe46c4b25f/0309e/AWS2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABTklEQVQoz6VRwU7CQBDljzx50qsnT0a/wIPxpHc04aIHMY3IRRP8F40xKWqU0CYqQYGW7W67Wzpd2Ka0aalLETkT3mEyh3kzb94rZFk2ySEbzrlt2xhj13UppbICgGwcx8E54jiezWc5CtkKKKRpqmta473BekaEEBDi5KeiKJpNoH7/pf780/6WQjxqADMZxUIEU/J4PN7Z293c3ioeH12fnCpn50qlolSuut1O/QNMltzVbtc21vcPDy7L5apSvKmWLsql+4fHKVm+YapN7+0LE4Jsx8JE/maYxsB1nzRP6wJ0DHj9dNo9RAi2pCe0Z5qWZf3J9m3KMYWBB94Uo9EoCIKZbOmMAA4m8dlABGI4HHLu+z6EYbgwLIpjxphcixCS5CznpfMUgjBsapqqqrqut1otIcRybsvv5DVZkyT5T2tBnsyxRFQr5bwK+ReIHWUfUqpblwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/c7abde1b1d484d7f3791a3fe46c4b25f/01472/AWS2.webp 240w,
+/static/c7abde1b1d484d7f3791a3fe46c4b25f/222bd/AWS2.webp 480w,
+/static/c7abde1b1d484d7f3791a3fe46c4b25f/620b9/AWS2.webp 960w,
+/static/c7abde1b1d484d7f3791a3fe46c4b25f/a1c21/AWS2.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/c7abde1b1d484d7f3791a3fe46c4b25f/0783d/AWS2.png 240w,
+/static/c7abde1b1d484d7f3791a3fe46c4b25f/782f4/AWS2.png 480w,
+/static/c7abde1b1d484d7f3791a3fe46c4b25f/f570d/AWS2.png 960w,
+/static/c7abde1b1d484d7f3791a3fe46c4b25f/0309e/AWS2.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/c7abde1b1d484d7f3791a3fe46c4b25f/f570d/AWS2.png&quot;
+          alt=&quot;AWS2&quot;
+          title=&quot;AWS2&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/996e7d44c9ef5d7692f5163092173a68/0309e/AWS3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABJklEQVQoz5VR20rDQBDt//+K4pP3IiISpI1VaEsJtnRjSUKyaZJN3GTvGydBRSQP8TAswzBnz5mZCaV0end/cnp2fnUzvb59vLjc+4d2HCZSqaeZ6z4vnPmLM3tdPDhrbzeWbK01xkBmhdBZBonWGopjyVLK7hWiLgooKSX/QQapTtnaD0pVj7FkznkYhlEUYYyDIEAIZb15+wvGDP82YU2NkzhJMHCqqiKE1HXNheDfACO6tzNEZqwsS8YaxjkM37WaL+g+oCkhrGr4ABl0cIJDf5/G8RFjkue0LEXTCMYgJGNta94CciR1N8tfZc7zNE3debFcFqtVtdlQz2PbLd/tFEISIfvu+/M1OURtv4mBOyshrNJw4hZ8wn7g1D8BdaPboY19ApcHfGIwDLIrAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/996e7d44c9ef5d7692f5163092173a68/01472/AWS3.webp 240w,
+/static/996e7d44c9ef5d7692f5163092173a68/222bd/AWS3.webp 480w,
+/static/996e7d44c9ef5d7692f5163092173a68/620b9/AWS3.webp 960w,
+/static/996e7d44c9ef5d7692f5163092173a68/a1c21/AWS3.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/996e7d44c9ef5d7692f5163092173a68/0783d/AWS3.png 240w,
+/static/996e7d44c9ef5d7692f5163092173a68/782f4/AWS3.png 480w,
+/static/996e7d44c9ef5d7692f5163092173a68/f570d/AWS3.png 960w,
+/static/996e7d44c9ef5d7692f5163092173a68/0309e/AWS3.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/996e7d44c9ef5d7692f5163092173a68/f570d/AWS3.png&quot;
+          alt=&quot;AWS3&quot;
+          title=&quot;AWS3&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2be8a057d6607cb84414b6d64d5269c4/0309e/AWS4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABRUlEQVQoz42RiW7CMAyGef/n20ShqBcdhdIrZ5M4x36EJo1j0izHdZJ+9u9244n6bXbZZudse86yPtvNRcnKai4KRFbVS1ktRYlIWqdH20TvRXVk9dfcNFNd2/OgTxfZdrxuddevXS+OJ348qbYjIV/gGI1zatUUAjykBPcxWHIxJTjF4Lz3MTqid/C6rnolIudcwj5E5MYYlALlrEOOPZJnGNeMsWVhjDMuOHKUQhVjLaInNwrT5K3ZZV6pZxhVm6apqrIoiro55nkuOMcFFNzfwMNTSN6nn5NfslPSxkgIN8b74EOUUkgpodlae9d/m4cISnDyPLO8XtVwtZwbY8nHfL/PDwcwwzBwzruum6ZpnmfEcRwf4RB0ni8fn/iZ0IVW8UXeX3brrJ0TlsRqkQOG4Dsf39kDjCWFwJhKKSx86vTvzt8I933XM/Lg+QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/2be8a057d6607cb84414b6d64d5269c4/01472/AWS4.webp 240w,
+/static/2be8a057d6607cb84414b6d64d5269c4/222bd/AWS4.webp 480w,
+/static/2be8a057d6607cb84414b6d64d5269c4/620b9/AWS4.webp 960w,
+/static/2be8a057d6607cb84414b6d64d5269c4/a1c21/AWS4.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/2be8a057d6607cb84414b6d64d5269c4/0783d/AWS4.png 240w,
+/static/2be8a057d6607cb84414b6d64d5269c4/782f4/AWS4.png 480w,
+/static/2be8a057d6607cb84414b6d64d5269c4/f570d/AWS4.png 960w,
+/static/2be8a057d6607cb84414b6d64d5269c4/0309e/AWS4.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/2be8a057d6607cb84414b6d64d5269c4/f570d/AWS4.png&quot;
+          alt=&quot;AWS4&quot;
+          title=&quot;AWS4&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/59eb6d67fa351dc816fa8a660c7964f3/0309e/AWS5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABN0lEQVQoz6VRW27CMBD0/a/SW/DRqlIKRbwSRCjYsRLnQWwcx7HjJN0UhPgCpI5Wq/VYu/bMImstxjhJkqIo0jTlnAshoCjLsmma4SFQay2llBAipaz+0HXd8BqQ1hqTyA8CGAG1Uqpt2/4BhqG/Ne8T8fZ+8A+xFNy5zrUj7AMYY+u6kmd4CcU59/cRjmIS0ZhlcZJCMAY5Y1mRMMgZ8GlejLnk+eHIFqvt9yIvOdKNXSzX4gyKa4izVKZ1s9k8zU/GOmAqpbTSRhvbGGvbE6Gbj08jlDUWNY0GtfDViwwQVUkJbsPruq5HRsoTxnS3+1mvvclk+eUdg4ARzMMQOecuDt08hCMYDurgamyuqjrLaBhu5/PNdLryPOz7grGKUvR8ITAXlnc3/Ur2PRpeRn8X11UN/8AvSEZ5ALPI5VYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/59eb6d67fa351dc816fa8a660c7964f3/01472/AWS5.webp 240w,
+/static/59eb6d67fa351dc816fa8a660c7964f3/222bd/AWS5.webp 480w,
+/static/59eb6d67fa351dc816fa8a660c7964f3/620b9/AWS5.webp 960w,
+/static/59eb6d67fa351dc816fa8a660c7964f3/a1c21/AWS5.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/59eb6d67fa351dc816fa8a660c7964f3/0783d/AWS5.png 240w,
+/static/59eb6d67fa351dc816fa8a660c7964f3/782f4/AWS5.png 480w,
+/static/59eb6d67fa351dc816fa8a660c7964f3/f570d/AWS5.png 960w,
+/static/59eb6d67fa351dc816fa8a660c7964f3/0309e/AWS5.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/59eb6d67fa351dc816fa8a660c7964f3/f570d/AWS5.png&quot;
+          alt=&quot;AWS5&quot;
+          title=&quot;AWS5&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c352127ee83c97d1f18a9d68f97fbdae/0309e/AWS6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABGElEQVQoz62Q306DMBSHCyZLvNieZXEjsLC4t1g2AxdGw7IYfcP5Alwuc95BA4HAZDra0kJlWObfC43E+KU5PTdff6cHFJyHW5Q8phhjhBCltDhQNQAU/Bk+ZNuU5IxRmlGCRUMIaSS/XpzzXMQFAVmvMYQiv5HMGPM8z3EcCKHnunfLZbLZFHmOMcmyX54Atm0rfUVTtYE2UFS12+/pQ300Ou2ddIe6htFTWZaM5QJ6gNW/q2stL24X4AjILRm05GMJdCQZACBJkqiddjtN3HQXf4wWBEEURb7vh2FYy6v7lTE3zBvTuDat2fnVmTWZXEyn1nh8OZvNKY6qKsNoF8ex2Mv3C2vCXpx3PuX9z7xpX/o/Jv+z/ALkZUXYIfff5QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/c352127ee83c97d1f18a9d68f97fbdae/01472/AWS6.webp 240w,
+/static/c352127ee83c97d1f18a9d68f97fbdae/222bd/AWS6.webp 480w,
+/static/c352127ee83c97d1f18a9d68f97fbdae/620b9/AWS6.webp 960w,
+/static/c352127ee83c97d1f18a9d68f97fbdae/a1c21/AWS6.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/c352127ee83c97d1f18a9d68f97fbdae/0783d/AWS6.png 240w,
+/static/c352127ee83c97d1f18a9d68f97fbdae/782f4/AWS6.png 480w,
+/static/c352127ee83c97d1f18a9d68f97fbdae/f570d/AWS6.png 960w,
+/static/c352127ee83c97d1f18a9d68f97fbdae/0309e/AWS6.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/c352127ee83c97d1f18a9d68f97fbdae/f570d/AWS6.png&quot;
+          alt=&quot;AWS6&quot;
+          title=&quot;AWS6&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/54c9f92eb16bfb47d491f504e073cac1/0309e/AWS7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACAElEQVQoz41SO2/TUBS+VALbca0kHcqAyFIVVsTAbvFQgUIl1JmfQDc3XQod+AWw0SIk6qQilMbOVLUKSBERDykPIaqAHKmJnTSJQ+K3G9uxOU0mBAI+3Xunc873OBd5ntfpdDRNM01TluVeryeKoqIoQRD4wT+AHMfJ5/PZbDaXy5XLZfv4eDwo+A8gqGaY5bsLC7fn5+PxuKqqmq535bZqDHqG6+qafnhoSw2zXrdUDYqtEVzXHTc7ywxz787c3K2b9xcXHz9Yerb+XO33Gx2jUlc8Tfnx7XtPEPqCoHe7MBdEGYZh2zb4RcPhcG3t0Y3r12iavkrTVy5fYhgGpnqu02yIUrMptVqNVgvCaB4d1Wq1/gggUNd15Lre14ODUrlcKpYKxcLnTx+r1erYkmXZUARUQPBnz3Ah4VQqxXH86HDpdHpz8yXLsslkYmsrCUgk2I2N9WKxcKLI83zfh3HwIlnzEztvo1GKmAwRIQLHCQzDo5EpkqQIYhI7E8JxMhyeQgitrj6EZsdxf2F+9/4DGQthMYw8R+H42YlT0YnT09PnwxcuUjMzVCxGzM5GIxG0srIERiRJlCRJEASI7aQZAuAyXJpPj1TzPJ95s8Pv7Wd2d9nt1NO9/W2ef/H61ZNK5QvQWpYJq4K0YFvoL38AXLXb3cHA0XXDNO3fC34Cg3T/7oyX2QUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/54c9f92eb16bfb47d491f504e073cac1/01472/AWS7.webp 240w,
+/static/54c9f92eb16bfb47d491f504e073cac1/222bd/AWS7.webp 480w,
+/static/54c9f92eb16bfb47d491f504e073cac1/620b9/AWS7.webp 960w,
+/static/54c9f92eb16bfb47d491f504e073cac1/a1c21/AWS7.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/54c9f92eb16bfb47d491f504e073cac1/0783d/AWS7.png 240w,
+/static/54c9f92eb16bfb47d491f504e073cac1/782f4/AWS7.png 480w,
+/static/54c9f92eb16bfb47d491f504e073cac1/f570d/AWS7.png 960w,
+/static/54c9f92eb16bfb47d491f504e073cac1/0309e/AWS7.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/54c9f92eb16bfb47d491f504e073cac1/f570d/AWS7.png&quot;
+          alt=&quot;AWS7&quot;
+          title=&quot;AWS7&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a9ca6fed2dead4475483729d8d7e53e4/0309e/AWS8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABiElEQVQoz42R3UrCYBjH332Z1XQ4Jb0Hu4FmpUVY6c10UAceOdgElRzOISJON8Fb8Ao8lSQF78ETQUHJTV2PLj87qD8PD8/78v6erxc1m81IOByPxZ4eo9HoQzz2fH8XCXFcKLQyjrsCu725vgwGdV23LMs0TWsjpGkaIpGbZc7oc5I6wQkHhnB0KIqiwPM8D4BhGDu4qlURhgg3gShgwDAMw0nS8S+4+9kVBTGbzhbkgqbV6nVdUfIpkW80GqVSqVgsCoIgimIikWi1WgAsFosdvD13Oh1ZllVVzeelt9eXilpRFKVcLu+XOhICcjqdQpRMJqE3kiShb/B2wy6Xazgc2ntaLpfH8HaBkiQB4/V6nU4ny7IMw0AQCARGo9F8Pv/aaDabQTG4OYAzmQyU8vl8gEEK4G14MBjARB9rtdvtfr/f6/Umk8khnE4D7L/wezye07XgCFnG47H9BgaEgvvN7+Bc7t1+TdM09G9/DySy4d8D/8CGudpnKpdafSnjwAkCx8ERf8LfGcJ8/VFznLMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/a9ca6fed2dead4475483729d8d7e53e4/01472/AWS8.webp 240w,
+/static/a9ca6fed2dead4475483729d8d7e53e4/222bd/AWS8.webp 480w,
+/static/a9ca6fed2dead4475483729d8d7e53e4/620b9/AWS8.webp 960w,
+/static/a9ca6fed2dead4475483729d8d7e53e4/a1c21/AWS8.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/a9ca6fed2dead4475483729d8d7e53e4/0783d/AWS8.png 240w,
+/static/a9ca6fed2dead4475483729d8d7e53e4/782f4/AWS8.png 480w,
+/static/a9ca6fed2dead4475483729d8d7e53e4/f570d/AWS8.png 960w,
+/static/a9ca6fed2dead4475483729d8d7e53e4/0309e/AWS8.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/a9ca6fed2dead4475483729d8d7e53e4/f570d/AWS8.png&quot;
+          alt=&quot;AWS8&quot;
+          title=&quot;AWS8&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/154e8018d7e45551ea86a4c2a7be23dd/0309e/AWS9.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABSElEQVQoz6VRu07DMBTNB1PMxMhrawsSM1sroSTNysLAzlyhEqTSqA+VJjS1HceOX7ExFRKoDxg4OrJ0de+55+rY45wv3rJFBucpTJcFpRWlnFJWFCVljJCyqiprbZqms9kMIZTnOcbYruFppQQvhWC15msKU0supK4tF4px4RY5A8aYUyqlpJRa6y+xKyDOEM4og5wjR6FJNp3OB6/Jc/zweD8cDuweeELIJarKSuWQvK+KFSSQCpiMl4MYT8bZS4wmk89BY3aIrakrLne1/oaXFzLNSe8u6EQdP/KjMAp9PwyCXuD3giAKw9tuNxmN1t6bDl4yp8Pp6vrm6qx9fnF6cnl03GyAZuOgdQhaALQBaALw1O+70bqut87+AbdbS04wLiCi7pcwdq/Z0nyL3S2OLn2llTE75pyh2ROJt1GbLfwWmP0HPgBFl2sBT9H9agAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/154e8018d7e45551ea86a4c2a7be23dd/01472/AWS9.webp 240w,
+/static/154e8018d7e45551ea86a4c2a7be23dd/222bd/AWS9.webp 480w,
+/static/154e8018d7e45551ea86a4c2a7be23dd/620b9/AWS9.webp 960w,
+/static/154e8018d7e45551ea86a4c2a7be23dd/a1c21/AWS9.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/154e8018d7e45551ea86a4c2a7be23dd/0783d/AWS9.png 240w,
+/static/154e8018d7e45551ea86a4c2a7be23dd/782f4/AWS9.png 480w,
+/static/154e8018d7e45551ea86a4c2a7be23dd/f570d/AWS9.png 960w,
+/static/154e8018d7e45551ea86a4c2a7be23dd/0309e/AWS9.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/154e8018d7e45551ea86a4c2a7be23dd/f570d/AWS9.png&quot;
+          alt=&quot;AWS9&quot;
+          title=&quot;AWS9&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/71233d7383058fdda0318708b256d3ee/0309e/AWS10.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABOUlEQVQoz5VSi46CQBDj///G+ww1SjASNQiioIIiIPISpJfOBeN5aLxJys4su6UzRQmCAKqqQtM06LoOz/PAPd/3sd1uBcfjEUmS4Hw+S369XsEoyxJhGCLLMskZCi+u12vYtg3LsoTAdV0hPZ1OgjiO5SLzMAzgejF0O4VpWvjq9dDv9zEYDJDn+Q/hbDbDfD7HYrGAYRiSbzYbUUlQ1eFwkHW32yHNCpQVEEWRCOGe4ziiUuGjVcWXJFwul7hcLrjdbqiq6g/ehcJ58AtsdzweYzKZYLVaSZuvommIphNKXdd3haPRSBTu9/tOwseLz3UnYessW6cpHEeaptJ+URS/SF62zINUQyK2TsdpCMGa5KZpiikfEbbJdDqVf3E4HL6c3zuiO+HzDBh0t62Zt/VHCh8Pdq3/jW/N8U5s1XzAHAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/71233d7383058fdda0318708b256d3ee/01472/AWS10.webp 240w,
+/static/71233d7383058fdda0318708b256d3ee/222bd/AWS10.webp 480w,
+/static/71233d7383058fdda0318708b256d3ee/620b9/AWS10.webp 960w,
+/static/71233d7383058fdda0318708b256d3ee/a1c21/AWS10.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/71233d7383058fdda0318708b256d3ee/0783d/AWS10.png 240w,
+/static/71233d7383058fdda0318708b256d3ee/782f4/AWS10.png 480w,
+/static/71233d7383058fdda0318708b256d3ee/f570d/AWS10.png 960w,
+/static/71233d7383058fdda0318708b256d3ee/0309e/AWS10.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/71233d7383058fdda0318708b256d3ee/f570d/AWS10.png&quot;
+          alt=&quot;AWS10&quot;
+          title=&quot;AWS10&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2294430ef4471cf695c7e60b561b8bee/0309e/AWS11.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABY0lEQVQoz6WS207CMByHCy2wzrK2G3McjIZxoSG+gLca4jjNKW/DgwEmRB8ABkLUZ+CacbhgBytRb9R54ZemF02//Pr/pcBbeQ+Pj/1B/2k2mbiT+Xz2+vI8nU5Ho9F4PHZdd7FYrPas1+vNZrNcLj3P2263u90ORGFw6dwxU61UitWz0/NquZBX5U8ymcxwOIyiyPf96Bsg9P0Lq44LsnlSOjJNrtFUGgEAEokE2DMYDH6VgyBoN9uGkSuXdYkxiUhEySCEUu/AvXwfJzu2ozJOdJ0ahlHUGOcYy4RkCZGEH5csTu2mVSowrh4oDKsaplTKkrRYnGEEQb8fJwc37SumpUvH+WKeIZhAMIkQFJnp/fBxyWEYNq4tLMu5wwJVuHitolCqYEYx5zKC8I/CarWaGFJXtSyGSfBR8lfhvV4vLrnb7dbr9U7n1nHatm23Wq1GoykQu2VZ4p+IeyLjBzn6B2/Z1JAJbdXrbAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/2294430ef4471cf695c7e60b561b8bee/01472/AWS11.webp 240w,
+/static/2294430ef4471cf695c7e60b561b8bee/222bd/AWS11.webp 480w,
+/static/2294430ef4471cf695c7e60b561b8bee/620b9/AWS11.webp 960w,
+/static/2294430ef4471cf695c7e60b561b8bee/a1c21/AWS11.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/2294430ef4471cf695c7e60b561b8bee/0783d/AWS11.png 240w,
+/static/2294430ef4471cf695c7e60b561b8bee/782f4/AWS11.png 480w,
+/static/2294430ef4471cf695c7e60b561b8bee/f570d/AWS11.png 960w,
+/static/2294430ef4471cf695c7e60b561b8bee/0309e/AWS11.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/2294430ef4471cf695c7e60b561b8bee/f570d/AWS11.png&quot;
+          alt=&quot;AWS11&quot;
+          title=&quot;AWS11&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a43d852820ccbb6916d762734f9a7506/0309e/AWS12.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABXUlEQVQoz62RX0vCUBjGz1LSQYkRdFEfqZuuugnLuzl0bYFX3fQp6htEH6ELda77oC7EC8FNVMTmtjYaMhD3dDymLJuU0Au/vX/OOc959x4ShiF834dtWdR/wHUt2LaJv9rsfNTI7HN7f4ezy3PkZQEX+TIKwhVurstQZAVSsQhJkiCKJRQKJRRpLggiFEWGRZtYFWWCJ7ljkBRBIsuBkG1KCnuEMBIUsoZ2u81EptPpd8Fc/hQHhwT7R1nsZDJIp3eRTFK2eHArIhzHMc/zPAzDiBd8fnmFWn2Aqj2iWtNQ+6Jef6LUoWka86qq0noNlUqFxePxOO6X54nnvMFz3+lcbDiODc9zMRqZNHZgmiZjOBwiCILfH2UymaDX69OZ6NB1Hd1uF61WC81mk9FoNJZxp9PBYDCgF3pLwR8dzvNwOY/ZhoWPbl7UF2uxHa4WNrG4syTa9qasneF/2ifFjfAgyjta/gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/a43d852820ccbb6916d762734f9a7506/01472/AWS12.webp 240w,
+/static/a43d852820ccbb6916d762734f9a7506/222bd/AWS12.webp 480w,
+/static/a43d852820ccbb6916d762734f9a7506/620b9/AWS12.webp 960w,
+/static/a43d852820ccbb6916d762734f9a7506/a1c21/AWS12.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/a43d852820ccbb6916d762734f9a7506/0783d/AWS12.png 240w,
+/static/a43d852820ccbb6916d762734f9a7506/782f4/AWS12.png 480w,
+/static/a43d852820ccbb6916d762734f9a7506/f570d/AWS12.png 960w,
+/static/a43d852820ccbb6916d762734f9a7506/0309e/AWS12.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/a43d852820ccbb6916d762734f9a7506/f570d/AWS12.png&quot;
+          alt=&quot;AWS12&quot;
+          title=&quot;AWS12&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1879557e03511c170921e4e444b7d743/0309e/AWS13.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACDUlEQVQoz12SS2/TQBSF/XtYoi67YMeGIKT+ApBaqZsKUQlFCBAsQSpqVyBUsYEKwRYoqA2vRCQtadK0hBA7jyZ+xPEjzow9nnE6Ew8TWzw/jTy+V/dcHR9ZMlWjWag0vjULpfKnXG5v/6AoTqn89aBWrhwW9/a/lIrlSvWwVlP7fd0w2j1x9xVFsSxLGo5g26NdxBsuOxrSqjktdlmhzcpafGSLQxVI1dM4jGP+F5RS3/clF0KbUsC5zznk3GC86fNjK66PeMPjdZfLAW8BrCI8SWRxghBDCCUPQj+KwukUcY4TvcliLaAnJmppoGME9bb97Pnr+xuP3+aLZJJu4IRgzxtJ0A8QmrVIRAM8ASgSLlq178qDJ+6LHWvrjbK+9XBt8/qN24uLl2/dyd68m13buHdlaSFf+CB1O633ue3P+W1n5IwJcSg71syl5ZXMhczLVx9VP94tVBcuXrq6cu3R5tPV7Or5zPz8ubNzc2d2dt9Jtj3UtBPD6GEchiEOo8gD0DDNdqcjnviU+SFRVc2ynQCRABMPjAXmYOA4tiRCE18vbDNKbdsGEM7Kf6L9A/svbZhOJ4wh7Gm6MRjgECOM7dEsTdH3ANCHQ9d1GWO/xbO0hQcAwMwxxrpuyE253+t5nidc6AliQPwWPxoNWZaFHiEkhoVE9CWxA/0iXUEIEVdaCtIXkpCWKUL4E1DMRcuZxZWUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/1879557e03511c170921e4e444b7d743/01472/AWS13.webp 240w,
+/static/1879557e03511c170921e4e444b7d743/222bd/AWS13.webp 480w,
+/static/1879557e03511c170921e4e444b7d743/620b9/AWS13.webp 960w,
+/static/1879557e03511c170921e4e444b7d743/a1c21/AWS13.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/1879557e03511c170921e4e444b7d743/0783d/AWS13.png 240w,
+/static/1879557e03511c170921e4e444b7d743/782f4/AWS13.png 480w,
+/static/1879557e03511c170921e4e444b7d743/f570d/AWS13.png 960w,
+/static/1879557e03511c170921e4e444b7d743/0309e/AWS13.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/1879557e03511c170921e4e444b7d743/f570d/AWS13.png&quot;
+          alt=&quot;AWS13&quot;
+          title=&quot;AWS13&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ec5fc90a5e610516085fc34ae6fbea2d/0309e/AWS14.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABX0lEQVQoz82QT0sCURTFX2oZBdY6KAhCahVaRJEYRZt2fZX8ftGmXbQvLMpx1PnjmPpmpplR59cbBbFoE7XowuG+d+555977xMXlBSItSOVSzGWyzM+vkErnWMqusJFdZC2TYX1hgWUh2MwJVlW+vb6h0+3yVK1iGAaO49BVd9M0EZWrCvuFImflMuXSMacnJU7KxwolSkeHHOwV2Svssp3f4fwsz8H+Fvd39yQRBgFfQwwGEeab5LnV49Xsj/OL0UOz+jQdF73dp2ErtH1021TaB6zeCFuGRMN4bBLH8RQiIQaKt+SIthfT8UG9JZpoiWe6T87aOEdDGI6+MUz2bzR0HNvCtgxMo4lerynUsRXXajXRtBoNva5qttI8otWqyL6cms22FYH6B8/z8Hwf33/HdT2k6yKlJKn57wnnjjW+0gRBpGouYRh+mm5qyC9i1mhqOLv/T/HnE34X/9/wAzTTHRn9iiCfAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/ec5fc90a5e610516085fc34ae6fbea2d/01472/AWS14.webp 240w,
+/static/ec5fc90a5e610516085fc34ae6fbea2d/222bd/AWS14.webp 480w,
+/static/ec5fc90a5e610516085fc34ae6fbea2d/620b9/AWS14.webp 960w,
+/static/ec5fc90a5e610516085fc34ae6fbea2d/a1c21/AWS14.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/ec5fc90a5e610516085fc34ae6fbea2d/0783d/AWS14.png 240w,
+/static/ec5fc90a5e610516085fc34ae6fbea2d/782f4/AWS14.png 480w,
+/static/ec5fc90a5e610516085fc34ae6fbea2d/f570d/AWS14.png 960w,
+/static/ec5fc90a5e610516085fc34ae6fbea2d/0309e/AWS14.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/ec5fc90a5e610516085fc34ae6fbea2d/f570d/AWS14.png&quot;
+          alt=&quot;AWS14&quot;
+          title=&quot;AWS14&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4ad85aacaab3413bd5769ae80dda7506/0309e/AWS15.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABJElEQVQoz62Q3WqDQBCFR2MQmqYlUHLbJy70pqGBvEgrdTf2Hby34k9AhBAEf2JOnQGpBL1qDhxn1935ZmbpdfsCmhPsJxNERmcbRhfXRFh0pglvNhuwmqbBUPS+fYO1JKyfV1iuHrC4e4RtLzGf3WNmmDAMQ2yabBOWZQlwt9sJoCxLnM9niXVdg4KfAB9fn1CegtprKNeDUh60/sbe8+C6rlgpJdZaw3EcpGmK0+kE3/dxOByQZRnyPAf1rXKVa439uz7nkS+Xy9/I/DkejwjDUCpFUYQgCGTPMUkS6YY7KIoCbdsKiONQDGULsKoqAcVxLIm85spsfhs+5/fpIX1HPWS4FyBf5CQ2Qzh5SsPxxkRTF4bVxzqZBP4neRJ4S90c+AsVlAorbpOHpAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/4ad85aacaab3413bd5769ae80dda7506/01472/AWS15.webp 240w,
+/static/4ad85aacaab3413bd5769ae80dda7506/222bd/AWS15.webp 480w,
+/static/4ad85aacaab3413bd5769ae80dda7506/620b9/AWS15.webp 960w,
+/static/4ad85aacaab3413bd5769ae80dda7506/a1c21/AWS15.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/4ad85aacaab3413bd5769ae80dda7506/0783d/AWS15.png 240w,
+/static/4ad85aacaab3413bd5769ae80dda7506/782f4/AWS15.png 480w,
+/static/4ad85aacaab3413bd5769ae80dda7506/f570d/AWS15.png 960w,
+/static/4ad85aacaab3413bd5769ae80dda7506/0309e/AWS15.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/4ad85aacaab3413bd5769ae80dda7506/f570d/AWS15.png&quot;
+          alt=&quot;AWS15&quot;
+          title=&quot;AWS15&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Scrum 이란 ??]]></title><description><![CDATA[Agile Scrum]]></description><link>https://kyj7337.github.io/posts/Scrum</link><guid isPermaLink="false">https://kyj7337.github.io/posts/Scrum</guid><pubDate>Sun, 03 Nov 2019 12:40:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;software-development-methology&quot;&gt;&lt;a href=&quot;#software-development-methology&quot; aria-label=&quot;software development methology permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software Development Methology&lt;/h2&gt;
 &lt;p&gt;​&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
