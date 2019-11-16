@@ -1,4 +1,551 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Nov 2019 09:14:17 GMT</lastBuildDate><item><title><![CDATA[삼항연산자 논리연산자 활용]]></title><description><![CDATA[토큰유무에 따라 다른 태그 보여지기]]></description><link>https://kyj7337.github.io/posts/apply</link><guid isPermaLink="false">https://kyj7337.github.io/posts/apply</guid><pubDate>Sat, 09 Nov 2019 20:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;삼항연산자와-논리연산자-활용&quot;&gt;&lt;a href=&quot;#%EC%82%BC%ED%95%AD%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90-%ED%99%9C%EC%9A%A9&quot; aria-label=&quot;삼항연산자와 논리연산자 활용 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;삼항연산자와 논리연산자 활용&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 16 Nov 2019 11:59:51 GMT</lastBuildDate><item><title><![CDATA[Data Structure]]></title><description><![CDATA[Array, Object]]></description><link>https://kyj7337.github.io/posts/datastructure</link><guid isPermaLink="false">https://kyj7337.github.io/posts/datastructure</guid><pubDate>Sat, 16 Nov 2019 21:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;array-object-stack-queue&quot;&gt;&lt;a href=&quot;#array-object-stack-queue&quot; aria-label=&quot;array object stack queue permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Array, Object, Stack, Queue&lt;/h2&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7e32bab38530258643fafdc9eba0a88c/0309e/str1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAlElEQVQoz62SOwrFIBREs/8FmS1ooSAWYmNjYRACYqMgZh4GDCGlvoFBLsJh7mfDpK7ret63t3+AWmu3p4Bf6FfTCXuirpwzOOcwxuA8z3lgjBFSSiilQCkFYwzHccwBB1RrDSEESim3a61rQOccCCEIIazNcACttdj3Hd77Z65LwL6QlNLd7vjbVg/7Wy8lfB/3qH/ZK2OmYposlwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/7e32bab38530258643fafdc9eba0a88c/01472/str1.webp 240w,
+/static/7e32bab38530258643fafdc9eba0a88c/222bd/str1.webp 480w,
+/static/7e32bab38530258643fafdc9eba0a88c/620b9/str1.webp 960w,
+/static/7e32bab38530258643fafdc9eba0a88c/a1c21/str1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/7e32bab38530258643fafdc9eba0a88c/0783d/str1.png 240w,
+/static/7e32bab38530258643fafdc9eba0a88c/782f4/str1.png 480w,
+/static/7e32bab38530258643fafdc9eba0a88c/f570d/str1.png 960w,
+/static/7e32bab38530258643fafdc9eba0a88c/0309e/str1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/7e32bab38530258643fafdc9eba0a88c/f570d/str1.png&quot;
+          alt=&quot;str1&quot;
+          title=&quot;str1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dc0ab915b9bce8433ee7bb651664bb33/0309e/str2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABY0lEQVQoz6VRy1KDMBTl/1du3Ljpxk9Q23GsFKeLTtWOOhQoj4m8hYCUVyBIg7et1umIK8/iTG6Sk3vuCYcx1nUduGmaqqrqHSilbIfNNz76wMVxLEmSZVmqqiKEbNvWNA0Y9oMwTJJkvUPXB64oCmgbRREhBDq0bQtPggugjjFYgwso+8VZloEyDMPDDca2HKf5g6LlpOr+BndcbnVpltiu4ePwfrlyA990dErrfjFtKCElmAV7EFVZktl8ejY4QRaCY0UVB+enrm+/Z0WaF3CD7Y3txW/YE+Vn2sBuB8p9Ng2lo8l0/rKsq7osqrwoL/np01KOIwy5HNmOEqwYkoG0dbbetHC2ERdX2JNd9KgtBcbalThLY19XFhaSD9N9iSFhUhH9deX4JpRlns+FsSbLw4vh5Jbnx3cCL1yPbsIgaI6H/wnM8x0D6axjMHzg+WmS2rYbBNhxtmya9u8P47p/4BMU5nALSj0qbQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/dc0ab915b9bce8433ee7bb651664bb33/01472/str2.webp 240w,
+/static/dc0ab915b9bce8433ee7bb651664bb33/222bd/str2.webp 480w,
+/static/dc0ab915b9bce8433ee7bb651664bb33/620b9/str2.webp 960w,
+/static/dc0ab915b9bce8433ee7bb651664bb33/a1c21/str2.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/dc0ab915b9bce8433ee7bb651664bb33/0783d/str2.png 240w,
+/static/dc0ab915b9bce8433ee7bb651664bb33/782f4/str2.png 480w,
+/static/dc0ab915b9bce8433ee7bb651664bb33/f570d/str2.png 960w,
+/static/dc0ab915b9bce8433ee7bb651664bb33/0309e/str2.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/dc0ab915b9bce8433ee7bb651664bb33/f570d/str2.png&quot;
+          alt=&quot;str2&quot;
+          title=&quot;str2&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e6e9ac9ba59b54594cbdab9b5468a47e/0309e/str3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABZklEQVQoz42STU+DQBCG+f8/wHj1oB68mti0alotKraKfKeUhi4WBArLRynlo4ATGiu0B30uu5O8MzvzzhJhFIxpyrSMON4AaZomaZLnqYy0i5s73bKyLM0a5A0Ix7PvyW64CuN1jLHr+wHNvp5fnXqBW1XVdCaeXZ5YtgH3siyrNgT2nV6/Y1iLPMuTJAFFGIYsx3eHFDdF2MMTWfLDVY8c8RPF87xtUfwmp1limDo03yyJlLE64+czxlqIEOqarOtzecJ8omnr5eqIZLOhBtdIEV4eb8l+R+DFYf/24/1NU2Wn3T+xC4BtTVEUoe9LLI9URJIjhhGfSYplhIfBUxStD2feHTAMTdMcx7E1mqapqqppCKG5ruvLpW3blmmaIMMYx3HcSoYdiKIIyYIgMAyzqyJJkqIoXzWO44CdsEhQQoOHM0dRBCIoDDrXdXFNEATeDxDCbv8w7P+0kssGe1f33h5/km84JWluHN9usgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/e6e9ac9ba59b54594cbdab9b5468a47e/01472/str3.webp 240w,
+/static/e6e9ac9ba59b54594cbdab9b5468a47e/222bd/str3.webp 480w,
+/static/e6e9ac9ba59b54594cbdab9b5468a47e/620b9/str3.webp 960w,
+/static/e6e9ac9ba59b54594cbdab9b5468a47e/a1c21/str3.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/e6e9ac9ba59b54594cbdab9b5468a47e/0783d/str3.png 240w,
+/static/e6e9ac9ba59b54594cbdab9b5468a47e/782f4/str3.png 480w,
+/static/e6e9ac9ba59b54594cbdab9b5468a47e/f570d/str3.png 960w,
+/static/e6e9ac9ba59b54594cbdab9b5468a47e/0309e/str3.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/e6e9ac9ba59b54594cbdab9b5468a47e/f570d/str3.png&quot;
+          alt=&quot;str3&quot;
+          title=&quot;str3&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/243294ef71c9016108e4ca5f4aa7873c/0309e/str4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABiElEQVQoz52RXU+DMBSG9//jtTdeemW882Ymxphsi86oKH4xxpYJExiUUqCUtkBbyz7UxJgYn7bJyek5Pe+b9gLftycTAABjjFIqpRRC1GsaDeeNjkjJIdRxzVizya/pvfv+vWneGcbj8/OLZa1WK4SQWqOfAa4bed5qsQicWex50ZuLE6h29OaWdTsYDM/ObgaD0fn5cDg0TTMMwyAIiqKoGCeUZhiHaaIDyrge/9Wcui6aTqFtw1cLOTNdIJTaqGrbditBe5FC/aCT7UeR3hFOMpIpzhghBcZ6RNVB1e/08jxfTh3PdsYHN5d9ax8VI4BaUpKqKsuSdzIFy/OqJAUXBLOK1FLJbbM+i4W9nE8eL8zJ1fQ0CZ5KrJNiV4HzOUWwYU2aRYzGOXI549vmVshT4+hhvNe/OjScw+PLg9A5WfvsTDZNFfoGSmAczWAce+51HM6zFG9uu8kAApC8AS+K06VXoDR7/3QlpaprxRv984zXktcVZXXbfpP9b7pm2Q3YrJ3Rv/EBWEtvpSDgnK8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/243294ef71c9016108e4ca5f4aa7873c/01472/str4.webp 240w,
+/static/243294ef71c9016108e4ca5f4aa7873c/222bd/str4.webp 480w,
+/static/243294ef71c9016108e4ca5f4aa7873c/620b9/str4.webp 960w,
+/static/243294ef71c9016108e4ca5f4aa7873c/a1c21/str4.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/243294ef71c9016108e4ca5f4aa7873c/0783d/str4.png 240w,
+/static/243294ef71c9016108e4ca5f4aa7873c/782f4/str4.png 480w,
+/static/243294ef71c9016108e4ca5f4aa7873c/f570d/str4.png 960w,
+/static/243294ef71c9016108e4ca5f4aa7873c/0309e/str4.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/243294ef71c9016108e4ca5f4aa7873c/f570d/str4.png&quot;
+          alt=&quot;str4&quot;
+          title=&quot;str4&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/aa84f9c79d4be61e365f4659e8831c9a/0309e/str5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABZElEQVQoz5WS2Y6CQBBF+f+fM8G4i/sKijuCqDV9rjaZmPFhOql0NRS3Tt0mWC6X1uv1bL1e2/V6tcvlYvf7XfF4PKr4ff7M/bksSwuez6fE2u22DYdD6/f7ttvt7Hg8Wpqmiv1+r0abzUbvOMdxXNUdDgc9Qzgwt3iB0GQykSgFp9NJxRT6D4jb7aYoiuKVOyqFy4ET4Wq1EiGiWIAAYufzucppShPqCT+qMS752wIRLhYLq9VqVq/XbTQaKaIoqoi73a7O7M1mU/VJkth2uzXXzTJHnrqGRZ6/BPEDQgqhxCvoIMuyrKKFkB0//ei5Gz13QuSsgCK6tVot63Q6IqIBozKm9xP//NnTEVwoNnF58pCHUEEYhqE1Gg2RQuG9+s/SyHQcDAY2n8/lFTEej9VoOp2KGEoIuV2Wv5zP0C3j2Ww2kzCinBFkRwAPIUbUe8V3XwnL93/EeAiw+//qr/XtOesHGi1K22aPPq8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/aa84f9c79d4be61e365f4659e8831c9a/01472/str5.webp 240w,
+/static/aa84f9c79d4be61e365f4659e8831c9a/222bd/str5.webp 480w,
+/static/aa84f9c79d4be61e365f4659e8831c9a/620b9/str5.webp 960w,
+/static/aa84f9c79d4be61e365f4659e8831c9a/a1c21/str5.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/aa84f9c79d4be61e365f4659e8831c9a/0783d/str5.png 240w,
+/static/aa84f9c79d4be61e365f4659e8831c9a/782f4/str5.png 480w,
+/static/aa84f9c79d4be61e365f4659e8831c9a/f570d/str5.png 960w,
+/static/aa84f9c79d4be61e365f4659e8831c9a/0309e/str5.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/aa84f9c79d4be61e365f4659e8831c9a/f570d/str5.png&quot;
+          alt=&quot;str5&quot;
+          title=&quot;str5&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1d885eee7156ae619055e405f2ed8ef8/0309e/str6.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABZklEQVQoz6WRTU/CQBCG+9O9e5aDITFKMEHiyUQiNxISOLQNRCmftrQI3W3p1n5t2223dSmC1SgXn8NmdrKzM+873Hq9Xq1WqqqGBUEQ7AOMMYtJQXIgTVNKaXqA0zRNEIRer9fv97vdLs/zg8FgPB6z07bt/CScoiidTqfVarXbbVEUzRIYh57vs1bZd76K2YTsHYRQ13XLRsCAxifA2prbrcmK/+y8n76U2X1MfMVd3rlqMzEecWADaCBksR4AAITQsTnneZ6+2RCMSRLXJw/Vl4YdhQHgIV9xJlWsXZMQAWhOp1NmhCzL8/mcjckGi6KIY4KiIMjjOM3oxdPVWeMceX7qvr7Pas6i7mv3eZ5YyJ7NdsWSJDEjpQKml6NsA4TkhbDlVB4JwzjOXCgawwqaXAZaLUu8o5yfmvOSe0W0uxN7ZD3feItb/NakiV9k6V5q2XPuVxszmqTESWOHEu/UnvN/8AGHo2udOk9OJgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/1d885eee7156ae619055e405f2ed8ef8/01472/str6.webp 240w,
+/static/1d885eee7156ae619055e405f2ed8ef8/222bd/str6.webp 480w,
+/static/1d885eee7156ae619055e405f2ed8ef8/620b9/str6.webp 960w,
+/static/1d885eee7156ae619055e405f2ed8ef8/a1c21/str6.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/1d885eee7156ae619055e405f2ed8ef8/0783d/str6.png 240w,
+/static/1d885eee7156ae619055e405f2ed8ef8/782f4/str6.png 480w,
+/static/1d885eee7156ae619055e405f2ed8ef8/f570d/str6.png 960w,
+/static/1d885eee7156ae619055e405f2ed8ef8/0309e/str6.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/1d885eee7156ae619055e405f2ed8ef8/f570d/str6.png&quot;
+          alt=&quot;str6&quot;
+          title=&quot;str6&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/0309e/str7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABMElEQVQoz5VRyW6DMBTk/38KDoiiFoKaXgIIlBIWs4aw2GbvJKhpFKWNOoeR7bfMvGfB9/3D4dC27TCMXdcxxqZpWpZlHMe+74c/IWy3Hy/q68Z4f9MNVVUVRTE2G9d167penkGoqgqpnvfpfWO32zmOUxTF8+LbCwzD7ThNjHN4juMYU0RR5F8QBEEYhnj5KUYSxBlnSKWUgmE4TdPydKK0RYEkSZhF0zRZlkVRRAhl8zyfi6EGhyjDztAFh+OxZOCyhEiWZXmeoyPn/LHt6owa21st4bBue77ANE1d1y3L2u/3kEEXCIAREhjjhMR916+2iyKnFMIUjRBGC0KIbdtYKnidHIxHhISmaeBtdYh/xkicdzEh6J0kye16HtiGSeStjOVdz9cp5l9w/1X/xRfBIXUXNa1xNgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/01472/str7.webp 240w,
+/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/222bd/str7.webp 480w,
+/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/620b9/str7.webp 960w,
+/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/a1c21/str7.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/0783d/str7.png 240w,
+/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/782f4/str7.png 480w,
+/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/f570d/str7.png 960w,
+/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/0309e/str7.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/e4d4296eaeda1dd1ce1b16d644eb9b0e/f570d/str7.png&quot;
+          alt=&quot;str7&quot;
+          title=&quot;str7&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/50a68178b6f43d660431477ae6c1b9ee/0309e/str8.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAyElEQVQoz+3NOw+CMBQFYP7/YnA3rhoHZzcfgwlijRgGDQuKCDFaiNBW+rgWQRMXH7vfcNLk9txrhOHB97cYJ1xIxhghRCevFVwCs9s8cgWABMUk7I8pxlgIoccGQgt7jpaOO51as5ntOA6lFCpK6WA7RKM1XfXpspejTjLv8oJVcyNN063vB0HgeV4cx1JKeHVh4hwH+aSZjc181DgPzSw5KVV+M+ATpT033jvEavHNoC6rhzcbQApQokz9vmZQkK8uv/Ev/+gGJbKCJb1BVSMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/50a68178b6f43d660431477ae6c1b9ee/01472/str8.webp 240w,
+/static/50a68178b6f43d660431477ae6c1b9ee/222bd/str8.webp 480w,
+/static/50a68178b6f43d660431477ae6c1b9ee/620b9/str8.webp 960w,
+/static/50a68178b6f43d660431477ae6c1b9ee/a1c21/str8.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/50a68178b6f43d660431477ae6c1b9ee/0783d/str8.png 240w,
+/static/50a68178b6f43d660431477ae6c1b9ee/782f4/str8.png 480w,
+/static/50a68178b6f43d660431477ae6c1b9ee/f570d/str8.png 960w,
+/static/50a68178b6f43d660431477ae6c1b9ee/0309e/str8.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/50a68178b6f43d660431477ae6c1b9ee/f570d/str8.png&quot;
+          alt=&quot;str8&quot;
+          title=&quot;str8&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[git rebase & destructuring]]></title><description><![CDATA[git rebase 사용법과 destructuring]]></description><link>https://kyj7337.github.io/posts/rebase</link><guid isPermaLink="false">https://kyj7337.github.io/posts/rebase</guid><pubDate>Sat, 16 Nov 2019 20:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;rebase-하는법-destructuring&quot;&gt;&lt;a href=&quot;#rebase-%ED%95%98%EB%8A%94%EB%B2%95-destructuring&quot; aria-label=&quot;rebase 하는법 destructuring permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;rebase 하는법, destructuring&lt;/h2&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ef4de6db66c320fe018325049c33f15c/0309e/rebase1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAu0lEQVQoz+2PWQqEQAxE+/5n8wDij+K+IK6oKFrDC/RcYPycQNFJOqmquHmeVde1IcsydV2noiisTtPU8qZpFMex/Xvkea6yLDWOo47j0HVduu9bru97hWFoS8uy2Oe6roZpmrRtm/UQZtnXzA7DYD1wnqcIRxFFkdq2VZIkpuqBUBAEqqrKCBDxrycm3/fdyJ7nkcMmdhngDJxyLkOIQEwPN5DhFEDkXZN/CfVSQGYnk7yB1x36+BP+Hh/qq1zv7iTmKgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/ef4de6db66c320fe018325049c33f15c/01472/rebase1.webp 240w,
+/static/ef4de6db66c320fe018325049c33f15c/222bd/rebase1.webp 480w,
+/static/ef4de6db66c320fe018325049c33f15c/620b9/rebase1.webp 960w,
+/static/ef4de6db66c320fe018325049c33f15c/a1c21/rebase1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/ef4de6db66c320fe018325049c33f15c/0783d/rebase1.png 240w,
+/static/ef4de6db66c320fe018325049c33f15c/782f4/rebase1.png 480w,
+/static/ef4de6db66c320fe018325049c33f15c/f570d/rebase1.png 960w,
+/static/ef4de6db66c320fe018325049c33f15c/0309e/rebase1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/ef4de6db66c320fe018325049c33f15c/f570d/rebase1.png&quot;
+          alt=&quot;rebase1&quot;
+          title=&quot;rebase1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ef4de6db66c320fe018325049c33f15c/0309e/rebase1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAu0lEQVQoz+2PWQqEQAxE+/5n8wDij+K+IK6oKFrDC/RcYPycQNFJOqmquHmeVde1IcsydV2noiisTtPU8qZpFMex/Xvkea6yLDWOo47j0HVduu9bru97hWFoS8uy2Oe6roZpmrRtm/UQZtnXzA7DYD1wnqcIRxFFkdq2VZIkpuqBUBAEqqrKCBDxrycm3/fdyJ7nkcMmdhngDJxyLkOIQEwPN5DhFEDkXZN/CfVSQGYnk7yB1x36+BP+Hh/qq1zv7iTmKgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/ef4de6db66c320fe018325049c33f15c/01472/rebase1.webp 240w,
+/static/ef4de6db66c320fe018325049c33f15c/222bd/rebase1.webp 480w,
+/static/ef4de6db66c320fe018325049c33f15c/620b9/rebase1.webp 960w,
+/static/ef4de6db66c320fe018325049c33f15c/a1c21/rebase1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/ef4de6db66c320fe018325049c33f15c/0783d/rebase1.png 240w,
+/static/ef4de6db66c320fe018325049c33f15c/782f4/rebase1.png 480w,
+/static/ef4de6db66c320fe018325049c33f15c/f570d/rebase1.png 960w,
+/static/ef4de6db66c320fe018325049c33f15c/0309e/rebase1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/ef4de6db66c320fe018325049c33f15c/f570d/rebase1.png&quot;
+          alt=&quot;rebase1&quot;
+          title=&quot;rebase1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/940c5fd9e5b1c70b284244903b769f81/0309e/destructuring1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAWElEQVQoz81SQQrAMAjz/z+r4HsqWs1gMA+FXdoyJoScDDGRcHhoZSkzi2fQqpNH9KjDMQZUFe5e2BLsvUNEwMxord28fXJEwMwK26Ucy/CtafrFH34qeAGILmmFPXMcJQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/940c5fd9e5b1c70b284244903b769f81/01472/destructuring1.webp 240w,
+/static/940c5fd9e5b1c70b284244903b769f81/222bd/destructuring1.webp 480w,
+/static/940c5fd9e5b1c70b284244903b769f81/620b9/destructuring1.webp 960w,
+/static/940c5fd9e5b1c70b284244903b769f81/a1c21/destructuring1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/940c5fd9e5b1c70b284244903b769f81/0783d/destructuring1.png 240w,
+/static/940c5fd9e5b1c70b284244903b769f81/782f4/destructuring1.png 480w,
+/static/940c5fd9e5b1c70b284244903b769f81/f570d/destructuring1.png 960w,
+/static/940c5fd9e5b1c70b284244903b769f81/0309e/destructuring1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/940c5fd9e5b1c70b284244903b769f81/f570d/destructuring1.png&quot;
+          alt=&quot;destructuring1&quot;
+          title=&quot;destructuring1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/0309e/destructuring2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB5klEQVQoz4WRXW/ScBTG+Q4K7cC+/ufWF6BjXLglm4l+FDdfMPHCfRhx0zpN9j32Em8IkHBjVGhLoWMobU2LtNLy5mkb70z2S3Pyv3ie85xzmro8v5TfnX48Ozv+dFqV31dPPlRl+Y18cvy2qqrqdDq1bXs0GjmO47qu53lBEPi+P5vNVqtVqvLkMI/lHuSoTRy/g2OZDJbB8TSGpdN3a7UaKKCFYRj9GEVRut1ur9cbDoex+UVlI18qbu+ss4ikSDqCAkiKajQaoBgMBiAFw3WMpmnQyzTN5XIZmbNra+sIMTTDkCQNH0VBhXdiHv/Di5lMJjD2YrGIkl+9rOwSxGNeeMTxDzf5fYT2ENpl0D6LPl9dgSLR/ZfU86fPaJLakqSCIBbEPL9xn2URTZAsTV9cnE+DANL8GMiE958YOFtkPjg8yBJsebsgcIgXRU4QOV4g7uWy2Vy9XgdFu92GJWFVWBsqrK3rOhw/Mh+9PqIZtigVtqRiUZJKpVK5XBZ4Dmg2m6BotVrJtcEDx4Ofl4RHB7MsS9W0jqp1NP3L12/fFU3RdFXvQ04yG9QwDEENk4MTTrCMiZLn87k1Dq/tsG96xs1PtXfT0Qdd4wdIV7eRgk6OM3bc367j2rZlW9avqJq+d7v5L5A/0hlkAmiZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/01472/destructuring2.webp 240w,
+/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/222bd/destructuring2.webp 480w,
+/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/620b9/destructuring2.webp 960w,
+/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/a1c21/destructuring2.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/0783d/destructuring2.png 240w,
+/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/782f4/destructuring2.png 480w,
+/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/f570d/destructuring2.png 960w,
+/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/0309e/destructuring2.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/bd5e2b2e5d2c5687bbe30b3230fceaf9/f570d/destructuring2.png&quot;
+          alt=&quot;destructuring2&quot;
+          title=&quot;destructuring2&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/0309e/destructuring3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABxUlEQVQoz52QS3PSYBSG8wfaHTQwyZeUS5pSwsWGYKCUZsHChS7rWlF3daGL1v/gD8MZJi7KJTUCprSESNIgmZCGFOJXcHRwHJ3xWZw5M+88Z845SKXyKJVgDtLJvR0KAAJFUZ7n5/O5pmlMho0nUnRiNxKNR2NxQJJ8oTidTn3fXywWsCJPSkcMvcfhWIwgAHEvHxT5q5F9LikPCgVA0RgAGI4TAKDoFsdxjuP8kh+Xj8hUliHICADk9nY4HC4flqTP/Q9i4zDHlVheYHPJSBQHIBQK5fP5NbnC5sidRBLHQoFAYCu4ubmRyWS8mauq1/vJVDlXEPazFI6HMSwYDLIsuya/f/P27OTk9cvq8dPj59VnL15Vz96dwuCrpnEPi2kuz2TTMYrapWmKogRBWJO9ycR2HN3QLy4kwzB+BvBn+kjXR6NLRanVao1Gw1iySlcgkvylJn762FQkWTGMG8/z/D9hmuZsNoON67q3S+AUxPxmm5Z7M7m1bJh687u73zTLss6X1Ot1URT7/f5wOBwMBnB/xP8XK7nb7bZaLdj0ej1VVRVFgSvcy4u/yrZty7Lc6XSazWa73YZTxuMxvOKH/N98B5b71PyRHgnhAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/01472/destructuring3.webp 240w,
+/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/222bd/destructuring3.webp 480w,
+/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/620b9/destructuring3.webp 960w,
+/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/a1c21/destructuring3.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/0783d/destructuring3.png 240w,
+/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/782f4/destructuring3.png 480w,
+/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/f570d/destructuring3.png 960w,
+/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/0309e/destructuring3.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/e2b0b4e36fbf6aa69acd51e0f3f261ae/f570d/destructuring3.png&quot;
+          alt=&quot;destructuring3&quot;
+          title=&quot;destructuring3&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[삼항연산자 논리연산자 활용]]></title><description><![CDATA[토큰유무에 따라 다른 태그 보여지기]]></description><link>https://kyj7337.github.io/posts/apply</link><guid isPermaLink="false">https://kyj7337.github.io/posts/apply</guid><pubDate>Sat, 09 Nov 2019 20:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;삼항연산자와-논리연산자-활용&quot;&gt;&lt;a href=&quot;#%EC%82%BC%ED%95%AD%EC%97%B0%EC%82%B0%EC%9E%90%EC%99%80-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90-%ED%99%9C%EC%9A%A9&quot; aria-label=&quot;삼항연산자와 논리연산자 활용 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;삼항연산자와 논리연산자 활용&lt;/h2&gt;
 &lt;p&gt;​&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
@@ -5091,19 +5638,7 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;git push origin develop&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;yarn deploy&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;을 입력하여 업로드를 확인한다.&lt;/p&gt;
-&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
-&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
-&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;설치 진행중&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;1.1 static —&gt; default&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;위치가 지정된 것이 아님
 ​&lt;/p&gt;
@@ -5278,4 +5813,16 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;레이아웃 정보&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://ko.learnlayout.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://ko.learnlayout.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-layout&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-layout&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
+&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
+&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;설치 진행중&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
