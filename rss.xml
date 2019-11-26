@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 Nov 2019 12:37:35 GMT</lastBuildDate><item><title><![CDATA[CRA 기초 세팅]]></title><description><![CDATA[eslint, CRA, cross-env]]></description><link>https://kyj7337.github.io/posts/CRA</link><guid isPermaLink="false">https://kyj7337.github.io/posts/CRA</guid><pubDate>Tue, 26 Nov 2019 21:55:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;초기세팅&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EA%B8%B0%EC%84%B8%ED%8C%85&quot; aria-label=&quot;초기세팅 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초기세팅&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 Nov 2019 14:06:47 GMT</lastBuildDate><item><title><![CDATA[CRA 기초 세팅]]></title><description><![CDATA[eslint, CRA, cross-env]]></description><link>https://kyj7337.github.io/posts/CRA</link><guid isPermaLink="false">https://kyj7337.github.io/posts/CRA</guid><pubDate>Tue, 26 Nov 2019 21:55:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;초기세팅&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EA%B8%B0%EC%84%B8%ED%8C%85&quot; aria-label=&quot;초기세팅 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초기세팅&lt;/h2&gt;
 &lt;h3 id=&quot;cra-설치-방법&quot;&gt;&lt;a href=&quot;#cra-%EC%84%A4%EC%B9%98-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;cra 설치 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CRA 설치 방법&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;cmd를 켠다.&lt;/li&gt;
@@ -21,11 +21,216 @@
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;start&lt;/code&gt;부분과 &lt;code class=&quot;language-text&quot;&gt;&amp;quot;build&amp;quot;&lt;/code&gt;부분을 다음과 같이 바꿔준다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;start&amp;quot;: &amp;quot;cross-env NODE_PATH=src react-scripts start&amp;quot;, &amp;quot;build&amp;quot;: &amp;quot;cross-env NODE_PATH=src react-scripts build&amp;quot;,&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Promise]]></title><description><![CDATA[promise 설명]]></description><link>https://kyj7337.github.io/posts/promise</link><guid isPermaLink="false">https://kyj7337.github.io/posts/promise</guid><pubDate>Mon, 25 Nov 2019 23:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;promise-란-&quot;&gt;&lt;a href=&quot;#promise-%EB%9E%80-&quot; aria-label=&quot;promise 란  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Promise 란 ?&lt;/h2&gt;
-&lt;p&gt;​&lt;img src=&quot;/media/Etc/Promise/promise(1).png&quot;&gt;
-​&lt;img src=&quot;/media/Etc/Promise/promise(2).png&quot;&gt;
-​&lt;img src=&quot;/media/Etc/Promise/promise(3).png&quot;&gt;
-​&lt;img src=&quot;/media/Etc/Promise/promise(4).png&quot;&gt;
-​&lt;img src=&quot;/media/Etc/Promise/promise(5).png&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[이제부터는 Window 에서 블로그 시작]]></title><description><![CDATA[우분투고군분투 안녕]]></description><link>https://kyj7337.github.io/posts/window</link><guid isPermaLink="false">https://kyj7337.github.io/posts/window</guid><pubDate>Sun, 24 Nov 2019 09:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;윈도우에서-블로그-시작&quot;&gt;&lt;a href=&quot;#%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8B%9C%EC%9E%91&quot; aria-label=&quot;윈도우에서 블로그 시작 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;윈도우에서 블로그 시작&lt;/h2&gt;
+&lt;p&gt;​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3b59d305049753159eb0e108953ef0a3/0309e/promise(1).png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABPUlEQVQoz6WQTU/CQBCG9w960ANpgKohJvKfPBj/heEoakIR6lUgKdSWfu1ut9uvLSm7DhwQxY8DTzazb7LzzswOygux9MOEZ4SyANOURirxRRxGmESYvjtLxhKllFQb1lLVtdwdtE6x4NQLwiiKgiBwPc9Z+izhlFJCMOcJXGEYcs4hoSwKtQe6u71ptbSrbrdzrV92Wm292Ww3Ls41Xde0ZuP07KTXu4e8qhJVVdV1/cX8Npk89Ptj8/Xp+XE0GpqmOXwxDGNgjkfGcACCsXgztpTqABTHse/7yZZ4C3wyTVNCKWMMWuV5XpalEAJilmWr1erTDP9cLBaO48zn1mw2A2HbtmVZ9haoO51OPc8D4bouJED13SCoKArYDcYYqsJWQEAeRELIfpMfQX8/ywO+m+UvqP9A6giOMn8A9VJlu0wJvGQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/3b59d305049753159eb0e108953ef0a3/01472/promise(1).webp 240w,
+/static/3b59d305049753159eb0e108953ef0a3/222bd/promise(1).webp 480w,
+/static/3b59d305049753159eb0e108953ef0a3/620b9/promise(1).webp 960w,
+/static/3b59d305049753159eb0e108953ef0a3/a1c21/promise(1).webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/3b59d305049753159eb0e108953ef0a3/0783d/promise(1).png 240w,
+/static/3b59d305049753159eb0e108953ef0a3/782f4/promise(1).png 480w,
+/static/3b59d305049753159eb0e108953ef0a3/f570d/promise(1).png 960w,
+/static/3b59d305049753159eb0e108953ef0a3/0309e/promise(1).png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/3b59d305049753159eb0e108953ef0a3/f570d/promise(1).png&quot;
+          alt=&quot;promise 1 &quot;
+          title=&quot;promise 1 &quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cf81f2c756718935c97249835b9952fc/0309e/promise(2).png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABuUlEQVQoz6WQzW7TQBDHfaVUipIiUZc0om2SxYtahAq9RCocwfACSHDl41CFQwVccooiBfcV8hioTwDptU1qenFiryOE7XjtjetNi9cfbEFFoF4Q/DSH0c78578zQsRYGIYn3xg9ZeSYkuAYe/5Xy+bhOK7jerbnu2RCQmq5XnhyGicpYwmLkzhOBce2tt++2dp+V6+/frFVf/7y1bOnTxqNBi9mHEozjM8iCDLiZx7O0jQ7RzAMXYJg8frSVfFasSiWivOXZ2fv39sc2YH2hY4MY3Cwj1RVV9XR0ZGDkGVZtm2Px+PpdCrour66tnbr7sbtO+sQgpXy8rwoyvKDnoa7Kumrnz/s7n7sdj/t7e33esg0NU0zTXMwGFBKBYSMKgDLVQnAm2UgVaTV0kr1ofwoiiL+Me5z2O8jhCaTCT+N7/sYY54TQuI45mIEISzfgBUJVKQygKC0VJIfy1HEuJiP4A7BD3gSnuO6LmNMGA6HC+JCLpcrFPL5Qn7uytzMzKVarcZrXJz+dp6LCBh7ivK+2WwqitJut3eUnVar1el0kiT51XRxxM8XIfsPzsTchG+f/Mnfiv+Z76I3D7rFHkY4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/cf81f2c756718935c97249835b9952fc/01472/promise(2).webp 240w,
+/static/cf81f2c756718935c97249835b9952fc/222bd/promise(2).webp 480w,
+/static/cf81f2c756718935c97249835b9952fc/620b9/promise(2).webp 960w,
+/static/cf81f2c756718935c97249835b9952fc/a1c21/promise(2).webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/cf81f2c756718935c97249835b9952fc/0783d/promise(2).png 240w,
+/static/cf81f2c756718935c97249835b9952fc/782f4/promise(2).png 480w,
+/static/cf81f2c756718935c97249835b9952fc/f570d/promise(2).png 960w,
+/static/cf81f2c756718935c97249835b9952fc/0309e/promise(2).png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/cf81f2c756718935c97249835b9952fc/f570d/promise(2).png&quot;
+          alt=&quot;promise 2 &quot;
+          title=&quot;promise 2 &quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/11fdebe0bf0c903ffb153a3429296c44/0309e/promise(3).png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABZUlEQVQoz31SXW+CMBTl//8X333yYYtz2SJglmUalUwGUvpBKTIYpdAdMXFmup1Ac3t77jnlBKdmXHi+nLtq7qmXV/r0nM5dOn1gs8f07j73FsFmy4VkPMPKRcaYyKQypsfjdM1XQUgeR3kcFyTpy9JWlcX6WdpDgdq0bdd11vYWb39cz3BaY97D8G212hPChCCMnQou5Z7STClCSJIkQog8z0uIXkg4UA3DMAiCNE2zAWwACnQwudvtOOf2FhxjDITX63Ucx5CnlIKKDraQiKIIEm3b3h7GHcAGVUpZVZVSqhgA58MAqNs/4Fy36roWSFTmeGDLufiV08/wQBUDicMHhtb0Gx4tSGBw4M261jSNRlo4Agd8xIYtFJ3tdjudTl3X9Qb4vi+YSCitdGNNl358qLygKZ1MJuPxeDQanYrlcnl01lqfv+p0PWx1o08djax025kObrgXEoHnOQjncuz6N/gf3yMibj9wGu1aAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/11fdebe0bf0c903ffb153a3429296c44/01472/promise(3).webp 240w,
+/static/11fdebe0bf0c903ffb153a3429296c44/222bd/promise(3).webp 480w,
+/static/11fdebe0bf0c903ffb153a3429296c44/620b9/promise(3).webp 960w,
+/static/11fdebe0bf0c903ffb153a3429296c44/a1c21/promise(3).webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/11fdebe0bf0c903ffb153a3429296c44/0783d/promise(3).png 240w,
+/static/11fdebe0bf0c903ffb153a3429296c44/782f4/promise(3).png 480w,
+/static/11fdebe0bf0c903ffb153a3429296c44/f570d/promise(3).png 960w,
+/static/11fdebe0bf0c903ffb153a3429296c44/0309e/promise(3).png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/11fdebe0bf0c903ffb153a3429296c44/f570d/promise(3).png&quot;
+          alt=&quot;promise 3 &quot;
+          title=&quot;promise 3 &quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/42e7ffd5f53188d28d4681b663fbcb85/0309e/promise(4).png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABS0lEQVQoz6WQW2vDMAyF/f//WVtoKRS2p4Rcm5tjO77FJo53krCxjY097MMEEenoSCLxE+v+whqXZQ0hTlIxJpqm67qBjqztBs6nFdmwZZcQydj1gnklzcTFyJkQUhuzoiRGSoc0TbMsS9Okbbs8z15fX6qqUkqhIIRAqqIskqfsemuMnTec94dYCHG9Xk+n0/l8vt/vt9vtcrk8Ho+6rtGRUkocsC5ajXnjV6y1TdM8dyBo2xZf7MA5hzmyxBiD8biwjHlvbcCb52WeIWaMoTrPc8hQpnfwcxzHaZqklEQbXRR5XbOm105J3/d+pI5STI406uCDCaGB1bHOB8TNs1ZaKWnd5rbi0PtDDCVsy7LEqOMOWqDX4e+9J2i27OB633aGBtdOkgT6Q3m0gB4xhCT+DsbGtsMw4GyIYeV2jmAbO/6DP8TrOz9m3wAQ2Xbf+0vZVwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/42e7ffd5f53188d28d4681b663fbcb85/01472/promise(4).webp 240w,
+/static/42e7ffd5f53188d28d4681b663fbcb85/222bd/promise(4).webp 480w,
+/static/42e7ffd5f53188d28d4681b663fbcb85/620b9/promise(4).webp 960w,
+/static/42e7ffd5f53188d28d4681b663fbcb85/a1c21/promise(4).webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/42e7ffd5f53188d28d4681b663fbcb85/0783d/promise(4).png 240w,
+/static/42e7ffd5f53188d28d4681b663fbcb85/782f4/promise(4).png 480w,
+/static/42e7ffd5f53188d28d4681b663fbcb85/f570d/promise(4).png 960w,
+/static/42e7ffd5f53188d28d4681b663fbcb85/0309e/promise(4).png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/42e7ffd5f53188d28d4681b663fbcb85/f570d/promise(4).png&quot;
+          alt=&quot;promise 4 &quot;
+          title=&quot;promise 4 &quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+​&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/02db5b3a1dda7b480ff0f25f53eb70e0/0309e/promise(5).png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB9UlEQVQoz52RW2sTQRiG8yPEWAsBBZtkk02a3WRzbJPihf9LEBFqDagXXvg/BNvQw52gSKltPQVMc9js7M7sYfYwu5OsXw7ihXe+Azszy/fwvfN+CawThDzL9LQpGo4nE9VABjEw8Vl0fflRLolVSSmJxXqtWpElpdJK3U129x/HccxYlDB1Q1dNMp16lLpLBSwIQ8b57OfVqZjJNoWdtthpF/eqhbq4lb6XvPXqxROAOecJ0zQ92+PUiefz+I/CMOLM/nF5Wi/ndovph5LQLGY625mGnEs/2Hj7Zh9qZgAjpHme61GfurMoDOFfPI+Zb89D/fzLdblaU6q1bUmSlYoky42dR6n7Wwfdl+vOGtIGg8FwaIw0l9lmMB5zNPUGF0Hgf/h8lc8WGoVWXWx2lL1auVHK5VO3k0+fHaxhVVXBOcam49D5jM/Ar6vpCFkO+3T+tSCUdoVKO19rCUozJ4tZYePO5vPu6zVs27ZlWZjAMlQNj0a/puqNhojrUmJah72z3tFxr3dyCN+jY7i+e3/y7XsfYIgoARvGGJxD1jqa2PjGsm1IYZk9ZZB8FHIOaYS+v5gCQNAN2gK4gHVd7/f7GBNdGzqORcyFVo4MwyCEwAFqELxlKUrpaigLGOrg5csJszBaNPlXDDwEweocRdFf+L/1GzbRCf8hKI1fAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/02db5b3a1dda7b480ff0f25f53eb70e0/01472/promise(5).webp 240w,
+/static/02db5b3a1dda7b480ff0f25f53eb70e0/222bd/promise(5).webp 480w,
+/static/02db5b3a1dda7b480ff0f25f53eb70e0/620b9/promise(5).webp 960w,
+/static/02db5b3a1dda7b480ff0f25f53eb70e0/a1c21/promise(5).webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/02db5b3a1dda7b480ff0f25f53eb70e0/0783d/promise(5).png 240w,
+/static/02db5b3a1dda7b480ff0f25f53eb70e0/782f4/promise(5).png 480w,
+/static/02db5b3a1dda7b480ff0f25f53eb70e0/f570d/promise(5).png 960w,
+/static/02db5b3a1dda7b480ff0f25f53eb70e0/0309e/promise(5).png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/02db5b3a1dda7b480ff0f25f53eb70e0/f570d/promise(5).png&quot;
+          alt=&quot;promise 5 &quot;
+          title=&quot;promise 5 &quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[이제부터는 Window 에서 블로그 시작]]></title><description><![CDATA[우분투고군분투 안녕]]></description><link>https://kyj7337.github.io/posts/window</link><guid isPermaLink="false">https://kyj7337.github.io/posts/window</guid><pubDate>Sun, 24 Nov 2019 09:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;윈도우에서-블로그-시작&quot;&gt;&lt;a href=&quot;#%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%8B%9C%EC%9E%91&quot; aria-label=&quot;윈도우에서 블로그 시작 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;윈도우에서 블로그 시작&lt;/h2&gt;
 &lt;p&gt;정신없어서 우분투에서만 블로그 글을 게시 했는데, 이제는 window 에서 git clone을 받아와서 window 에서도 블로그 글을 작성할 수 있게 됐습니다…&lt;/p&gt;
 &lt;p&gt;매번 블로그 작성할때 ppt 작업물들 전부 우분투로 보내고, 거기서 다시 이름 바꿔서 올리고, 파일 옮기면서 날아간적도 있고, 힘들었는데 프로젝트 끝나고 시간 남아서 이제서야 옮겼네요&lt;/p&gt;
 &lt;p&gt;사실 윈도우로 옮긴 이유가 ppt를 다룰 수 있기 때문이였는데… 우분투도 libre office가 있어서 비슷하게 사용할 수 있지만, 그래도 단축키나 아이콘 위치들이 달라져서 적응 못했는데 ,,,,,, 맥 유저들은 ppt도 그냥 사용하더라구요??&lt;/p&gt;
