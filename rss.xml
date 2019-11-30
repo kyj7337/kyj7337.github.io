@@ -1,4 +1,140 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 26 Nov 2019 14:06:47 GMT</lastBuildDate><item><title><![CDATA[CRA 기초 세팅]]></title><description><![CDATA[eslint, CRA, cross-env]]></description><link>https://kyj7337.github.io/posts/CRA</link><guid isPermaLink="false">https://kyj7337.github.io/posts/CRA</guid><pubDate>Tue, 26 Nov 2019 21:55:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;초기세팅&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EA%B8%B0%EC%84%B8%ED%8C%85&quot; aria-label=&quot;초기세팅 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초기세팅&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 30 Nov 2019 06:10:41 GMT</lastBuildDate><item><title><![CDATA[redux-1]]></title><description><![CDATA[redux 기초]]></description><link>https://kyj7337.github.io/posts/redux1</link><guid isPermaLink="false">https://kyj7337.github.io/posts/redux1</guid><pubDate>Sat, 30 Nov 2019 14:00:32 GMT</pubDate><content:encoded>&lt;h1 id=&quot;redux&quot;&gt;&lt;a href=&quot;#redux&quot; aria-label=&quot;redux permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;redux&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/media/React/Redux/redux1.PNG&quot;&gt;&lt;/p&gt;
+&lt;p&gt;리덕스의 큰 그림을 살펴보면 위와 같다.&lt;/p&gt;
+&lt;p&gt;리덕스를 사용할 때 필수 설치&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save react-redux&lt;/code&gt; : react에서 redux를 사용할 때 필요.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save redux&lt;/code&gt; : redux 자체 함수를 사용하기 위해 필요.&lt;/li&gt;
+&lt;li&gt;ex)createStore, bindActionCreators 함수 사용시&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save redux-devtools-extension&lt;/code&gt; : 크롬에서 현재 스토어를 눈으로 보기 위해 설정해줘야한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;ui준비하기&quot;&gt;&lt;a href=&quot;#ui%EC%A4%80%EB%B9%84%ED%95%98%EA%B8%B0&quot; aria-label=&quot;ui준비하기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;UI준비하기&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Container Component : 리덕스와 연동되어 있는 컴포넌트, 리덕스로부터 상태를 받아오기도 하고 스토어에 액션을 dispatch 한다.&lt;/li&gt;
+&lt;li&gt;Presentational Component : 상태관리 이뤄지지 않고, 그냥 보여주기만 하는 컴포넌트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;폴더-구조&quot;&gt;&lt;a href=&quot;#%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;폴더 구조 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;폴더 구조&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;src/container 에는 리덕스와 연동된 컴포넌트를 저장한다.&lt;/li&gt;
+&lt;li&gt;src/components 에는 Presentational component 들이 들어간다.&lt;/li&gt;
+&lt;li&gt;
+&lt;h5 id=&quot;srcmodule-에는-아래에서-설명되는-리덕스-관련-코드들이-들어가는-폴더가-된다&quot;&gt;&lt;a href=&quot;#srcmodule-%EC%97%90%EB%8A%94-%EC%95%84%EB%9E%98%EC%97%90%EC%84%9C-%EC%84%A4%EB%AA%85%EB%90%98%EB%8A%94-%EB%A6%AC%EB%8D%95%EC%8A%A4-%EA%B4%80%EB%A0%A8-%EC%BD%94%EB%93%9C%EB%93%A4%EC%9D%B4-%EB%93%A4%EC%96%B4%EA%B0%80%EB%8A%94-%ED%8F%B4%EB%8D%94%EA%B0%80-%EB%90%9C%EB%8B%A4&quot; aria-label=&quot;srcmodule 에는 아래에서 설명되는 리덕스 관련 코드들이 들어가는 폴더가 된다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;src/module 에는 아래에서 설명되는 리덕스 관련 코드들이 들어가는 폴더가 된다.&lt;/h5&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;리덕스-관련-코드들&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EB%8D%95%EC%8A%A4-%EA%B4%80%EB%A0%A8-%EC%BD%94%EB%93%9C%EB%93%A4&quot; aria-label=&quot;리덕스 관련 코드들 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리덕스 관련 코드들&lt;/h2&gt;
+&lt;p&gt;리덕스 관련 코드들은 크게 3가지 역할로 나눌 수 있다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;액션 타입&lt;/li&gt;
+&lt;li&gt;액션 생성 함수&lt;/li&gt;
+&lt;li&gt;초기state값 + 리듀서&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이 3가지 묶음을 하나의 js파일에 기능별로 정리 하는 것이 Ducks Pattern 이라고 한다.&lt;/p&gt;
+&lt;p&gt;이렇게 3가지 리덕스의 코드들을 src/module 폴더 안에 각자 이름으로 저장한다. (ex: module/counter.js)&lt;/p&gt;
+&lt;h3 id=&quot;아래-내용들은-모두-srcmodulecounterjs-내부에-들어간다&quot;&gt;&lt;a href=&quot;#%EC%95%84%EB%9E%98-%EB%82%B4%EC%9A%A9%EB%93%A4%EC%9D%80-%EB%AA%A8%EB%91%90-srcmodulecounterjs-%EB%82%B4%EB%B6%80%EC%97%90-%EB%93%A4%EC%96%B4%EA%B0%84%EB%8B%A4&quot; aria-label=&quot;아래 내용들은 모두 srcmodulecounterjs 내부에 들어간다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;아래 내용들은 모두 src/module/counter.js 내부에 들어간다.&lt;/h3&gt;
+&lt;h4 id=&quot;1-제일먼저-액션-타입을-정의해준다&quot;&gt;&lt;a href=&quot;#1-%EC%A0%9C%EC%9D%BC%EB%A8%BC%EC%A0%80-%EC%95%A1%EC%85%98-%ED%83%80%EC%9E%85%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%B4%EC%A4%80%EB%8B%A4&quot; aria-label=&quot;1 제일먼저 액션 타입을 정의해준다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 제일먼저 액션 타입을 정의해준다.&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;const INCREASE = &amp;quot;counter/INCREASE&amp;quot;;&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;const DECREASE = &amp;quot;counter/DECREASE&amp;quot;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;이렇게 정의를 해주는데, 이때 타입 앞에 폴더을 앞에 붙여주게 되면(&lt;code class=&quot;language-text&quot;&gt;counter&lt;/code&gt;/INCREASE) 다른 곳에 사용시 겹치지 않는다.&lt;/p&gt;
+&lt;h4 id=&quot;2-두번째로-액션-생성-함수를-만들어-준다&quot;&gt;&lt;a href=&quot;#2-%EB%91%90%EB%B2%88%EC%A7%B8%EB%A1%9C-%EC%95%A1%EC%85%98-%EC%83%9D%EC%84%B1-%ED%95%A8%EC%88%98%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4-%EC%A4%80%EB%8B%A4&quot; aria-label=&quot;2 두번째로 액션 생성 함수를 만들어 준다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 두번째로 액션 생성 함수를 만들어 준다.&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;export const increase = () =&amp;gt; ({ type: INCREASE });&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;export const decrease = () =&amp;gt; ({ type: DECREASE });&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;액션 타입이 들어간 액션 생성을 하는 함수를 만든다. 추가적인 인자가 들어가는 것이 없어 간단하게 보여진다.&lt;/p&gt;
+&lt;h5 id=&quot;주의할-것은-export가-붙는데-이-함수를-다른-파일에서-불러와-사용해야-한다는-것&quot;&gt;&lt;a href=&quot;#%EC%A3%BC%EC%9D%98%ED%95%A0-%EA%B2%83%EC%9D%80-export%EA%B0%80-%EB%B6%99%EB%8A%94%EB%8D%B0-%EC%9D%B4-%ED%95%A8%EC%88%98%EB%A5%BC-%EB%8B%A4%EB%A5%B8-%ED%8C%8C%EC%9D%BC%EC%97%90%EC%84%9C-%EB%B6%88%EB%9F%AC%EC%99%80-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%9C%EB%8B%A4%EB%8A%94-%EA%B2%83&quot; aria-label=&quot;주의할 것은 export가 붙는데 이 함수를 다른 파일에서 불러와 사용해야 한다는 것 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;주의할 것은 export가 붙는데 이 함수를 다른 파일에서 불러와 사용해야 한다는 것.&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ex) dispatch에 액션 생성 함수를 넣어줘야 하기 때문에 !! (dispatch는 다른파일에서 사용된다.)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;3-초기-state-값-설정--리듀서-생성&quot;&gt;&lt;a href=&quot;#3-%EC%B4%88%EA%B8%B0-state-%EA%B0%92-%EC%84%A4%EC%A0%95--%EB%A6%AC%EB%93%80%EC%84%9C-%EC%83%9D%EC%84%B1&quot; aria-label=&quot;3 초기 state 값 설정  리듀서 생성 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 초기 state 값 설정 + 리듀서 생성&lt;/h4&gt;
+&lt;p&gt;리듀서에는 인자 2개가 들어간다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;state값&lt;/li&gt;
+&lt;li&gt;action&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;인자 2개가 들어가는 이유(reducer의 역할) : action 값에 변화가 있으면, 기존에 있는 state 값을 참고해서 다시 새로운 state를 내보낸다&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;state값 설정&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const initialState = {
+    number: 0
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 해서 입력값이 없어도 state값이 0 이라고 지정해야한다.
+설정 안할시 undefined로 되어있기 때문에!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;reducer 함수 작성&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function counter(state = initialState, action) {
+    switch (action.type) {
+        case INCREASE:
+            return {
+              number: state.number + 1
+            };
+        case DECREASE:
+            return {
+              number: state.number - 1
+            };
+        default:
+            return state;
+        }
+      }
+
+export default counter;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이 부분에 대해서 설명이 좀 길다. 내가 이해하는데 오래 걸렸기 때문.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;function counter(state=initialState, action)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;이 부분에 대한 해석: 리듀서 함수를 만드는데, 이름을 counter라는 이름으로 reducer의 역할을 하는 함수를 만든다. 인자로 state와 action이 들어간다.&lt;/p&gt;
+&lt;p&gt;state는 위에서 선언한 initialState가 들어간다.그렇다면 state는&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;state : {
+    number:0
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 상태이다. 그리고 action은 이 dispatch에 의해서 들어오게 될 것이다.(아직 dispatch를 사용하지 않아서 이 부분은 빠져있을뿐.)&lt;/p&gt;
+&lt;p&gt;이제 뒷부분을 살펴보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;                               {
+        switch (action.type) {
+            case INCREASE:
+                return {
+                number: state.number + 1
+                };
+            case DECREASE:
+                return {
+                number: state.number - 1
+                };
+            default:
+                return state;
+            }
+        }
+
+    export default counter;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;인자 2개가 들어왔으면 실행되는 함수내용 인데
+switch(action.type)은 정확한 해석은 모르겠다.&lt;/p&gt;
+&lt;p&gt;action객체의 type을 보겠다는 것으로 해석된다.
+case INCREASE: action의 type이 위에서 선언한 INCREASE 이면 return 하는 내용을 담고 있다.&lt;/p&gt;
+&lt;p&gt;여기서 중요한 개념이 스프레드 연산자 인데, state의 여러 값 중에서 하나만 바꿀 때는&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;...state&lt;/code&gt; 라고 입력하여 나머지 state는 건들지 않고 바꿀 state 값만 입력해주면 된다.&lt;/p&gt;
+&lt;p&gt;그리고 default: return state는 바뀌는 값이 없으면 현재 state를 내보내겠다고 선언한 것이다.&lt;/p&gt;
+&lt;p&gt;맨 마지막 export default counter; 선언을 하여 내보낼 수 있게 해준다.&lt;/p&gt;
+&lt;h4 id=&quot;export-default-와-export-차이점-&quot;&gt;&lt;a href=&quot;#export-default-%EC%99%80-export-%EC%B0%A8%EC%9D%B4%EC%A0%90-&quot; aria-label=&quot;export default 와 export 차이점  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;export default 와 export 차이점 ?&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;export default counter;&lt;/code&gt; VS &lt;code class=&quot;language-text&quot;&gt;export const INCREASE = () =&amp;gt;({type:INCREASE})&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;export default 는 단 한개만 내보낼 수 있다.&lt;/p&gt;
+&lt;p&gt;하지만&lt;/p&gt;
+&lt;p&gt;export 는 여러개를 내보낼 수 있다.&lt;/p&gt;
+&lt;p&gt;???????????????????
+이게 무슨말이냐 하면&lt;/p&gt;
+&lt;p&gt;다른 파일에서 export 와 export default 를 사용할 때 방식이 다르다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;import counter from &amp;#39;./counter;&lt;/code&gt;
+&lt;code class=&quot;language-text&quot;&gt;import {INCREASE, DECREASE} from &amp;#39;./counter;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;이렇게 다르다. 사실 위 작성법은 &lt;code class=&quot;language-text&quot;&gt;import counter , {INCREASE, DECREASE} from &amp;#39;./counter;&lt;/code&gt; 라고 쓸 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/React/Redux/redux2.PNG&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;이렇게-리덕스-관련-함수들을-만들었다&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EB%A0%87%EA%B2%8C-%EB%A6%AC%EB%8D%95%EC%8A%A4-%EA%B4%80%EB%A0%A8-%ED%95%A8%EC%88%98%EB%93%A4%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8B%A4&quot; aria-label=&quot;이렇게 리덕스 관련 함수들을 만들었다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이렇게 리.덕.스 관련 함수들을 만들었다.&lt;/h4&gt;
+&lt;p&gt;우리는 이제 action과 reducer를 만들었다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;만들기만 했을 뿐 연결이 되지 않아 덩그러니 혼자 있는 상태이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;그렇다면 아직 안한것이 뭘까 ??&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;리엑트와 연결을 하지 않았다.&lt;/li&gt;
+&lt;li&gt;스토어를 만들지 않았다.&lt;/li&gt;
+&lt;li&gt;dispatch도 사용하지 않았다.&lt;/li&gt;
+&lt;li&gt;state 값을 읽어와서 render 하는 부분도 하지 않았다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;다음-장에서-나머지-부분을-연결해보도록-하겠다&quot;&gt;&lt;a href=&quot;#%EB%8B%A4%EC%9D%8C-%EC%9E%A5%EC%97%90%EC%84%9C-%EB%82%98%EB%A8%B8%EC%A7%80-%EB%B6%80%EB%B6%84%EC%9D%84-%EC%97%B0%EA%B2%B0%ED%95%B4%EB%B3%B4%EB%8F%84%EB%A1%9D-%ED%95%98%EA%B2%A0%EB%8B%A4&quot; aria-label=&quot;다음 장에서 나머지 부분을 연결해보도록 하겠다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;다음 장에서 나머지 부분을 연결해보도록 하겠다.&lt;/h4&gt;</content:encoded></item><item><title><![CDATA[CRA 기초 세팅]]></title><description><![CDATA[eslint, CRA, cross-env]]></description><link>https://kyj7337.github.io/posts/CRA</link><guid isPermaLink="false">https://kyj7337.github.io/posts/CRA</guid><pubDate>Tue, 26 Nov 2019 21:55:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;초기세팅&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EA%B8%B0%EC%84%B8%ED%8C%85&quot; aria-label=&quot;초기세팅 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초기세팅&lt;/h2&gt;
 &lt;h3 id=&quot;cra-설치-방법&quot;&gt;&lt;a href=&quot;#cra-%EC%84%A4%EC%B9%98-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;cra 설치 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CRA 설치 방법&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;cmd를 켠다.&lt;/li&gt;
