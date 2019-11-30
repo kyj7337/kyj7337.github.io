@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 30 Nov 2019 06:33:51 GMT</lastBuildDate><item><title><![CDATA[redux-1]]></title><description><![CDATA[redux 기초]]></description><link>https://kyj7337.github.io/posts/redux1</link><guid isPermaLink="false">https://kyj7337.github.io/posts/redux1</guid><pubDate>Sat, 30 Nov 2019 14:00:32 GMT</pubDate><content:encoded>&lt;h1 id=&quot;redux&quot;&gt;&lt;a href=&quot;#redux&quot; aria-label=&quot;redux permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;redux&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 30 Nov 2019 08:51:30 GMT</lastBuildDate><item><title><![CDATA[redux-3]]></title><description><![CDATA[container component, connect]]></description><link>https://kyj7337.github.io/posts/redux3</link><guid isPermaLink="false">https://kyj7337.github.io/posts/redux3</guid><pubDate>Sat, 30 Nov 2019 17:45:32 GMT</pubDate><content:encoded>&lt;h1 id=&quot;redux-3&quot;&gt;&lt;a href=&quot;#redux-3&quot; aria-label=&quot;redux 3 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;redux-3&lt;/h1&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
@@ -42,6 +42,449 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;리덕스의 큰 그림을 살펴보면 위와 같다.&lt;/p&gt;
+&lt;h3 id=&quot;우리가-해야할-것&quot;&gt;&lt;a href=&quot;#%EC%9A%B0%EB%A6%AC%EA%B0%80-%ED%95%B4%EC%95%BC%ED%95%A0-%EA%B2%83&quot; aria-label=&quot;우리가 해야할 것 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;우리가 해야할 것&lt;/h3&gt;
+&lt;p&gt;&lt;del&gt;1. 액션 타입 생성&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;2. 액션 생성 함수&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;3. 리듀서 생성&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;4. 리듀서 합치기 (combine)&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;5. react와 연결 - 스토어 생성(가장 최상위의 index.js) + Provider로 감싸기 + 크롬 개발자 연결&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;react와 연결 - container component(redux와 연결된 component) 에서 연결&lt;/li&gt;
+&lt;li&gt;react와 연결 – connect함수 ,dispatch하기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;react와-연결---container-componentredux와-연결된-component-에서-연결&quot;&gt;&lt;a href=&quot;#react%EC%99%80-%EC%97%B0%EA%B2%B0---container-componentredux%EC%99%80-%EC%97%B0%EA%B2%B0%EB%90%9C-component-%EC%97%90%EC%84%9C-%EC%97%B0%EA%B2%B0&quot; aria-label=&quot;react와 연결   container componentredux와 연결된 component 에서 연결 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;react와 연결 - container component(redux와 연결된 component) 에서 연결&lt;/h3&gt;
+&lt;p&gt;먼저 container component 를 만들기 전에 presentational component 에서 무엇을 인자로 받아야 하고 뭘 보여주는지 확인해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//위치 : component/counter.js           (presentational component임)
+
+import React from &amp;quot;react&amp;quot;;
+
+const Counter = ({ number, onIncrease, onDecrease }) =&amp;gt; {
+return (
+    &amp;lt;div&amp;gt;
+    &amp;lt;h1&amp;gt;{number}&amp;lt;/h1&amp;gt;
+    &amp;lt;div&amp;gt;
+        &amp;lt;button onClick={onIncrease}&amp;gt;+1&amp;lt;/button&amp;gt;
+        &amp;lt;button onClick={onDecrease}&amp;gt;-1&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+);
+};
+
+export default Counter;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;간단한 함수형 컴포넌트다. number, onIncrease, onDecrease 라는 3가지를 인자로 받고 return에서 사용된다.&lt;/p&gt;
+&lt;p&gt;이 presentational component 가 App.js 에서 다음과 같이 사용되고 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//위치 : src/App.js
+
+import React from &amp;quot;react&amp;quot;;
+import Counter from &amp;quot;./components/Counter&amp;quot;;
+const App = () =&amp;gt; {
+return (
+    &amp;lt;div&amp;gt;
+    &amp;lt;Counter /&amp;gt;
+    &amp;lt;/div&amp;gt;
+);
+};
+
+export default App;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;현재는 보여지기 위함으로 presentational component가 자리잡고 있지만 redux와 연결된 component(container component)가 완성되면 container component로 바꿔치기 당한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;이제부터-container-component를-진짜-만들어보자&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EC%A0%9C%EB%B6%80%ED%84%B0-container-component%EB%A5%BC-%EC%A7%84%EC%A7%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90&quot; aria-label=&quot;이제부터 container component를 진짜 만들어보자 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이제부터 container component를 진짜 만들어보자.&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//위치 : src/container/CounterContainer.js
+
+import React from &amp;#39;react&amp;#39;;
+import Counter from &amp;#39;./components/Counter&amp;#39;;
+
+const CounterContainer = () =&amp;gt;{
+    return &amp;lt;Counter/&amp;gt;
+};
+
+export default CounterContainer;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 되어 있으면 과연 presentational component와 뭐가 다른것인가 … 다를게 없으니, 이제 뭘 넣어야 될지 살펴보자.&lt;/p&gt;
+&lt;h4 id=&quot;우선-우리의-목적은-module-에서-만든-redux-를-연동connect시키기-위함이다-잊지말자&quot;&gt;&lt;a href=&quot;#%EC%9A%B0%EC%84%A0-%EC%9A%B0%EB%A6%AC%EC%9D%98-%EB%AA%A9%EC%A0%81%EC%9D%80-module-%EC%97%90%EC%84%9C-%EB%A7%8C%EB%93%A0-redux-%EB%A5%BC-%EC%97%B0%EB%8F%99connect%EC%8B%9C%ED%82%A4%EA%B8%B0-%EC%9C%84%ED%95%A8%EC%9D%B4%EB%8B%A4-%EC%9E%8A%EC%A7%80%EB%A7%90%EC%9E%90&quot; aria-label=&quot;우선 우리의 목적은 module 에서 만든 redux 를 연동connect시키기 위함이다 잊지말자 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;우선 우리의 목적은 module 에서 만든 redux 를 연동(connect)시키기 위함이다. 잊지말자.&lt;/h4&gt;
+&lt;p&gt;넣어야 될 것 :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;connect 함수&lt;/li&gt;
+&lt;li&gt;dispatch&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;dispatch안에는 뭐가 들어갈까요?&lt;/del&gt; 바로 액션 생성함수!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이렇게 3가지가 이곳(&lt;code class=&quot;language-text&quot;&gt;src/container/CounterContainer.js&lt;/code&gt;)에서 사용될 것이다.&lt;/p&gt;
+&lt;p&gt;우선 connect 함수를 살펴보면 &lt;code class=&quot;language-text&quot;&gt;connect(mapStateToProps, mapDispatchToProps)(연동할컴포넌트)&lt;/code&gt; 이렇게 생겼다.&lt;/p&gt;
+&lt;p&gt;이해가 잘 되진 않으나 하나씩 뜯어보면&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;mapStateToProps&lt;/code&gt; : 스토어 안의 상태(state)를 컴포넌트의 props로 넘겨주기 위해 사용되는 함수&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;mapDispatchToProps&lt;/code&gt; : 액션 생성 함수(module에서 만든거)를 컴포넌트의 props로 넘겨주기 위해 사용되는 함수&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;(연동할컴포넌트)&lt;/code&gt; : connect 함수에 위 2가지 인자가 들어갔다가 나오게 되면 다시 함수를 반환한다고 한다. 그 함수에 &lt;code class=&quot;language-text&quot;&gt;(연동할컴포넌트)&lt;/code&gt;를 넣어주게 되면 리덕스와 연동된 컴포넌트 드디어 생성된다!!!!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;라고 설명할수있다. 이제 재료 준비는 다됐고, 조립만 하면 된다는 얘기다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// 위치 : src/container/CounterContainer.js
+
+import React from &amp;#39;react&amp;#39;;
+import {connect} from &amp;#39;react-redux&amp;#39;;
+import Counter from &amp;#39;../components/Counter&amp;#39;;
+import {increase, decrease} from &amp;#39;../module/counter&amp;#39;
+
+const CounterContainer = ({number, increase, decrease})=&amp;gt;{
+    return(
+        &amp;lt;Counter number={number} onIncrease={increase} onDecrease={decrease} /&amp;gt;
+    );
+};
+
+const mapStateToProps = state =&amp;gt;({
+    number:state.counter.number
+});
+
+const mapDispatchToProps = dispatch =&amp;gt;({
+    increase:()=&amp;gt;{
+        dispatch(increase());
+    },
+    decrease:()=&amp;gt;{
+        dispatch(decrease());
+    }
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(CounterContainer)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 작성하면 된다고 하나, 무슨말인지 설명이 없으면 힘드니 해석을 시작해보자.&lt;/p&gt;
+&lt;p&gt;1.컴포넌트의 내용을 담고있는 첫번째 함수이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const CounterContainer = ({number, increase, decrease})=&amp;gt;{
+        return(
+            &amp;lt;Counter number={number} onIncrease={increase} onDecrease={decrease} /&amp;gt;
+        );
+    };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위에 사용된 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;Counter/&amp;gt;&lt;/code&gt; 컴포넌트에도 인자가 3개 있었다. 마찬가지로 여기도 3개의 인자(&lt;code class=&quot;language-text&quot;&gt;number, onIncrease, onDecrease&lt;/code&gt;)를 넣어줘야 해서 (&lt;code class=&quot;language-text&quot;&gt;number, increase, decrease&lt;/code&gt;)를 넣어준다.&lt;/p&gt;
+&lt;p&gt;2.mapStateToProps 함수 설명&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const mapStateToProps = state =&amp;gt;({
+        number:state.counter.number
+    });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이 함수에는 state가 파라미터로 들어가며, 현재 스토어가 지니고 있는 내용을 number 라는 이름으로 props로 주겠다 라는 뜻이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;state: {
+    counter:{
+        number:1
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;state의 상태는 위와 같을 것이다.&lt;/p&gt;
+&lt;p&gt;3.mapDispatchToProps 함수 설명&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const mapDispatchToProps = dispatch =&amp;gt;({
+        increase:()=&amp;gt;{
+            dispatch(increase());
+        },
+        decrease:()=&amp;gt;{
+            dispatch(decrease());
+        }
+    });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;Counter/&amp;gt;&lt;/code&gt;에 주고 있는것이 &lt;code class=&quot;language-text&quot;&gt;number, increase, decrease&lt;/code&gt; 였던 것을 기억하죠? 이 중 &lt;code class=&quot;language-text&quot;&gt;increase, decrease&lt;/code&gt;는 액션 생성 함수입니다. dispatch 와 연동된 액션 생성 함수를 props로 넘겨주기 위해 사용된다.&lt;/p&gt;
+&lt;p&gt;4.export default connect&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export default connect(
+        mapStateToProps,
+        mapDispatchToProps
+    )(CounterContainer)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위에서 함수들을 선언하는게 끝났으면 이제 connect 함수를 사용해 마무리 지어야 된다.
+&lt;code class=&quot;language-text&quot;&gt;(CounterContainer)&lt;/code&gt;를 맨마지막에 붙여 연동할 컴포넌트 즉, 현재 내보낼 component 이름을 넣어주면 마무리 된다.&lt;/p&gt;
+&lt;h3 id=&quot;연결-끝&quot;&gt;&lt;a href=&quot;#%EC%97%B0%EA%B2%B0-%EB%81%9D&quot; aria-label=&quot;연결 끝 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;연결 끝?&lt;/h3&gt;
+&lt;p&gt;아니다. 지금 한 작업은 container component 를 만들기만 했다. 이제 App.js 에서 presentational component로 보여지기만 했던 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;Counter/&amp;gt;&lt;/code&gt; 를 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;CounterContainer/&amp;gt;&lt;/code&gt;로 바꿔줘야 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//위치 : src/App.js
+
+import React from &amp;quot;react&amp;quot;;
+import CounterContainer from &amp;quot;./container/CounterContainer&amp;quot;;
+const App = () =&amp;gt; {
+return (
+    &amp;lt;div&amp;gt;
+    &amp;lt;CounterContainer /&amp;gt;
+    &amp;lt;/div&amp;gt;
+);
+};
+
+export default App;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 바꿔주게 되면 정말 연결이 끝났다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h1 id=&quot;끝&quot;&gt;&lt;a href=&quot;#%EB%81%9D&quot; aria-label=&quot;끝 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;끝!&lt;/h1&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;인줄알았으나, connect 함수를 사용하는 과정이 너무 코드들이 많아서 지저분해보이지 않았나요&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;깔끔하게 바꿀 수 있는 방법이 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;첫번째-방법&quot;&gt;&lt;a href=&quot;#%EC%B2%AB%EB%B2%88%EC%A7%B8-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;첫번째 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;첫번째 방법&lt;/h3&gt;
+&lt;h5 id=&quot;바로-export-default-connectcountercontainer-에서-직접-선언하는-것입니다&quot;&gt;&lt;a href=&quot;#%EB%B0%94%EB%A1%9C-export-default-connectcountercontainer-%EC%97%90%EC%84%9C-%EC%A7%81%EC%A0%91-%EC%84%A0%EC%96%B8%ED%95%98%EB%8A%94-%EA%B2%83%EC%9E%85%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;바로 export default connectcountercontainer 에서 직접 선언하는 것입니다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;바로 &lt;code class=&quot;language-text&quot;&gt;export default connect()(CounterContainer)&lt;/code&gt; 에서 직접 선언하는 것입니다.&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&amp;#39;;
+import {connect} from &amp;#39;react-redux&amp;#39;;
+import Counter from &amp;#39;../components/Counter&amp;#39;;
+import {increase, decrease} from &amp;#39;../module/counter&amp;#39;
+
+const CounterContainer = ({number, increase, decrease})=&amp;gt;{
+    return(
+        &amp;lt;Counter number={number} onIncrease={increase} onDecrease={decrease} /&amp;gt;
+    );
+};
+
+export default connect(
+    state=&amp;gt;({
+        number:state.counter.number
+    }),
+    dispatch=&amp;gt;({
+        increase: () =&amp;gt; dispatch(increase());
+        decrease: () =&amp;gt; dispatch(decrease());
+    })
+)(CounterContainer)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;로 바꾸면 깔끔하게 할 수 있다고 합니다.&lt;/p&gt;
+&lt;h3 id=&quot;두번째-방법&quot;&gt;&lt;a href=&quot;#%EB%91%90%EB%B2%88%EC%A7%B8-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;두번째 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;두번째 방법&lt;/h3&gt;
+&lt;h5 id=&quot;bindactioncreators-함수-사용&quot;&gt;&lt;a href=&quot;#bindactioncreators-%ED%95%A8%EC%88%98-%EC%82%AC%EC%9A%A9&quot; aria-label=&quot;bindactioncreators 함수 사용 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;bindActionCreators 함수 사용&lt;/h5&gt;
+&lt;p&gt;어렵지 않을겁니다 … 아마도 …
+리덕스 개발자도 이 함수를 만들게 된 이유도 불필요한 걸 줄이고 쉽게 사용하기 위함일테니까 …&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;#39;react&amp;#39;;
+import {connect} from &amp;#39;react-redux&amp;#39;;
+import Counter from &amp;#39;../components/Counter&amp;#39;;
+import {increase, decrease} from &amp;#39;../module/counter&amp;#39;
+import {bindActionCreators} from &amp;#39;redux&amp;#39;;
+
+const CounterContainer = ({number, increase, decrease})=&amp;gt;{
+    return(
+        &amp;lt;Counter number={number} onIncrease={increase} onDecrease={decrease} /&amp;gt;
+    );
+};
+
+export default connect(
+    state =&amp;gt; ({
+        number:state.counter.number
+    }),
+    dispatch =&amp;gt;
+      bindActionCreators({
+          increase,
+          decrease
+      },
+      dispatch
+      )
+)(CounterContainer);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;bindActionCreators&lt;/code&gt;만 사용했는데, 위에서 선언한 이해하기 어려운 함수들을 안써도 되네요???&lt;/p&gt;
+&lt;h4 id=&quot;여기까지만-자유자재로-사용만-해도&quot;&gt;&lt;a href=&quot;#%EC%97%AC%EA%B8%B0%EA%B9%8C%EC%A7%80%EB%A7%8C-%EC%9E%90%EC%9C%A0%EC%9E%90%EC%9E%AC%EB%A1%9C-%EC%82%AC%EC%9A%A9%EB%A7%8C-%ED%95%B4%EB%8F%84&quot; aria-label=&quot;여기까지만 자유자재로 사용만 해도 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;여기까지만 자유자재로 사용만 해도,&lt;/h4&gt;
+&lt;h4 id=&quot;redux를-사용하는데-어려움이-없을-것-같습니다&quot;&gt;&lt;a href=&quot;#redux%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EB%8D%B0-%EC%96%B4%EB%A0%A4%EC%9B%80%EC%9D%B4-%EC%97%86%EC%9D%84-%EA%B2%83-%EA%B0%99%EC%8A%B5%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;redux를 사용하는데 어려움이 없을 것 같습니다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Redux를 사용하는데 어려움이 없을 것 같습니다.&lt;/h4&gt;
+&lt;h4 id=&quot;이제-배운걸-응용해보면서-익숙해지도록-합시다&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EC%A0%9C-%EB%B0%B0%EC%9A%B4%EA%B1%B8-%EC%9D%91%EC%9A%A9%ED%95%B4%EB%B3%B4%EB%A9%B4%EC%84%9C-%EC%9D%B5%EC%88%99%ED%95%B4%EC%A7%80%EB%8F%84%EB%A1%9D-%ED%95%A9%EC%8B%9C%EB%8B%A4&quot; aria-label=&quot;이제 배운걸 응용해보면서 익숙해지도록 합시다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이제 배운걸 응용해보면서 익숙해지도록 합시다&lt;/h4&gt;</content:encoded></item><item><title><![CDATA[redux-2]]></title><description><![CDATA[리듀서 합치기(combine), store, <Provider>, 크롬개발자도구]]></description><link>https://kyj7337.github.io/posts/redux2</link><guid isPermaLink="false">https://kyj7337.github.io/posts/redux2</guid><pubDate>Sat, 30 Nov 2019 16:00:32 GMT</pubDate><content:encoded>&lt;h1 id=&quot;redux-2&quot;&gt;&lt;a href=&quot;#redux-2&quot; aria-label=&quot;redux 2 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;redux-2&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2be05f88f67c90fd15a6a1d6d3b669da/0309e/redux1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACAUlEQVQoz42RS28SURTH55toUdKZahnmwaMt02lD0TQGJJAYHEpQWTSwbiJs6sYgduyy3bAqK/sh6qqBdGGqpDySMXaMKaYwkcfQGS3z8DAkxERj/C9O7rn5/8499xwkl8tFIpFEIkGSpNPptNvtwWAwnU7H43GO40RRNE3TMIxp7Pa65UpZED7BGYlGoxiGAUbTtMvlghIsyxaLxVTqGYqitVoNTK1WSxAE05KiKJLUURR5DMdiMRzHPR4PkMBDFWhgze+HZIki66enYPoiiuXj4wmsaaNO5+rycjSGk8mk1+v1MQxFUYFAYHWFvc/4XmSzwYchiiTr1SqYXm5vP93Y+Hb+2cL1dvvHxYUFZzIZ+F44HCZwnIvHH6yv+yhyj9/Nbj13OOabzSaY3h4e7u3vfz0XzZEiq8NBv6eqwzEMr0HbDuLurZs3GGbZieO3bTaSIFd8y4x7sfHxDEz9fr/ZaIwM7afau5KH37tdmJ2u6wiMFOAF1rPgp5dWF91ed+De2kHpYDOzSbqJavUDwCfvK0fvjlRdvVb76mAgSZKmaTB8JBQK2WZmMBTD7qBzxOwcPQuRe/KYSz2yz9tOzioAN4VaQ6iPt6Vp14PBUJYnw0NKpVI+n+d5fgdU2LH0Ov8qXygU3vC77XZnuuGJjN9SxPwPGZb+vEf0f+qvzFS/ABgAwGBCi3x0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/2be05f88f67c90fd15a6a1d6d3b669da/01472/redux1.webp 240w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/222bd/redux1.webp 480w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/620b9/redux1.webp 960w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/a1c21/redux1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/2be05f88f67c90fd15a6a1d6d3b669da/0783d/redux1.png 240w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/782f4/redux1.png 480w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/f570d/redux1.png 960w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/0309e/redux1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/2be05f88f67c90fd15a6a1d6d3b669da/f570d/redux1.png&quot;
+          alt=&quot;redux1&quot;
+          title=&quot;redux1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;리덕스의 큰 그림을 살펴보면 위와 같다.&lt;/p&gt;
+&lt;h3 id=&quot;우리가-해야할-것들&quot;&gt;&lt;a href=&quot;#%EC%9A%B0%EB%A6%AC%EA%B0%80-%ED%95%B4%EC%95%BC%ED%95%A0-%EA%B2%83%EB%93%A4&quot; aria-label=&quot;우리가 해야할 것들 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;우리가 해야할 것들&lt;/h3&gt;
+&lt;p&gt;&lt;del&gt;1. 액션 타입 생성&lt;/del&gt;
+&lt;del&gt;2. 액션 생성 함수&lt;/del&gt;
+&lt;del&gt;3. 리듀서 생성&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;리듀서 합치기 (combine)&lt;/li&gt;
+&lt;li&gt;react와 연결 - 스토어 생성(가장 최상위의 index.js) + Provider로 감싸기 + 크롬 개발자 연결&lt;/li&gt;
+&lt;li&gt;react와 연결 - container component(redux와 연결된 component) 에서 연결&lt;/li&gt;
+&lt;li&gt;react와 연결 – connect함수 ,dispatch하기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;리듀서-합치기&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EB%93%80%EC%84%9C-%ED%95%A9%EC%B9%98%EA%B8%B0&quot; aria-label=&quot;리듀서 합치기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리듀서 합치기&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/media/React/Redux/redux3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위 사진 중에서 module 폴더를 보면 counter.js, index.js, todos.js가 있는데 이중에 counter.js와 index.js 만 사용할 것이다.&lt;/p&gt;
+&lt;p&gt;index.js 는 module 폴더안의 모든 redux 관련 함수들을 모아두는 역할을 할 것이다.&lt;/p&gt;
+&lt;p&gt;counter.js 에서 export 한 것이 무엇인지 기억할 것이다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;액션 생성 함수&lt;/li&gt;
+&lt;li&gt;리듀서 함수&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이 둘을 export 했다.
+이 중에서 리듀서 함수를 index.js에서 사용할 것이다.&lt;/p&gt;
+&lt;p&gt;index.js 는 어떻게 구성되어 있나 살펴보면&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { combineReducers } from &amp;quot;redux&amp;quot;;
+import counter from &amp;quot;./counter&amp;quot;;
+import todos from &amp;quot;./todos&amp;quot;;
+
+const rootReducer = combineReducers({
+    counter,
+    todos //todos 여기서 무시해도된다.
+});
+
+
+export default rootReducer;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 구성되어 있다.&lt;/p&gt;
+&lt;p&gt;combineReducers 라는 redux 자체 함수를 사용한다. 역할은 module 폴더 안에서 사용된 reducer 들을 하나로 모으는데 사용된다.&lt;/p&gt;
+&lt;p&gt;여기서 궁금점,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;왜 reducer 들을 모아야 할까 ???&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;store를 만들때는 reducer가 필요하다. store를 만들때는 reducer가 인자로 들어가게 된다.&lt;/p&gt;
+&lt;p&gt;redux에서는 reducer를 만드는 것이 주 업무라고 할 정도로 많은 reducer 들이 생기게 된다. reducer가 많다고 store가 많으면 안되니 만들어진 reducer 들을 하나로 모아서 하나의 store를 바라볼 수 있게 해줘야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;store를 만들때는 하나의 reducer만 사용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cccbd2e5b54c827fdce6be6c81ceb3c3/0309e/redux4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACEklEQVQoz3VRTWsTURR9m6IboVtX/RfqxqKiKEhdiBsLDehCcGG0hSJKiya1aOlCRCu2wdKF3dRqEYIosagZmzRtJJlQsYlJ07T5MNOZzCQT5+t9+V6mya5ncbnv3XfOefdeEAgEXs9ML35cpkJg78YRZeI8gTalFGPMop/DxxLY1OSHxxTvUf37LOVlyAIoFAqLbxfqhuNkwsV5b215imJEW9B1PZFIiKIIEabQkl5d2x07Y6Y+t8j8DeAZITyWK6rvkR360rkxTdP1J63jTj4rfOVVQvcBCMaIEGya6PgJCgDu6sKhUEubMDKE0GU6jrNbLGVzOVXTOnzgmsBsjnR305O95NBhODLKKwh1nBkkSVJVtVqtVioVpkjb5H0de8DjAGD39JB02v05IyPEe7Msg5GZeU2RG42GoshuL7znYrX5K1fWVOXD5MzWz+S2pGa2a+2eESY0JhYM05I1Q9wssfv1VF7T+UbAVrl55cHqgD/y4n2uz5camUvfnIydGxJ+pGRKHGYQCOZP3xGeLmS8z5KXR1cn5tOX7kcHn4tMFST/qBeGV67614dfps4Ohj3ja/1j8VO3hSWhzEbBRvn4zWbvrfDQlNjvX+u7F73+JH7xbsQzHjcsxL/9LSlFN5R/FloKl4p7ZnpHD66UmbBlWcxZ0ux34ZJStzfy9U+xv6aNgpHK70KjvecD0NnTQfgPC7UwbIkt9OoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/cccbd2e5b54c827fdce6be6c81ceb3c3/01472/redux4.webp 240w,
+/static/cccbd2e5b54c827fdce6be6c81ceb3c3/222bd/redux4.webp 480w,
+/static/cccbd2e5b54c827fdce6be6c81ceb3c3/620b9/redux4.webp 960w,
+/static/cccbd2e5b54c827fdce6be6c81ceb3c3/a1c21/redux4.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/cccbd2e5b54c827fdce6be6c81ceb3c3/0783d/redux4.png 240w,
+/static/cccbd2e5b54c827fdce6be6c81ceb3c3/782f4/redux4.png 480w,
+/static/cccbd2e5b54c827fdce6be6c81ceb3c3/f570d/redux4.png 960w,
+/static/cccbd2e5b54c827fdce6be6c81ceb3c3/0309e/redux4.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/cccbd2e5b54c827fdce6be6c81ceb3c3/f570d/redux4.png&quot;
+          alt=&quot;redux4&quot;
+          title=&quot;redux4&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;이렇게 rootReducer로 /module 에 있는 모든 reducer 들을 모아준다.&lt;/p&gt;
+&lt;h3 id=&quot;react와-연결---스토어-생성가장-최상위의-indexjs--provider로-감싸기--크롬-개발자-연결&quot;&gt;&lt;a href=&quot;#react%EC%99%80-%EC%97%B0%EA%B2%B0---%EC%8A%A4%ED%86%A0%EC%96%B4-%EC%83%9D%EC%84%B1%EA%B0%80%EC%9E%A5-%EC%B5%9C%EC%83%81%EC%9C%84%EC%9D%98-indexjs--provider%EB%A1%9C-%EA%B0%90%EC%8B%B8%EA%B8%B0--%ED%81%AC%EB%A1%AC-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%97%B0%EA%B2%B0&quot; aria-label=&quot;react와 연결   스토어 생성가장 최상위의 indexjs  provider로 감싸기  크롬 개발자 연결 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;react와 연결 - 스토어 생성(가장 최상위의 index.js) + Provider로 감싸기 + 크롬 개발자 연결&lt;/h3&gt;
+&lt;p&gt;이제 스토어를 생성해야 한다.
+store는 전역에서 사용된다. 그럼 어디에 위치해야 할까… 생각해보면 가장 기초에 자리잡으면 되지 않을까 하는 생각이 들것이다.
+맞다, 바로 src의 index.js 에서 만들어준다.&lt;/p&gt;
+&lt;p&gt;원래의 src/index.js 에는&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;ReactDOM.render(&amp;lt;App /&amp;gt;, document.getElementById(&amp;quot;root&amp;quot;));&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게만 있을것이다.&lt;/p&gt;
+&lt;p&gt;여기서 store를 만들어 주기 위해서 createStore를 사용한다. 그리고 크롬개발자도구에서 redux 의 상태를 관찰 할 수 있는 함수도 살짝 넣어준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React from &amp;quot;react&amp;quot;;
+import ReactDOM from &amp;quot;react-dom&amp;quot;;
+import { createStore } from &amp;quot;redux&amp;quot;;
+import { Provider } from &amp;quot;react-redux&amp;quot;;
+import { composeWithDevTools } from &amp;quot;redux-devtools-extension&amp;quot;;
+import App from &amp;quot;./App&amp;quot;;
+import rootReducer from &amp;quot;./module&amp;quot;;
+
+const store = createStore(rootReducer, composeWithDevTools());
+ReactDOM.render(
+&amp;lt;Provider store={store}&amp;gt;
+    &amp;lt;App /&amp;gt;
+&amp;lt;/Provider&amp;gt;,
+document.getElementById(&amp;quot;root&amp;quot;)
+);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;뭐가 추가되었는지 보면
+&lt;code class=&quot;language-text&quot;&gt;const store = createStore(rootReducer, composeWithDevTools());&lt;/code&gt; 가 추가되었다.&lt;/p&gt;
+&lt;p&gt;store 라는 함수로 이름으로 createStore 함수를 사용한다.
+첫번째 인자로는 위에서 만들어준 &lt;code class=&quot;language-text&quot;&gt;rootReducer&lt;/code&gt;(모든 리듀서들이 하나로 뭉쳐진것)가 들어간다. DevTool을 사용하지 않을 것이라면 rootReducer 하나만 넣어도 된다.&lt;/p&gt;
+&lt;p&gt;두번째 인자로 &lt;code class=&quot;language-text&quot;&gt;composeWithDevTools()&lt;/code&gt; 가 들어간다. 효과는 어마어마하다. 재밌다.&lt;/p&gt;
+&lt;p&gt;그리고 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;Provider&amp;gt;&lt;/code&gt;가 들어간다. 이 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;Provider&amp;gt;&lt;/code&gt;는 redux에서 제공하는 함수이다. 가장 기본이 되는 Component 인 &lt;code class=&quot;language-text&quot;&gt;&amp;lt;App/&amp;gt;&lt;/code&gt;을 감싸주도록 한다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;Provider&amp;gt;&lt;/code&gt;의 인자로 &lt;code class=&quot;language-text&quot;&gt;store={store}&lt;/code&gt;를 넣어준다.&lt;/p&gt;
+&lt;p&gt;이로써 단 하나의 store를 만들게 되었다.&lt;/p&gt;
+&lt;h3 id=&quot;우리가-해야할-것&quot;&gt;&lt;a href=&quot;#%EC%9A%B0%EB%A6%AC%EA%B0%80-%ED%95%B4%EC%95%BC%ED%95%A0-%EA%B2%83&quot; aria-label=&quot;우리가 해야할 것 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;우리가 해야할 것&lt;/h3&gt;
+&lt;p&gt;&lt;del&gt;1. 액션 타입 생성&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;2. 액션 생성 함수&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;3. 리듀서 생성&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;4. 리듀서 합치기 (combine)&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;5. react와 연결 - 스토어 생성(가장 최상위의 index.js) + Provider로 감싸기 + 크롬 개발자 연결&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;react와 연결 - container component(redux와 연결된 component) 에서 연결&lt;/li&gt;
+&lt;li&gt;react와 연결 – connect함수 ,dispatch하기&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[redux-1]]></title><description><![CDATA[액션 타입 생성, 액션 생성 함수, 리듀서 생성]]></description><link>https://kyj7337.github.io/posts/redux1</link><guid isPermaLink="false">https://kyj7337.github.io/posts/redux1</guid><pubDate>Sat, 30 Nov 2019 14:00:32 GMT</pubDate><content:encoded>&lt;h1 id=&quot;redux&quot;&gt;&lt;a href=&quot;#redux&quot; aria-label=&quot;redux permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;redux&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2be05f88f67c90fd15a6a1d6d3b669da/0309e/redux1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACAUlEQVQoz42RS28SURTH55toUdKZahnmwaMt02lD0TQGJJAYHEpQWTSwbiJs6sYgduyy3bAqK/sh6qqBdGGqpDySMXaMKaYwkcfQGS3z8DAkxERj/C9O7rn5/8499xwkl8tFIpFEIkGSpNPptNvtwWAwnU7H43GO40RRNE3TMIxp7Pa65UpZED7BGYlGoxiGAUbTtMvlghIsyxaLxVTqGYqitVoNTK1WSxAE05KiKJLUURR5DMdiMRzHPR4PkMBDFWhgze+HZIki66enYPoiiuXj4wmsaaNO5+rycjSGk8mk1+v1MQxFUYFAYHWFvc/4XmSzwYchiiTr1SqYXm5vP93Y+Hb+2cL1dvvHxYUFZzIZ+F44HCZwnIvHH6yv+yhyj9/Nbj13OOabzSaY3h4e7u3vfz0XzZEiq8NBv6eqwzEMr0HbDuLurZs3GGbZieO3bTaSIFd8y4x7sfHxDEz9fr/ZaIwM7afau5KH37tdmJ2u6wiMFOAF1rPgp5dWF91ed+De2kHpYDOzSbqJavUDwCfvK0fvjlRdvVb76mAgSZKmaTB8JBQK2WZmMBTD7qBzxOwcPQuRe/KYSz2yz9tOzioAN4VaQ6iPt6Vp14PBUJYnw0NKpVI+n+d5fgdU2LH0Ov8qXygU3vC77XZnuuGJjN9SxPwPGZb+vEf0f+qvzFS/ABgAwGBCi3x0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/2be05f88f67c90fd15a6a1d6d3b669da/01472/redux1.webp 240w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/222bd/redux1.webp 480w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/620b9/redux1.webp 960w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/a1c21/redux1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/2be05f88f67c90fd15a6a1d6d3b669da/0783d/redux1.png 240w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/782f4/redux1.png 480w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/f570d/redux1.png 960w,
+/static/2be05f88f67c90fd15a6a1d6d3b669da/0309e/redux1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/2be05f88f67c90fd15a6a1d6d3b669da/f570d/redux1.png&quot;
+          alt=&quot;redux1&quot;
+          title=&quot;redux1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;리덕스의 큰 그림을 살펴보면 위와 같다.&lt;/p&gt;
+&lt;h3 id=&quot;우리가-해야할-것들&quot;&gt;&lt;a href=&quot;#%EC%9A%B0%EB%A6%AC%EA%B0%80-%ED%95%B4%EC%95%BC%ED%95%A0-%EA%B2%83%EB%93%A4&quot; aria-label=&quot;우리가 해야할 것들 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;우리가 해야할 것들&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;액션 타입 생성&lt;/li&gt;
+&lt;li&gt;액션 생성 함수&lt;/li&gt;
+&lt;li&gt;리듀서 생성&lt;/li&gt;
+&lt;li&gt;리듀서 합치기 (combine)&lt;/li&gt;
+&lt;li&gt;react와 연결 - 스토어 생성(가장 최상위의 index.js) + Provider로 감싸기 + 크롬 개발자 연결&lt;/li&gt;
+&lt;li&gt;react와 연결 - container component(redux와 연결된 component) 에서 연결&lt;/li&gt;
+&lt;li&gt;react와 연결 – connect함수 ,dispatch하기&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;리덕스를 사용할 때 필수 설치&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install --save react-redux&lt;/code&gt; : react에서 redux를 사용할 때 필요.&lt;/li&gt;
@@ -209,12 +652,15 @@ case INCREASE: action의 type이 위에서 선언한 INCREASE 이면 return 하�
 &lt;blockquote&gt;
 &lt;p&gt;만들기만 했을 뿐 연결이 되지 않아 덩그러니 혼자 있는 상태이다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;그렇다면 아직 안한것이 뭘까 ??&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;리엑트와 연결을 하지 않았다.&lt;/li&gt;
-&lt;li&gt;스토어를 만들지 않았다.&lt;/li&gt;
-&lt;li&gt;dispatch도 사용하지 않았다.&lt;/li&gt;
-&lt;li&gt;state 값을 읽어와서 render 하는 부분도 하지 않았다.&lt;/li&gt;
+&lt;h3 id=&quot;우리가-해야할-것들-1&quot;&gt;&lt;a href=&quot;#%EC%9A%B0%EB%A6%AC%EA%B0%80-%ED%95%B4%EC%95%BC%ED%95%A0-%EA%B2%83%EB%93%A4-1&quot; aria-label=&quot;우리가 해야할 것들 1 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;우리가 해야할 것들&lt;/h3&gt;
+&lt;p&gt;&lt;del&gt;1. 액션 타입 생성&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;2. 액션 생성 함수&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;3. 리듀서 생성&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;리듀서 합치기 (combine)&lt;/li&gt;
+&lt;li&gt;react와 연결 - 스토어 생성(가장 최상위의 index.js) + Provider로 감싸기 + 크롬 개발자 연결&lt;/li&gt;
+&lt;li&gt;react와 연결 - container component(redux와 연결된 component) 에서 연결&lt;/li&gt;
+&lt;li&gt;react와 연결 – connect함수 ,dispatch하기&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&quot;다음-장에서-나머지-부분을-연결해보도록-하겠다&quot;&gt;&lt;a href=&quot;#%EB%8B%A4%EC%9D%8C-%EC%9E%A5%EC%97%90%EC%84%9C-%EB%82%98%EB%A8%B8%EC%A7%80-%EB%B6%80%EB%B6%84%EC%9D%84-%EC%97%B0%EA%B2%B0%ED%95%B4%EB%B3%B4%EB%8F%84%EB%A1%9D-%ED%95%98%EA%B2%A0%EB%8B%A4&quot; aria-label=&quot;다음 장에서 나머지 부분을 연결해보도록 하겠다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;다음 장에서 나머지 부분을 연결해보도록 하겠다.&lt;/h4&gt;</content:encoded></item><item><title><![CDATA[CRA 기초 세팅]]></title><description><![CDATA[eslint, CRA, cross-env]]></description><link>https://kyj7337.github.io/posts/CRA</link><guid isPermaLink="false">https://kyj7337.github.io/posts/CRA</guid><pubDate>Tue, 26 Nov 2019 21:55:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;초기세팅&quot;&gt;&lt;a href=&quot;#%EC%B4%88%EA%B8%B0%EC%84%B8%ED%8C%85&quot; aria-label=&quot;초기세팅 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;초기세팅&lt;/h2&gt;
 &lt;h3 id=&quot;cra-설치-방법&quot;&gt;&lt;a href=&quot;#cra-%EC%84%A4%EC%B9%98-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;cra 설치 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CRA 설치 방법&lt;/h3&gt;
@@ -229,12 +675,12 @@ case INCREASE: action의 type이 위에서 선언한 INCREASE 이면 return 하�
 &lt;li&gt;react 폴더 root에 &lt;code class=&quot;language-text&quot;&gt;.eslintrc.json&lt;/code&gt; 파일을 생성한다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;.eslintrc.json&lt;/code&gt; 파일 내부에 &lt;code class=&quot;language-text&quot;&gt;{ &amp;quot;extends&amp;quot;: &amp;quot;react-app&amp;quot;}&lt;/code&gt; 내용을 추가해준다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm i prettier eslint-config-prettier eslint-plugin-prettier -D&lt;/code&gt; 을 입력해준다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;text{ &amp;quot;extends&amp;quot;: [&amp;quot;react-app&amp;quot;, &amp;quot;plugin:prettier/recommended&amp;quot;]}&lt;/code&gt; 로 업데이트 해준다.
-4번 과정은 이미 변경되어 있을 수도 있다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;{ &amp;quot;extends&amp;quot;: [&amp;quot;react-app&amp;quot;, &amp;quot;plugin:prettier/recommended&amp;quot;]}&lt;/code&gt; 로 업데이트 해준다.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&quot;cross-env-설정&quot;&gt;&lt;a href=&quot;#cross-env-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;cross env 설정 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;cross-env 설정&lt;/h3&gt;
 &lt;p&gt;cross env는 파일을 import 할 때, &lt;code class=&quot;language-text&quot;&gt;../../../&lt;/code&gt;과 같이 상대경로 설정시, 길어지는 문제를 해결 할 수 있다.&lt;/p&gt;
 &lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install cross-env&lt;/code&gt;을 해준다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt; 파일에 들어간다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;start&lt;/code&gt;부분과 &lt;code class=&quot;language-text&quot;&gt;&amp;quot;build&amp;quot;&lt;/code&gt;부분을 다음과 같이 바꿔준다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;start&amp;quot;: &amp;quot;cross-env NODE_PATH=src react-scripts start&amp;quot;, &amp;quot;build&amp;quot;: &amp;quot;cross-env NODE_PATH=src react-scripts build&amp;quot;,&lt;/code&gt;&lt;/li&gt;
@@ -6802,19 +7248,7 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;git push origin develop&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;yarn deploy&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;을 입력하여 업로드를 확인한다.&lt;/p&gt;
-&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
-&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
-&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;설치 진행중&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;1.1 static —&gt; default&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;위치가 지정된 것이 아님
 ​&lt;/p&gt;
@@ -6989,4 +7423,16 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;레이아웃 정보&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://ko.learnlayout.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://ko.learnlayout.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-layout&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-layout&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
+&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
+&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;설치 진행중&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
