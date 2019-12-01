@@ -1,4 +1,395 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 30 Nov 2019 08:51:30 GMT</lastBuildDate><item><title><![CDATA[redux-3]]></title><description><![CDATA[container component, connect]]></description><link>https://kyj7337.github.io/posts/redux3</link><guid isPermaLink="false">https://kyj7337.github.io/posts/redux3</guid><pubDate>Sat, 30 Nov 2019 17:45:32 GMT</pubDate><content:encoded>&lt;h1 id=&quot;redux-3&quot;&gt;&lt;a href=&quot;#redux-3&quot; aria-label=&quot;redux 3 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;redux-3&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Dec 2019 08:21:46 GMT</lastBuildDate><item><title><![CDATA[arrow function, hoisting]]></title><description><![CDATA[Front-End Study 2주차]]></description><link>https://kyj7337.github.io/posts/FrontStudy2-3</link><guid isPermaLink="false">https://kyj7337.github.io/posts/FrontStudy2-3</guid><pubDate>Sun, 01 Dec 2019 15:45:32 GMT</pubDate><content:encoded>&lt;h3 id=&quot;이번주-공부-과제&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EB%B2%88%EC%A3%BC-%EA%B3%B5%EB%B6%80-%EA%B3%BC%EC%A0%9C&quot; aria-label=&quot;이번주 공부 과제 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이번주 공부 과제&lt;/h3&gt;
+&lt;p&gt;&lt;del&gt;1. this&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;2. bind&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;3. apply&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;4. call&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;es6 arrow function VS es5 function&lt;/li&gt;
+&lt;li&gt;hoisting(let, var, const)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;es6-arrow-function-vs-es5-function&quot;&gt;&lt;a href=&quot;#es6-arrow-function-vs-es5-function&quot; aria-label=&quot;es6 arrow function vs es5 function permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;es6 arrow function VS es5 function&lt;/h3&gt;
+&lt;p&gt;es6 에서 arrow function (화살표 함수) 에는 이름, this, arguments 가 없다 ?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;화살표 함수에는 없는 것 : 함수이름, this, arguments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;1-이름이-없다-&quot;&gt;&lt;a href=&quot;#1-%EC%9D%B4%EB%A6%84%EC%9D%B4-%EC%97%86%EB%8B%A4-&quot; aria-label=&quot;1 이름이 없다  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 이름이 없다 ?&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;        //기존함수
+        function myfunc(){
+            console.log(&amp;#39;hello&amp;#39;)
+        }
+
+        //화살표 함수
+        ()=&amp;gt;{
+            console.log(&amp;#39;hello&amp;#39;)
+        }
+
+이름이 들어가질 않는다. 하지만 해결방법이 있으니, 바로 변수에 담아 넣어놓는 것.
+~~사실 이름이 없다고 해서 큰 차이점을 모르겠다.~~
+
+        //기존함수
+        const myfunc =function(){
+            console.log(&amp;#39;hello&amp;#39;)
+        }
+
+        //화살표 함수
+        const myfunc = () =&amp;gt; {
+            console.log(&amp;#39;hello&amp;#39;)
+        }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 줄곧 사용해와서 이름이 없는 것조차 몰랐다.&lt;/p&gt;
+&lt;h5 id=&quot;결론--다루기-위해선-변수에-담아야-한다&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EB%A1%A0--%EB%8B%A4%EB%A3%A8%EA%B8%B0-%EC%9C%84%ED%95%B4%EC%84%A0-%EB%B3%80%EC%88%98%EC%97%90-%EB%8B%B4%EC%95%84%EC%95%BC-%ED%95%9C%EB%8B%A4&quot; aria-label=&quot;결론  다루기 위해선 변수에 담아야 한다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결론 : 다루기 위해선 변수에 담아야 한다.&lt;/h5&gt;
+&lt;h5 id=&quot;2-this가-없다&quot;&gt;&lt;a href=&quot;#2-this%EA%B0%80-%EC%97%86%EB%8B%A4&quot; aria-label=&quot;2 this가 없다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. this가 없다?&lt;/h5&gt;
+&lt;p&gt;함수는 실행 될 때, 자기자신의 scope 안에 this 라는게 존재하는데, arrow function 에는 본인만의 this가 존재하지 않는다.
+할 수 없는것이 존재한다!!! 바로 call, apply를 사용할 수가 없다&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;arrow function 에서 this는 그 arrow function이 &lt;strong&gt;선언&lt;/strong&gt; 된 위치 상의 this를 가리키게 된다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;선언된 곳에서의 this를 바로 사용하기 때문에, bind를 쓸 필요가 없다.&lt;/p&gt;
+&lt;p&gt;그래서 생긴 단점이라면 call, apply를 통해 다른 객체를 가로채기 하는 것이 불가능해 졌다고 생각하면 될까 …&lt;/p&gt;
+&lt;h5 id=&quot;3-arguments가-없다-&quot;&gt;&lt;a href=&quot;#3-arguments%EA%B0%80-%EC%97%86%EB%8B%A4-&quot; aria-label=&quot;3 arguments가 없다  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. arguments가 없다 ?&lt;/h5&gt;
+&lt;p&gt;이 부분역시 중요하지만 아직 다룰 필요성을 못느껴서 와닿지가 않는다 …&lt;/p&gt;
+&lt;p&gt;다음에 알아보자 …&lt;/p&gt;
+&lt;h3 id=&quot;hoisting&quot;&gt;&lt;a href=&quot;#hoisting&quot; aria-label=&quot;hoisting permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;hoisting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;hoisting&lt;/strong&gt; 이란 ?
+코드에 &lt;strong&gt;선언&lt;/strong&gt; 된 &lt;strong&gt;변수 및 함수&lt;/strong&gt; 를 코드 상단으로 끌어올리는 것을 말한다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;변수&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;함수 내에서 선언된 변수 : 해당 scope의 최상위로 올라간다.&lt;/li&gt;
+&lt;li&gt;함수 밖(전역)에서 선언된 변수 : 스크립트의 최상위로 끌어올려진다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;함수&lt;/strong&gt; : 함수 hoisting은 선언 방식이 &lt;strong&gt;함수 선언식(function declarations)&lt;/strong&gt; 인 경우에만 적용된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이게 무슨말인가 ??&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    //함수 선언식(function declarations)
+    function Test(){
+        console.log(&amp;#39;Hello World&amp;#39;)
+    }
+
+    //함수 표현식(function expressions)
+    let Test2 = function(){
+        console.log(&amp;#39;Hello World2&amp;#39;)
+    }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;선언식은 함수이름을 사용하는 것이고, 표현식은 &lt;strong&gt;변수&lt;/strong&gt;에 함수를 담는 것이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;그래서 hoisting 을 공부하는가 ?? 바로 &lt;strong&gt;오류를 막기 위해서&lt;/strong&gt;다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ex) 함수 안에서 변수를 사용한 다음에 선언을 하면 오류가 난다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;변수의 호이스팅 오류 예제를 살펴보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;예제 1
+1 name = global;          //전역변수
+2 function func(){
+3     console.log(name)   //얘는 뭐가 나올까요?
+4     let name = &amp;#39;local&amp;#39;;
+5     console.log(name)   //얘는 local 이라고 나올것 같은데 ...
+6 }
+7 func();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;예상으로는 3번째 줄에서 &lt;code class=&quot;language-text&quot;&gt;global&lt;/code&gt; 이라고 나올 것 같네요. 그리고 5번째줄에서는 &lt;code class=&quot;language-text&quot;&gt;local&lt;/code&gt; 이라고 나올 것같구요,&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;하지만&lt;/strong&gt; 3번째줄은 &lt;code class=&quot;language-text&quot;&gt;undefined&lt;/code&gt; 가 나옵니다.&lt;/p&gt;
+&lt;p&gt;그 이유는 , &lt;code class=&quot;language-text&quot;&gt;name&lt;/code&gt;이 &lt;code class=&quot;language-text&quot;&gt;func&lt;/code&gt;함수 내에서 지역 변수로 선언되었다고 간주하기 때문입니다.
+선언문 자체(&lt;code class=&quot;language-text&quot;&gt;let name = &amp;#39;local&amp;#39;&lt;/code&gt;)가 그 &lt;strong&gt;다음에 있더라도&lt;/strong&gt; 말입니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;예제1을 JS가 읽을 때는 이렇게 보인다.
+
+1 name = global;
+2 function func(){
+3     let name;             //이렇게 선언하면 let name=undefined; 와 동일
+4     console.log(name)     //&amp;#39;undefined&amp;#39;
+5     let name = &amp;#39;local&amp;#39;;
+6     console.log(name)     //&amp;#39;local&amp;#39;
+7 }
+8 func();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;실제 구현단계에서는 좀 더 복잡하다.&lt;/p&gt;
+&lt;h3 id=&quot;let-const-var-차이&quot;&gt;&lt;a href=&quot;#let-const-var-%EC%B0%A8%EC%9D%B4&quot; aria-label=&quot;let const var 차이 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;let, const, var 차이&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;var&lt;/code&gt; vs &lt;code class=&quot;language-text&quot;&gt;let, const&lt;/code&gt; : &lt;code class=&quot;language-text&quot;&gt;var&lt;/code&gt;은 &lt;strong&gt;변수 재선언 가능&lt;/strong&gt;이지만 &lt;code class=&quot;language-text&quot;&gt;let&lt;/code&gt; 과 &lt;code class=&quot;language-text&quot;&gt;const&lt;/code&gt;는 &lt;strong&gt;변수 재선언 불가능&lt;/strong&gt;하다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;let&lt;/code&gt; vs &lt;code class=&quot;language-text&quot;&gt;const&lt;/code&gt; : &lt;code class=&quot;language-text&quot;&gt;let&lt;/code&gt;은 변수에 재할당이 가능하지만, &lt;code class=&quot;language-text&quot;&gt;const&lt;/code&gt;는 변주 재선언, 재할당 모두 불가능하다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//let
+let a = &amp;#39;test&amp;#39;
+let a = &amp;#39;test2&amp;#39; // Uncaught SyntaxError: Identifier &amp;#39;a&amp;#39; has already been declared
+a = &amp;#39;test3&amp;#39;     // 가능
+
+
+// const
+const b = &amp;#39;test&amp;#39;
+const b = &amp;#39;test2&amp;#39; // Uncaught SyntaxError: Identifier &amp;#39;a&amp;#39; has already been declared
+b = &amp;#39;test3&amp;#39;    // Uncaught TypeError:Assignment to constant variable.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이것으로 포스팅 마무리.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[apply, call]]></title><description><![CDATA[Front-End Study 2주차]]></description><link>https://kyj7337.github.io/posts/FrontStudy2-2</link><guid isPermaLink="false">https://kyj7337.github.io/posts/FrontStudy2-2</guid><pubDate>Sun, 01 Dec 2019 14:45:32 GMT</pubDate><content:encoded>&lt;h3 id=&quot;이번주-공부-과제&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EB%B2%88%EC%A3%BC-%EA%B3%B5%EB%B6%80-%EA%B3%BC%EC%A0%9C&quot; aria-label=&quot;이번주 공부 과제 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이번주 공부 과제&lt;/h3&gt;
+&lt;p&gt;&lt;del&gt;1. this&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;2. bind&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;apply&lt;/li&gt;
+&lt;li&gt;call&lt;/li&gt;
+&lt;li&gt;es6 arrow function VS es5 function&lt;/li&gt;
+&lt;li&gt;hoisting(let, var, const)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;apply-call&quot;&gt;&lt;a href=&quot;#apply-call&quot; aria-label=&quot;apply call permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;apply, call&lt;/h3&gt;
+&lt;p&gt;apply,call은 함수를 호출하는 방법이다. 일반적으로 사용되는 함수 () 말고도 apply와 call을 통해서 역시 함수를 호출 할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function func(num1, num2){
+    return num1 + num2;
+};
+
+func(1, 2) // 3
+func.call(null, 1, 2) // 3
+func.apply(null, [1, 2]) // 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;허허 이래서 뭐 어쩌라는걸까 ?? 언제 call을 스고 언제 apply를 쓰고 무슨 차이가 있길래 그럴까 ??&lt;/p&gt;
+&lt;p&gt;일단 apply와 call의 차이점부터 보자면&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;call : 인자가 따로 떨어져 있네요&lt;/li&gt;
+&lt;li&gt;apply : 인자가 배열로 들어가 있네요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;배열이냐 아니냐 차이가 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;그렇다면 왜 call과 apply같은 호출방법이 있을까 ???&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;우선 call과 apply의 첫번째 인자로 &lt;code class=&quot;language-text&quot;&gt;null&lt;/code&gt;이 들어갔는데, 이 자리는 원래 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;가 들어가는 자리이다. 이 전 포스팅에서도 다뤘던 그 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt; 말이다.
+정리하자면…&lt;/p&gt;
+&lt;h5 id=&quot;호출-된-함수의-this가-가리킬-객체가-들어간다&quot;&gt;&lt;a href=&quot;#%ED%98%B8%EC%B6%9C-%EB%90%9C-%ED%95%A8%EC%88%98%EC%9D%98-this%EA%B0%80-%EA%B0%80%EB%A6%AC%ED%82%AC-%EA%B0%9D%EC%B2%B4%EA%B0%80-%EB%93%A4%EC%96%B4%EA%B0%84%EB%8B%A4&quot; aria-label=&quot;호출 된 함수의 this가 가리킬 객체가 들어간다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;호출 된 함수의 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;가 가리킬 객체가 들어간다&lt;/h5&gt;
+&lt;p&gt;이 말이 무슨 말일까 ???&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;가 가리킬 객체라 …&lt;/p&gt;
+&lt;p&gt;호출하는 함수에서 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;를 표현해야 하는데, 이 때 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;로 가르키고 싶은 객체를 넣어줄 수 있다는 것!!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;   1  let name = {
+   2      name : &amp;#39;Wecode&amp;#39;,
+   3      printName : function() { console.log(this.name) }
+   4  }
+   5
+   6  let KYJ = {
+   7      name : &amp;#39;Kim Young Jun&amp;#39;,
+   8  }
+   9
+   10  let YBM = {
+   11      name : &amp;#39;Yoo Byeong Min&amp;#39;,
+   12  }
+   13
+   14  name.printName()            // Wecode
+   15  name.printName.call(KYJ)    // Kim Young Jun
+   16  name.printName.apply(YBM)    // Yoo Byeong Min&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;15번째 줄의 call에 KYJ 라는 객체를 넣어주게 되니 &lt;code class=&quot;language-text&quot;&gt;name.printName&lt;/code&gt;에서 가리키는 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;가 &lt;code class=&quot;language-text&quot;&gt;KYJ&lt;/code&gt;가 되었다 !! 그 결과 &lt;code class=&quot;language-text&quot;&gt;KYJ.name&lt;/code&gt;인 &lt;code class=&quot;language-text&quot;&gt;Kim Young Jun&lt;/code&gt;을 표현하게 되었다.&lt;/li&gt;
+&lt;li&gt;16번째 줄 역시 분석해보자. &lt;code class=&quot;language-text&quot;&gt;name.printName&lt;/code&gt;에서 &lt;code class=&quot;language-text&quot;&gt;console.log(this.name)&lt;/code&gt;을 실행 하게 되는데, &lt;code class=&quot;language-text&quot;&gt;.apply(YBM)&lt;/code&gt;을 적용했다. 그 결과 &lt;code class=&quot;language-text&quot;&gt;name.printName&lt;/code&gt; 에서의 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;가 &lt;code class=&quot;language-text&quot;&gt;YBM&lt;/code&gt;을 가리키게 되었고, &lt;code class=&quot;language-text&quot;&gt;YBM.name&lt;/code&gt;인 &lt;code class=&quot;language-text&quot;&gt;Yoo Byeong Min&lt;/code&gt;을 콘솔로그로 찍게 되었다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;1-apply와-call은-배열이냐-아니냐의-차이가-있다&quot;&gt;&lt;a href=&quot;#1-apply%EC%99%80-call%EC%9D%80-%EB%B0%B0%EC%97%B4%EC%9D%B4%EB%83%90-%EC%95%84%EB%8B%88%EB%83%90%EC%9D%98-%EC%B0%A8%EC%9D%B4%EA%B0%80-%EC%9E%88%EB%8B%A4&quot; aria-label=&quot;1 apply와 call은 배열이냐 아니냐의 차이가 있다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. apply와 call은 배열이냐 아니냐의 차이가 있다.&lt;/h5&gt;
+&lt;h5 id=&quot;2-apply와-call은-this를-가리킬-객체를-넣어-줄-수-있다-약간-function-훔쳐쓰는-도둑-같은-느낌&quot;&gt;&lt;a href=&quot;#2-apply%EC%99%80-call%EC%9D%80-this%EB%A5%BC-%EA%B0%80%EB%A6%AC%ED%82%AC-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%EB%84%A3%EC%96%B4-%EC%A4%84-%EC%88%98-%EC%9E%88%EB%8B%A4-%EC%95%BD%EA%B0%84-function-%ED%9B%94%EC%B3%90%EC%93%B0%EB%8A%94-%EB%8F%84%EB%91%91-%EA%B0%99%EC%9D%80-%EB%8A%90%EB%82%8C&quot; aria-label=&quot;2 apply와 call은 this를 가리킬 객체를 넣어 줄 수 있다 약간 function 훔쳐쓰는 도둑 같은 느낌 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. apply와 call은 this를 가리킬 객체를 넣어 줄 수 있다. (약간 &lt;code class=&quot;language-text&quot;&gt;function&lt;/code&gt; 훔쳐쓰는 도둑 같은 느낌)&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;참고
+&lt;a href=&quot;https://medium.com/sjk5766/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-apply-call-%ED%95%A8%EC%88%98-f26bb54e12d5&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;여기서 참고했어요&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;del&gt;1. this&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;2. bind&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;3. apply&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;4. call&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;es6 arrow function VS es5 function&lt;/li&gt;
+&lt;li&gt;hoisting(let, var, const)&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[this, bind]]></title><description><![CDATA[Front-End Study 2주차]]></description><link>https://kyj7337.github.io/posts/FrontStudy2</link><guid isPermaLink="false">https://kyj7337.github.io/posts/FrontStudy2</guid><pubDate>Sun, 01 Dec 2019 12:45:32 GMT</pubDate><content:encoded>&lt;h3 id=&quot;이번주-공부-과제&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EB%B2%88%EC%A3%BC-%EA%B3%B5%EB%B6%80-%EA%B3%BC%EC%A0%9C&quot; aria-label=&quot;이번주 공부 과제 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이번주 공부 과제&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;this&lt;/li&gt;
+&lt;li&gt;bind&lt;/li&gt;
+&lt;li&gt;apply&lt;/li&gt;
+&lt;li&gt;call&lt;/li&gt;
+&lt;li&gt;es6 arrow function VS es5 function&lt;/li&gt;
+&lt;li&gt;hoisting(let, var, const)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;this&quot;&gt;&lt;a href=&quot;#this&quot; aria-label=&quot;this permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;this&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;JavaScript 의 this 키워드는 다른 언어들과 비교하여 조금 다르게 동작한다.
+대부분의 경우 this의 값은 함수를 호출하는 방법에 의해 결정된다.
+선언하는 것에서 결정되는것이 아니라, 호.출 할때 결정된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;호출&quot;&gt;&lt;a href=&quot;#%ED%98%B8%EC%B6%9C&quot; aria-label=&quot;호출 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;호.출.&lt;/h2&gt;
+&lt;p&gt;하는 방법에 의해 결정된다는 것.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ES5에서 호출 값이 어떻든 간에 this를 묶어 버리는 함수가 존재하는데, 그게 바로 &lt;code class=&quot;language-text&quot;&gt;bind&lt;/code&gt; 메소드 이다.(this를 고정시키는 것) 이 부분은 뒤에서 설명함.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1    let someone = {
+2        name : &amp;#39;김영준&amp;#39;,
+3        whoAmI : function(){
+4            console.log(this);
+5        }
+6    };
+7
+8   someone.WhoAmI();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;라고 입력을 했을 경우,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    //console 창
+    {name:&amp;#39;김영준&amp;#39;, whoAmI: f}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 나올 것이다.
+호출하는 방법에 의해 결정된다고 했으니,4번째 줄에서 가리키는 this 는 함수 객체 자기 자신을 가리키는 것이다.&lt;/p&gt;
+&lt;p&gt;하지만 호출 하는 방법을 달리하면 결과는 어떻게 될까&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;         //호출하는 방법 다르게 하면
+    1    let someone = {
+    2        name : &amp;#39;김영준&amp;#39;,
+    3        whoAmI : function(){
+    4            console.log(this);
+    5        }
+    6    };
+    7
+    8   someone.WhoAmI();
+    9
+    10  let myWhoAmI = someone.whoAmI;
+    11  myWhoAmI();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이렇게 10번과 11번 줄은 호출하는 방법을 다르게 한것이다.
+10번줄을 보면 myWhoAmI 라는 변수에 someone.whoAmI를 호출하는 코드를 넣고
+11번줄에서 10번줄을 호출 한다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/897e3f86a3fac50d7d3bb29fb7ba84ec/0309e/this1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABfklEQVQoz21RXUvCUBg+d150638Juqj+Q/QHuoggoYuoq+giqH6CXQwSzQZiF0EJUlkjmjlLI40MJHDzYwox3dp2Ojs7p80ZbeoLZ5z3fXk+zjPQU+B+/D19J9GJsjGSuurhyccZ16TTCqRyjbl1bmknr+rI6Qn5Q7oXK3ZRW9y4X959HHz/+LcjsPxl7sXeUjnR64lv7yg3Ov2DRC19K05X9iDOMQyjXq/7d7quI4RKT0Kn3RrjHYGdiTeEEDIMw/O8y0Ww8zVN08Y4xbLVSiUIJp4e8LtVFCUajcqy7A0dL47yaTb7OnSEMbZt268PgkYItimGCqptYvEIEgpbLTUSMY+P6Sguz6RIlZzTBsHEcnNqx5px0D+fMezeYGW1B8AgFNI4jisKmcuMUOC1h1kpCSyJGVO2XQbjEwoLVnXNpFTb2u4C0A+H9XI5XyrdXF2/lJ81fr6RBKiZAFP/ASEuC0TIUFXKsqRQCNhGMtWKk28OhKkP659vWP7AfgEiAVi55sBLIgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/897e3f86a3fac50d7d3bb29fb7ba84ec/01472/this1.webp 240w,
+/static/897e3f86a3fac50d7d3bb29fb7ba84ec/222bd/this1.webp 480w,
+/static/897e3f86a3fac50d7d3bb29fb7ba84ec/620b9/this1.webp 960w,
+/static/897e3f86a3fac50d7d3bb29fb7ba84ec/a1c21/this1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/897e3f86a3fac50d7d3bb29fb7ba84ec/0783d/this1.png 240w,
+/static/897e3f86a3fac50d7d3bb29fb7ba84ec/782f4/this1.png 480w,
+/static/897e3f86a3fac50d7d3bb29fb7ba84ec/f570d/this1.png 960w,
+/static/897e3f86a3fac50d7d3bb29fb7ba84ec/0309e/this1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/897e3f86a3fac50d7d3bb29fb7ba84ec/f570d/this1.png&quot;
+          alt=&quot;this1&quot;
+          title=&quot;this1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;위 그림과 같이 한번 거쳐서 와서 호출하는 방법이 달라진것이라 생각하면 된다.
+결과는 어떻게 될까 ??&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    //console 창
+    {name:&amp;#39;김영준&amp;#39;, whoAmI: f}
+    Window {postMessage: f, blur: f, focus: f, close: f, frames: Window, ...}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;라고 나온다..&lt;/p&gt;
+&lt;p&gt;첫번째 줄에서는 처음에 호출한 &lt;code class=&quot;language-text&quot;&gt;someone.WhoAmI();&lt;/code&gt;에 대한 값이고&lt;/p&gt;
+&lt;p&gt;두번째 줄에서는 한번 거쳐서 호출한 &lt;code class=&quot;language-text&quot;&gt;myWhoAmI();&lt;/code&gt;에 대한 내용이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;soneomne&lt;/code&gt; 객체 안에 있는 WhoAmI를 직접 호출한 애는 사실 8번째줄의 &lt;code class=&quot;language-text&quot;&gt;someone.WhoAmI();&lt;/code&gt; 이놈이다 !! &lt;code class=&quot;language-text&quot;&gt;WhoAmI&lt;/code&gt;를 꺼낸 놈이 8번째줄 그 자체이다.&lt;/li&gt;
+&lt;li&gt;그렇다면 &lt;code class=&quot;language-text&quot;&gt;myWhoAmI();&lt;/code&gt;는 왜 다를까?
+바로 &lt;code class=&quot;language-text&quot;&gt;let myWhoAmI&lt;/code&gt;는 윈도우가 낳은 자식이다…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이걸 어떻게 말로 설명할지 감이 잘 오지 않는다 …&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/935624ecde6917d6acfaaddf64c68a38/0309e/this2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABy0lEQVQoz31Rv0/bQBg9oYLUsTMC5k5I7V/AgliYKiGBGMrMViaq8mOGCTEwoFaqEAsTYi5CgiFK7AQlaiIUFIaQ2HES21H8687nu+uLDRK0Ut9wvvN379333keUlFIpqeX5j+/x7a1SiXqNKIoopWEK7Blj2MRxjBIBU33d7L19921hd3356O7oVElBufSocDyeCOm6juu6lmX1ej3HcXzfN01zMBiMyPT6RhHy88PKwmHr08HD5vx2+OvKTpTv+syPOKVtwwDTMAxwHlJ4nsc5T5KEsL19kPXpj0sbl4s7xbOZObW7xaXkHZN3rci285qma1oul9N1vdlsNhqNdhuCBiwQfn4uCFETb+4n3/+emoVQfHEx8iJE5lmkQDJ46q84yKi8uqrGx9XYGJjJ2ueXZSkET5GpgI8VacE55Ag6ZL4fHR/TLxvs5ESEIZ5Nngm2bVcqlVKpVCgUyuVyPgWO1WoVKqTdaiEKi1JLCIsxpNIxzSAMgyAYDof9fr9YLNZqNUiAD+e4gPDT+SqC6LIOcdd4fEQk9Xq92+2O/gQBOsSQs6lm5p/sZGTI44PR44Z4dogjytD9N6RXgaExjLGTwnoBHGFY/Rd/AOAxRO31ALStAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/935624ecde6917d6acfaaddf64c68a38/01472/this2.webp 240w,
+/static/935624ecde6917d6acfaaddf64c68a38/222bd/this2.webp 480w,
+/static/935624ecde6917d6acfaaddf64c68a38/620b9/this2.webp 960w,
+/static/935624ecde6917d6acfaaddf64c68a38/a1c21/this2.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/935624ecde6917d6acfaaddf64c68a38/0783d/this2.png 240w,
+/static/935624ecde6917d6acfaaddf64c68a38/782f4/this2.png 480w,
+/static/935624ecde6917d6acfaaddf64c68a38/f570d/this2.png 960w,
+/static/935624ecde6917d6acfaaddf64c68a38/0309e/this2.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/935624ecde6917d6acfaaddf64c68a38/f570d/this2.png&quot;
+          alt=&quot;this2&quot;
+          title=&quot;this2&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h5 id=&quot;mywhoami는-자바스크립트-전체에-있고-그-전체에서-this를-찾으니-당연히-window가-나올-수-밖에-없지-않겠는가--결국-window가-호출한-셈이다&quot;&gt;&lt;a href=&quot;#mywhoami%EB%8A%94-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%A0%84%EC%B2%B4%EC%97%90-%EC%9E%88%EA%B3%A0-%EA%B7%B8-%EC%A0%84%EC%B2%B4%EC%97%90%EC%84%9C-this%EB%A5%BC-%EC%B0%BE%EC%9C%BC%EB%8B%88-%EB%8B%B9%EC%97%B0%ED%9E%88-window%EA%B0%80-%EB%82%98%EC%98%AC-%EC%88%98-%EB%B0%96%EC%97%90-%EC%97%86%EC%A7%80-%EC%95%8A%EA%B2%A0%EB%8A%94%EA%B0%80--%EA%B2%B0%EA%B5%AD-window%EA%B0%80-%ED%98%B8%EC%B6%9C%ED%95%9C-%EC%85%88%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;mywhoami는 자바스크립트 전체에 있고 그 전체에서 this를 찾으니 당연히 window가 나올 수 밖에 없지 않겠는가  결국 window가 호출한 셈이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;code class=&quot;language-text&quot;&gt;myWhoAmI&lt;/code&gt;는 자바스크립트 전체에 있고, 그 전체에서 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;를 찾으니 당연히 &lt;code class=&quot;language-text&quot;&gt;window&lt;/code&gt;가 나올 수 밖에 없지 않겠는가 ?? 결국 &lt;code class=&quot;language-text&quot;&gt;window&lt;/code&gt;가 호출한 셈이다.&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;자바스크립트에서 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;의 핵심은&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;누가-호출-하였는가누가-실행했느냐&quot;&gt;&lt;a href=&quot;#%EB%88%84%EA%B0%80-%ED%98%B8%EC%B6%9C-%ED%95%98%EC%98%80%EB%8A%94%EA%B0%80%EB%88%84%EA%B0%80-%EC%8B%A4%ED%96%89%ED%96%88%EB%8A%90%EB%83%90&quot; aria-label=&quot;누가 호출 하였는가누가 실행했느냐 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;누가 호출 하였는가(누가 실행했느냐)&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그 &lt;code class=&quot;language-text&quot;&gt;누가(who)&lt;/code&gt; 가 바로 this 이다. 실행한 주체에 따라서 this가 바뀐다는 소리다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;이제 위에서 말한 &lt;code class=&quot;language-text&quot;&gt;bind&lt;/code&gt; 를 설명할 차례인데, &lt;code class=&quot;language-text&quot;&gt;bind&lt;/code&gt; 는 호출한(실행한) 주체와 무관하게 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;를 고정시켜 놓는다는 뜻을 가지고 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;     //bind를 붙여보면?
+1    let someone = {
+2        name : &amp;#39;김영준&amp;#39;,
+3        whoAmI : function(){
+4            console.log(this);
+5        }
+6    };
+7
+8   someone.WhoAmI();
+9
+10  let myWhoAmI = someone.whoAmI;
+11  myWhoAmI();
+12
+13  let bindedWhoAmI = myWhoAmI.bind(someone);
+14  bindedWhoAmI();&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;여기서 추가 된 13번째 줄을 살펴보자.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;myWhoAmI&lt;/code&gt;는 위에서 &lt;code class=&quot;language-text&quot;&gt;window&lt;/code&gt;를 가리키는 상태였는데, 여기에 &lt;code class=&quot;language-text&quot;&gt;.bind(someone)&lt;/code&gt;을 붙이면 이제 &lt;code class=&quot;language-text&quot;&gt;someone&lt;/code&gt;을 바라보겠다는 뜻이 된다. 즉, &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;의 대상이 &lt;code class=&quot;language-text&quot;&gt;someone&lt;/code&gt; 이 된다!!&lt;/p&gt;
+&lt;p&gt;이제 14번째 줄만 실행시켰을때의 상황을 보면&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    //console 창
+    {name:&amp;#39;김영준&amp;#39;, whoAmI: f}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&quot;정리를-해보자&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EB%A6%AC%EB%A5%BC-%ED%95%B4%EB%B3%B4%EC%9E%90&quot; aria-label=&quot;정리를 해보자 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정리를 해보자&lt;/h3&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;1-js에서는-선언할때-결정되는-것이-있고-호출할때-결정-되는-것이-있다-this는-호출할때-결정되는-것-호출한-객체가-바로-this-이다&quot;&gt;&lt;a href=&quot;#1-js%EC%97%90%EC%84%9C%EB%8A%94-%EC%84%A0%EC%96%B8%ED%95%A0%EB%95%8C-%EA%B2%B0%EC%A0%95%EB%90%98%EB%8A%94-%EA%B2%83%EC%9D%B4-%EC%9E%88%EA%B3%A0-%ED%98%B8%EC%B6%9C%ED%95%A0%EB%95%8C-%EA%B2%B0%EC%A0%95-%EB%90%98%EB%8A%94-%EA%B2%83%EC%9D%B4-%EC%9E%88%EB%8B%A4-this%EB%8A%94-%ED%98%B8%EC%B6%9C%ED%95%A0%EB%95%8C-%EA%B2%B0%EC%A0%95%EB%90%98%EB%8A%94-%EA%B2%83-%ED%98%B8%EC%B6%9C%ED%95%9C-%EA%B0%9D%EC%B2%B4%EA%B0%80-%EB%B0%94%EB%A1%9C-this-%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;1 js에서는 선언할때 결정되는 것이 있고 호출할때 결정 되는 것이 있다 this는 호출할때 결정되는 것 호출한 객체가 바로 this 이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. JS에서는 선언할때 결정되는 것이 있고, 호출할때 결정 되는 것이 있다. this는 호출할때 결정되는 것. 호출한 객체가 바로 this 이다.&lt;/h4&gt;
+&lt;h4 id=&quot;2-그-this를-호출과-무관하게-묶어줄-수-있는-애가-바로-bind-함수-이다&quot;&gt;&lt;a href=&quot;#2-%EA%B7%B8-this%EB%A5%BC-%ED%98%B8%EC%B6%9C%EA%B3%BC-%EB%AC%B4%EA%B4%80%ED%95%98%EA%B2%8C-%EB%AC%B6%EC%96%B4%EC%A4%84-%EC%88%98-%EC%9E%88%EB%8A%94-%EC%95%A0%EA%B0%80-%EB%B0%94%EB%A1%9C-bind-%ED%95%A8%EC%88%98-%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;2 그 this를 호출과 무관하게 묶어줄 수 있는 애가 바로 bind 함수 이다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 그 this를 호출과 무관하게 묶어줄 수 있는 애가 바로 &lt;code class=&quot;language-text&quot;&gt;bind&lt;/code&gt; 함수 이다.&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;출처
+코드종 유튜브 &lt;a href=&quot;https://youtu.be/CA5EDD4Hjz4?list=PLuBMRNcyzsWxcnDdAmJWyWYXuExyP9aS1&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;동영상 보러 가기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;del&gt;1. this&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;2. bind&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;apply&lt;/li&gt;
+&lt;li&gt;call&lt;/li&gt;
+&lt;li&gt;es6 arrow function VS es5 function&lt;/li&gt;
+&lt;li&gt;hoisting(let, var, const)&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[redux-3]]></title><description><![CDATA[container component, connect]]></description><link>https://kyj7337.github.io/posts/redux3</link><guid isPermaLink="false">https://kyj7337.github.io/posts/redux3</guid><pubDate>Sat, 30 Nov 2019 17:45:32 GMT</pubDate><content:encoded>&lt;h1 id=&quot;redux-3&quot;&gt;&lt;a href=&quot;#redux-3&quot; aria-label=&quot;redux 3 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;redux-3&lt;/h1&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
@@ -315,7 +706,42 @@ export default connect(
 &lt;li&gt;react와 연결 – connect함수 ,dispatch하기&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&quot;리듀서-합치기&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EB%93%80%EC%84%9C-%ED%95%A9%EC%B9%98%EA%B8%B0&quot; aria-label=&quot;리듀서 합치기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리듀서 합치기&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/media/React/Redux/redux3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 237px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7affe7bb243d62c7902745c21cd22f08/a1ad1/redux3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 183.1223628691983%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAlCAYAAABCr8kFAAAACXBIWXMAABYlAAAWJQFJUiTwAAAFgUlEQVRIx4VWaXPTSBD1z4AlBsu6Jds6bOvyldiJTQjYQIBAEe7aLT5tZT/y69++HnsUO2RrP3RNS5pp9fH69TQcx0WW5QjDDrK0h2IYQ95Zlg3bdmrZf97XTdPGuEjR64ZomxYa8lIMdjodXD6b4t36BL7vw5IDjnNg9OB5Z9SkkdlogLjXuTVoGG20WgaF65M22i0TbVm13mrfPlMs0z7w9MljA+22pfSGvHRdD1U1QhRF6JUp0uMc/UWF/mlFvUB6spXBcoTh0wncwL81Sq9kTxB3YdKoMiiSxAn8IERCYwMa6s9LTN6vkDEN/UWJ4sUxhjSYP5/B74XK0Nagjc4ghhcGSqfBbU4Mw1T5kL/I5tZRC0azhdajJ2j9sRWjaSjRoepV0mLqkHWlPM/Fz58JC+Sjv5qioCeDsxGqVwtMP54jY6jD1RhRNYDJn9dVpi5Rqfc03NB/8jyHefQRBA6CpId4zMqNh4gnmcpfr+yrHIb9qPZG5zAk3Pyoo/SGVZffJv4cBRevE6g/yzddWTEi70zDqsOtQzetukh1yEHg4uYmRVFsQ65ezXHy9Tmq1wsVark5IQ7dQ1zuQpaixZOhymXjNrkWwe3QS3pKYEsYHXaNhC/5kZDv6xbxTCqsoaRCllbrdLpcfdiuC4fi+l697nfIfS3pse1kr+h1DieTKeI0Ju4mGF2eYvz2DPMfa0w+rHD8+QLly/lvxlTIzK00gUSkgK3/0m6baDaZcG/rkeoghrLfxxpvUhhdNJ3HAxxuw3Zwft5Bt+sgHCbqj5IX6YIe2SRMI5XHIOmi09/qkg4xJHn2ezvY3FbZwbdvEYZDD+nZWFVZwpTQZ5+eKV2qPXpzhvxiiuMvzxXw5bzgNBrtgL3fRg8fWmxBW1GTZhlDmERwyDAVJvms36mzLOi9Ibuug+vrCGnqIZlXSIgr8SRitwjOxAPpHOkWeU5muaqsGOvmSd1Bdci+72Kz6SJOPHTLgTJWvT5V7JJfzBRFScgFCXjENAi1dbNEOSM/E12M1yEbrPLREVmmyTCPhGW2bKOEz3U1pdKG+RtBmPsEK8CeEodJmiCdF8ojKUqxPq6LoQ7cHQk1DkuEyR0cdjikXM9XEBGCFSMpSVZ0CUkT6l2Rs0HUVRBSnaI/+H4Aj0mW6ioilbAp28rqijr/2S36fWPbJRYSunxz00deeIhPKsUuBaWSNrxablPBAm1nB7vEtpVI/jQOBWYNGVCOQyNxTMiE9JRVHiSIyTDxKFN6xKpHBQn2dERmCVXO5Zw6a7sI4whBr6v0xnDISUapqhkWC/JeyedsK1k+wiBlHgeVkn5C6HDVZ7Rk+ViJ6I2imHKOTDGfz/Hr1wlWywlOP1xi8/cnbG4+4+mXt0oWb9bIh8RhOYOc0ZINxlhcrnGyvlB6I01ziJTlGL1ezlxyJg84g/NKybBgPhfHGGQl9N67Ivv7/ULpqigyPuUqsliEvOOw4ky8G/qKsWW+OKQ0V81dq54lWuSs1w3U/oPW67MX//wrVWxTvDzFlJWdXT9Tw17migz6/Wn320xhnx+M0XbbJ9PwnsKXIgYPy+VHICVQES/vnSlcH8vd5/Bu4+Dduy56kYP5JKdkKEmyFRu+T2Nt6ds9A/vGHK4X7KaMEYoTDQk3DF1cXfUUdW1Y5X9+bPD58gyfKGekKf13+54BJXJNVpoQpy3DvM3hgwck1LaNR3Kf4YfWbmY8ZusZO2a56502/FDuP7s9DX0N+f49RpEHWB6XWJMYvr5dYsWWOidBSOjGPQXRRj+Kh+XOQ9MkTAIbZ0sfceRjPs6wWU1wRSIVwx95WZJwjD3+O6gyjb5Yjm9zaFnEkUOsmRGraitpcmY8IuM0JVxuav1PyHqf6P8CSxNsIJrZ1z8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/7affe7bb243d62c7902745c21cd22f08/637cb/redux3.webp 237w&quot;
+          sizes=&quot;(max-width: 237px) 100vw, 237px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/7affe7bb243d62c7902745c21cd22f08/a1ad1/redux3.png 237w&quot;
+          sizes=&quot;(max-width: 237px) 100vw, 237px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/7affe7bb243d62c7902745c21cd22f08/a1ad1/redux3.png&quot;
+          alt=&quot;redux3&quot;
+          title=&quot;redux3&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;위 사진 중에서 module 폴더를 보면 counter.js, index.js, todos.js가 있는데 이중에 counter.js와 index.js 만 사용할 것이다.&lt;/p&gt;
 &lt;p&gt;index.js 는 module 폴더안의 모든 redux 관련 함수들을 모아두는 역할을 할 것이다.&lt;/p&gt;
 &lt;p&gt;counter.js 에서 export 한 것이 무엇인지 기억할 것이다.&lt;/p&gt;
@@ -501,9 +927,7 @@ document.getElementById(&amp;quot;root&amp;quot;)
 &lt;ul&gt;
 &lt;li&gt;src/container 에는 리덕스와 연동된 컴포넌트를 저장한다.&lt;/li&gt;
 &lt;li&gt;src/components 에는 Presentational component 들이 들어간다.&lt;/li&gt;
-&lt;li&gt;
-&lt;h5 id=&quot;srcmodule-에는-아래에서-설명되는-리덕스-관련-코드들이-들어가는-폴더가-된다&quot;&gt;&lt;a href=&quot;#srcmodule-%EC%97%90%EB%8A%94-%EC%95%84%EB%9E%98%EC%97%90%EC%84%9C-%EC%84%A4%EB%AA%85%EB%90%98%EB%8A%94-%EB%A6%AC%EB%8D%95%EC%8A%A4-%EA%B4%80%EB%A0%A8-%EC%BD%94%EB%93%9C%EB%93%A4%EC%9D%B4-%EB%93%A4%EC%96%B4%EA%B0%80%EB%8A%94-%ED%8F%B4%EB%8D%94%EA%B0%80-%EB%90%9C%EB%8B%A4&quot; aria-label=&quot;srcmodule 에는 아래에서 설명되는 리덕스 관련 코드들이 들어가는 폴더가 된다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;src/module 에는 아래에서 설명되는 리덕스 관련 코드들이 들어가는 폴더가 된다.&lt;/h5&gt;
-&lt;/li&gt;
+&lt;li&gt;src/module 에는 아래에서 설명되는 리덕스 관련 코드들이 들어가는 폴더가 된다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;리덕스-관련-코드들&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EB%8D%95%EC%8A%A4-%EA%B4%80%EB%A0%A8-%EC%BD%94%EB%93%9C%EB%93%A4&quot; aria-label=&quot;리덕스 관련 코드들 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리덕스 관련 코드들&lt;/h2&gt;
 &lt;p&gt;리덕스 관련 코드들은 크게 3가지 역할로 나눌 수 있다.&lt;/p&gt;
@@ -7248,7 +7672,19 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;git push origin develop&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;yarn deploy&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;을 입력하여 업로드를 확인한다.&lt;/p&gt;
-&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
+&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
+&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;설치 진행중&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;1.1 static —&gt; default&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;위치가 지정된 것이 아님
 ​&lt;/p&gt;
@@ -7423,16 +7859,4 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;레이아웃 정보&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://ko.learnlayout.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://ko.learnlayout.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-layout&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-layout&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
-&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
-&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;설치 진행중&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
