@@ -1,4 +1,316 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 07 Dec 2019 10:38:29 GMT</lastBuildDate><item><title><![CDATA[비동기를 다루고 싶어]]></title><description><![CDATA[비동기특집( 콜백함수 )]]></description><link>https://kyj7337.github.io/posts/callback</link><guid isPermaLink="false">https://kyj7337.github.io/posts/callback</guid><pubDate>Sat, 07 Dec 2019 16:03:32 GMT</pubDate><content:encoded>&lt;h4 id=&quot;콜백-함수란-&quot;&gt;&lt;a href=&quot;#%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98%EB%9E%80-&quot; aria-label=&quot;콜백 함수란  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;콜백 함수란 ??&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Dec 2019 09:12:20 GMT</lastBuildDate><item><title><![CDATA[Redux-4]]></title><description><![CDATA[redux 내가 만드는 예제]]></description><link>https://kyj7337.github.io/posts/redux4</link><guid isPermaLink="false">https://kyj7337.github.io/posts/redux4</guid><pubDate>Sun, 08 Dec 2019 14:03:32 GMT</pubDate><content:encoded>&lt;h3 id=&quot;만들어보는-redux-예제&quot;&gt;&lt;a href=&quot;#%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EB%8A%94-redux-%EC%98%88%EC%A0%9C&quot; aria-label=&quot;만들어보는 redux 예제 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;만들어보는 redux 예제&lt;/h3&gt;
+&lt;p&gt;벨로퍼트님의 counter , todo 예제를 보고 조금만 수정해서 만들어보자.&lt;/p&gt;
+&lt;p&gt;만들고 싶은 것은 숫자를 입력하고 버튼을 누르면 기존 값과 입력한 숫자 값이 합쳐져서 표시 되는 것이다.
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/842d2439a3073681b6ccaeedc6a2c6d5/14e05/redux5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABTklEQVQoz3WRy27CMBBF88EsIL8IVASEVKOigIRYsCCNU0Iejt82vUkoCqDe1fjOHM94HDRNc3sTIZ9kQ9I0Xa2W6/X6eDy+1wAMqqpC5L1/uMaYoiiGJmMM5gsMMKjruk8DkFK2sHXnJMnzHHcj26e0cd47HNtYa5QhDpCz1s5mM0IIYmV8LSx6Omcfcs5pe/vOrtPpNI5jIcQdfnSWUnCh8qLhnKN6OCGOQnB6KbNLabRGAZq3MGbjvPmYz3fxDrcuoyiOd0qpl91Ei8V2+5VSGnWiNLvDDWMpzaSxiMqyhIu7hzCcn6IQUqEh9oQsIDy+g4U4Hw7idHLdhKjAK55gLlJCbGf2XwC+hVGHU5UkbL+X1grOsQ8saQhr76+bDaNUai3+1I5NYWFXSkljerIXfxb2iU+rOuFpcAAGo9EoDMMJNB5P/hcqwmcB/AXxtVY1GHfhFgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/842d2439a3073681b6ccaeedc6a2c6d5/8ac56/redux5.webp 240w,
+/static/842d2439a3073681b6ccaeedc6a2c6d5/d3be9/redux5.webp 480w,
+/static/842d2439a3073681b6ccaeedc6a2c6d5/e46b2/redux5.webp 960w,
+/static/842d2439a3073681b6ccaeedc6a2c6d5/af3f0/redux5.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/842d2439a3073681b6ccaeedc6a2c6d5/e4891/redux5.png 240w,
+/static/842d2439a3073681b6ccaeedc6a2c6d5/0ce91/redux5.png 480w,
+/static/842d2439a3073681b6ccaeedc6a2c6d5/b7c40/redux5.png 960w,
+/static/842d2439a3073681b6ccaeedc6a2c6d5/14e05/redux5.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/842d2439a3073681b6ccaeedc6a2c6d5/b7c40/redux5.png&quot;
+          alt=&quot;redux5&quot;
+          title=&quot;redux5&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    파일위치 : src/components/Test.js
+    import React from &amp;quot;react&amp;quot;;
+
+    const Test = ({ input, number, onplus, onminus, onchange }) =&amp;gt; {
+    const onChange = e =&amp;gt; onchange(e.target.value);
+    return (
+    &amp;lt;div&amp;gt;
+    &amp;lt;h1&amp;gt;금액 : {number} 원&amp;lt;/h1&amp;gt;
+    &amp;lt;form&amp;gt;
+            &amp;lt;input value={input} onChange={onChange} /&amp;gt;
+    &amp;lt;/form&amp;gt;
+    &amp;lt;div&amp;gt;
+            &amp;lt;button onClick={onplus}&amp;gt;+&amp;lt;/button&amp;gt;
+            &amp;lt;button onClick={onminus}&amp;gt;-&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    );
+    };
+
+    export default Test;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;먼저 presentational components 를 만든다. 이 컴포넌트는 껍데기다. 그냥 보여줄 수 있는 틀을 잡아 놓은 것이다.&lt;/p&gt;
+&lt;p&gt;이제부터 module폴더 안에 액션 타입, 액션 함수, 리듀서를 만들 것이다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;input 에 변화를 일으키는 change&lt;/li&gt;
+&lt;li&gt;plus 버튼을 누를 때 더해줄 함수&lt;/li&gt;
+&lt;li&gt;minus 버튼을 누를 때 값을 빼줄 함수&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;위 3가지 함수가 필요하다. 이제 아래와 같이 작성을 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    파일위치 : src/module/test.js
+
+    const CHANGE = &amp;quot;test/CHANGE&amp;quot;;
+    const PLUS = &amp;quot;test/PLUS&amp;quot;;
+    const MINUS = &amp;quot;test/minus&amp;quot;;
+
+    export const change = input =&amp;gt; ({
+    type: CHANGE,
+    input
+    });
+    export const plus = input =&amp;gt; ({
+    type: PLUS,
+    input
+    });
+
+    export const minus = input =&amp;gt; ({
+    type: MINUS,
+    input
+    });
+
+    const initialState = {
+    input: &amp;quot;&amp;quot;,
+    number: 1000
+    };
+
+    function test(state = initialState, action) {
+    switch (action.type) {
+    case CHANGE:
+    return {
+            ...state,
+            input: action.input
+    };
+    case PLUS:
+    return {
+            ...state,
+            number: state.number + state.input * 1
+            //* 1 을 해주지 않으면 숫자가 옆으로 그냥 붙기 때문.
+    };
+    case MINUS:
+    return {
+            ...state,
+            number: state.number - state.input
+    };
+    default:
+    return state;
+    }
+    }
+
+    export default test;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그리고 만들어진 reducer 를 rootReducer에다가 하나로 뭉쳐줘야 한다. rootReducer는 module 폴더의 index.js 에 만들어 놓았다. (redux-1,2,3 참조)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    파일위치 : src/module/index.js
+
+    import { combineReducers } from &amp;quot;redux&amp;quot;;
+    import counter from &amp;quot;./counter&amp;quot;;
+    import todos from &amp;quot;./todos&amp;quot;;
+    import test from &amp;quot;./test&amp;quot;;
+
+    const rootReducer = combineReducers({
+    counter,
+    todos,
+    test
+    });
+
+    //counter.js 와 index.js 에서 만든 reducer 2개를 하나의 reducer로 합쳐준다.
+    //왜냐하면 , createStore함수를 사용해서 store를 만들때는 하나의 reducer만 사용해야 하기 때문에
+    //여러개의 reducer들을 하나로 합쳐줘야 한다.
+    export default rootReducer;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이전에 만들어 놓았던 counter와 todos도 같이 보인다.&lt;/p&gt;
+&lt;p&gt;이제 container component 를 만들어야 한다. 이 컴포넌트의 &lt;strong&gt;역할&lt;/strong&gt;은 실제 redux 의 store(state)에 있는 값을 presentational component 로 넘겨줘야 하기 때문이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    파일위치 : src/container/TestContainers.js
+
+    1  import React from &amp;quot;react&amp;quot;;
+    2  import Test from &amp;quot;../components/Test&amp;quot;;
+    3  import { connect } from &amp;quot;react-redux&amp;quot;;
+    4  import { plus, minus, change } from &amp;quot;../module/test&amp;quot;;
+    5  // import { bindActionCreators } from &amp;quot;redux&amp;quot;;
+    6
+    7  const TestContainer = ({ number, change, plus, minus, input }) =&amp;gt; {
+    8     return (
+    9        &amp;lt;Test
+    10          number={number}
+    11          input={input}
+    12          onchange={change}
+    13          onplus={plus}
+    14          onminus={minus}
+    15         /&amp;gt;
+    16      );
+    17    };
+    18
+    19  const mapStateToProps = state =&amp;gt; ({
+    20     number: state.test.number,
+    21     input: state.test.input
+    22    });
+    23
+    24  const mapDispatchToProps = dispatch =&amp;gt; ({
+    25     plus: () =&amp;gt; {
+    26     dispatch(plus());
+    27  },
+    28  minus: () =&amp;gt; {
+    29     dispatch(minus());
+    30  },
+    31  change: () =&amp;gt; {
+    32     dispatch(change());
+    33  }
+    34  });
+    35
+    36  // export default connect(mapStateToProps, mapDispatchToProps)(TestContainer);
+    37
+    38  // export default connect(mapStateToProps, { plus, minus, change })(TestContainer);
+    39
+    40  export default connect(
+    41    ({ test }) =&amp;gt; ({
+    42       input: test.input,
+    43       number: test.number
+    44     }),
+    45    { plus, minus, change }
+    46    )(TestContainer);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;여기서 중요한것이 있다. 19번과 24번째 줄의 &lt;code class=&quot;language-text&quot;&gt;mapStateToProps&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;mapDispatchToProps&lt;/code&gt;를 작성하긴 했는데, &lt;code class=&quot;language-text&quot;&gt;connect&lt;/code&gt;함수내에서는 먹히지 않는다는것이다…&lt;/p&gt;
+&lt;p&gt;그래서 &lt;code class=&quot;language-text&quot;&gt;connect&lt;/code&gt; 함수 내에 직접 선언하는 방식으로 40번재 줄부터 작성하였더니, &lt;strong&gt;정상&lt;/strong&gt; 작동했다… 왜 그런지는 아직 모른다 … 앞으로 redux 를 사용할때는 &lt;strong&gt;40번째 줄처럼 작성&lt;/strong&gt;을 해야겠다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;조심해야할 점&lt;/strong&gt;은 presentational component 에서 container component의 값을 받아올 때 &lt;strong&gt;state에서 가져오는 값(우리 예제에서는 number , input) + action 함수(change, plus, minus) 총 5개 라는 것&lt;/strong&gt;을 기억해야 한다.
+&lt;del&gt;처음에 예제 만들때, state에서 넘어오는 값을 주지 않아서 멍…했다&lt;/del&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[콜백지옥을 벗어나자]]></title><description><![CDATA[await/async]]></description><link>https://kyj7337.github.io/posts/promise_</link><guid isPermaLink="false">https://kyj7337.github.io/posts/promise_</guid><pubDate>Sun, 08 Dec 2019 12:03:32 GMT</pubDate><content:encoded>&lt;h3 id=&quot;콜백-함수의-단점--콜백지옥이-생긴다&quot;&gt;&lt;a href=&quot;#%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98%EC%9D%98-%EB%8B%A8%EC%A0%90--%EC%BD%9C%EB%B0%B1%EC%A7%80%EC%98%A5%EC%9D%B4-%EC%83%9D%EA%B8%B4%EB%8B%A4&quot; aria-label=&quot;콜백 함수의 단점  콜백지옥이 생긴다 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;콜백 함수의 단점 : 콜백지옥이 생긴다.&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 721px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7e4b51c526994565ce722498f17f0178/f6c57/hell.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.25242718446603%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAEDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAeZnIAf/xAAWEAEBAQAAAAAAAAAAAAAAAAABESD/2gAIAQEAAQUCSa//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAWEAEBAQAAAAAAAAAAAAAAAAARASD/2gAIAQEABj8CKa//xAAZEAACAwEAAAAAAAAAAAAAAAABEAARUWH/2gAIAQEAAT8h1rhhpF//2gAMAwEAAgADAAAAENPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhAAAQUBAAAAAAAAAAAAAAAAAQAQESExgf/aAAgBAQABPxDawVpCGNEcYiTZx//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/7e4b51c526994565ce722498f17f0178/8ac56/hell.webp 240w,
+/static/7e4b51c526994565ce722498f17f0178/d3be9/hell.webp 480w,
+/static/7e4b51c526994565ce722498f17f0178/c71bf/hell.webp 721w&quot;
+          sizes=&quot;(max-width: 721px) 100vw, 721px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/7e4b51c526994565ce722498f17f0178/5a194/hell.jpg 240w,
+/static/7e4b51c526994565ce722498f17f0178/8a430/hell.jpg 480w,
+/static/7e4b51c526994565ce722498f17f0178/f6c57/hell.jpg 721w&quot;
+          sizes=&quot;(max-width: 721px) 100vw, 721px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/7e4b51c526994565ce722498f17f0178/f6c57/hell.jpg&quot;
+          alt=&quot;hell&quot;
+          title=&quot;hell&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;벗어나기 위해서 사용되는 것&lt;/strong&gt; : &lt;code class=&quot;language-text&quot;&gt;new Promise&lt;/code&gt; 혹은 &lt;code class=&quot;language-text&quot;&gt;await/async&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;둘 다 &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;를 return 한다는 점에서 역할이 비슷하다.
+&lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;는 이전 포스팅에서 간략히 설명을 한것이 있다.
+다시 한번 짧게 설명하면 &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;resolve&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;reject&lt;/code&gt;를 만들 수 있다.
+&lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;를 사용하려면 함수 내에 명시적으로&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    function example(){
+         return new Promise((resolve, reject)=&amp;gt;{
+
+       })
+    }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;new Promise&lt;/code&gt; 선언을 하고 &lt;code class=&quot;language-text&quot;&gt;resolve&lt;/code&gt;,&lt;code class=&quot;language-text&quot;&gt;reject&lt;/code&gt;를 만들어서 &lt;code class=&quot;language-text&quot;&gt;.then()&lt;/code&gt; 혹은 &lt;code class=&quot;language-text&quot;&gt;.catch()&lt;/code&gt;로 다음 작업을 실행할 수 있게 했다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;이제 Await/Async 를 보자.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    function myFunc(){
+      return &amp;#39;func&amp;#39;
+    }
+
+    async function myAsync(){
+      return &amp;#39;async&amp;#39;
+    }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이 두가지 함수를 F12를 누른뒤 콘솔창에 입력한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    console.log(myFunc())
+    console.log(myAsync())&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;콘솔을 입력하여 확인해본다.&lt;/p&gt;
+&lt;p&gt;결과는 어떻게 나왔는가 ??&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    func
+    Promise {&amp;lt;resolved&amp;gt;}: &amp;#39;async&amp;#39;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;라고 나왔다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Myasync&lt;/code&gt; 는 결과값으로 &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;를 return 한다는것을 알 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;그래서 async는 뭐냐 ??&lt;/strong&gt; 바로 &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;를 return 하는 함수로 만들어준다는 것.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt; 를 return 한다는 것은 &lt;code class=&quot;language-text&quot;&gt;.then&lt;/code&gt; 을 쓸 수 있다는 것이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;myAsync&lt;/code&gt; 를 호출하면 &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt; 를 return 하니까, &lt;code class=&quot;language-text&quot;&gt;.then&lt;/code&gt; 을 사용할 수 있다.!!(&lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;에서도 &lt;code class=&quot;language-text&quot;&gt;then&lt;/code&gt;을 통해 &lt;code class=&quot;language-text&quot;&gt;resolve&lt;/code&gt;를 가져온것과 같이)
+&lt;del&gt;자꾸 같은말 반복하네요&lt;/del&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    myAsync().then((result)=&amp;gt;{
+            console.log(&amp;quot;결과&amp;quot;,result)
+    })&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;를 입력하면 어떻게 될까 ???&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;myAsync()&lt;/code&gt; 의 결과값(return값)인 &lt;code class=&quot;language-text&quot;&gt;async&lt;/code&gt;가 &lt;code class=&quot;language-text&quot;&gt;.then&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;result&lt;/code&gt;로 들어간다.
+그리고 &lt;code class=&quot;language-text&quot;&gt;console.log(&amp;quot;결과&amp;quot;,result)&lt;/code&gt;에서 사용된다.
+&lt;img src=&quot;&amp;#x27;/media/Etc/Promise/promise6.png&amp;#x27;&quot;&gt;
+&lt;del&gt;(비동기에서 에러를 다루는 것은 이부분에서 다루지 않는다.)&lt;/del&gt;&lt;/p&gt;
+&lt;h4 id=&quot;이제-async의-짝인-await을-알아보자&quot;&gt;&lt;a href=&quot;#%EC%9D%B4%EC%A0%9C-async%EC%9D%98-%EC%A7%9D%EC%9D%B8-await%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90&quot; aria-label=&quot;이제 async의 짝인 await을 알아보자 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;이제 &lt;code class=&quot;language-text&quot;&gt;Async&lt;/code&gt;의 짝인 &lt;code class=&quot;language-text&quot;&gt;await&lt;/code&gt;을 알아보자.&lt;/h4&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;await&lt;/code&gt;은 이름에서도 알 수 있듯이 무언가를 기다리는 것이다.
+뭘 기다리느냐, &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt; 를 return 하는 함수의 &lt;code class=&quot;language-text&quot;&gt;resolove&lt;/code&gt;값을 받아오기를 기다린다!!&lt;/p&gt;
+&lt;p&gt;무슨말인지 내가 이해했던 코드를 보면서 설명하자면 ..&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    1  function delayP(sec){
+    2     return new Promise((reslove,reject)=&amp;gt;{
+    3        setTimeout(()=&amp;gt;{
+    4             resolve(new Date().toISOString());
+    5       }, sec*1000)
+    6     })
+    7  }
+
+    8  async function myAsync(){
+    9     await delayP(3);
+    10     return &amp;#39;async&amp;#39;
+    11  }
+
+    12  myAsync().then((result)=&amp;gt;{
+    13     console.log(result)
+    14  })&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;line 9의 &lt;code class=&quot;language-text&quot;&gt;await dealyP(3)&lt;/code&gt;를 보면서 해석하면,
+&lt;code class=&quot;language-text&quot;&gt;delayP(3)&lt;/code&gt;이 &lt;code class=&quot;language-text&quot;&gt;resolve&lt;/code&gt;될 때 까지 기다겠다는 것이다.
+&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;await&lt;/code&gt;은 &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt; 객체를 반환하는 method를 사용할 수도 있고, &lt;code class=&quot;language-text&quot;&gt;일반 함수&lt;/code&gt;를 넣어도 사용할 수 있다.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    function normal(){
+       return &amp;#39;일반함수&amp;#39;
+    }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이런 일반 함수도 await에 사용할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;await&lt;/code&gt;에서 &lt;code class=&quot;language-text&quot;&gt;delayP(3)&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;resolve&lt;/code&gt; 값을 기다린 뒤에 &lt;code class=&quot;language-text&quot;&gt;return &amp;#39;async&amp;#39;&lt;/code&gt;를 진행하겠다 라는 의미가 된다…&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;정리&lt;/strong&gt; :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;async&lt;/code&gt;은 일반함수 쓰듯이 작성을 하고 앞에 &lt;code class=&quot;language-text&quot;&gt;async&lt;/code&gt;를 붙여서 사용한다. 그 함수의 결과값 즉, &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt; 값이 &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;resolve&lt;/code&gt;값이 된다!!&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;await&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;await&lt;/code&gt;이 쓰여진 함수가 처리될 때 까지 기다린다는 것.
+근데 만약 &lt;code class=&quot;language-text&quot;&gt;await&lt;/code&gt;이 쓰여진 함수가 &lt;code class=&quot;language-text&quot;&gt;Promise&lt;/code&gt;라면 &lt;code class=&quot;language-text&quot;&gt;resolve&lt;/code&gt;가 될 때까지 기다리고, 일반함수라면 &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt; 되기를 기다린다는 것.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;코드를 짜기 쉽게, 우리가 생각하는 로직을 표현하는것에 Promise 를 사용하는게 편할 수 있고, await/async 를 사용하는게 편할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;이곳에서 많은 도움을 받았습니다.&lt;/strong&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=JzXjB6L99N4&amp;#x26;t=16s&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.youtube.com/watch?v=JzXjB6L99N4&amp;#x26;t=16s&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[비동기를 다루고 싶어]]></title><description><![CDATA[비동기특집2( 콜백함수 )]]></description><link>https://kyj7337.github.io/posts/callback</link><guid isPermaLink="false">https://kyj7337.github.io/posts/callback</guid><pubDate>Sat, 07 Dec 2019 16:03:32 GMT</pubDate><content:encoded>&lt;h4 id=&quot;콜백-함수란-&quot;&gt;&lt;a href=&quot;#%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98%EB%9E%80-&quot; aria-label=&quot;콜백 함수란  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;콜백 함수란 ??&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;비동기함수의 처리가 끝난 뒤에, 다음 작업을 진행하기 위해 사용되는 것&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;예 ) 데이터를 받아왔어! 받아온 그 데이터를 가지고 alert 으로 표현하고 싶어 !&lt;/li&gt;
@@ -126,7 +438,7 @@ function(a, test){
 &lt;li&gt;이 글에서 다루진 않았지만, 콜백함수의 단점으로는 콜백지옥이 있다. (가독성 떨어짐, 유지보수 어려움)&lt;/li&gt;
 &lt;li&gt;함수의 흐름 순서를 잘 따져야 한다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&quot;참고자료--httpscodevkrtistorycom52&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C--httpscodevkrtistorycom52&quot; aria-label=&quot;참고자료  httpscodevkrtistorycom52 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;참고자료&lt;/strong&gt; : &lt;a href=&quot;https://codevkr.tistory.com/52&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://codevkr.tistory.com/52&lt;/a&gt;&lt;/h5&gt;</content:encoded></item><item><title><![CDATA[그래서 비동기가 뭐 ?]]></title><description><![CDATA[비동기특집( 개선점 & 필요성 )]]></description><link>https://kyj7337.github.io/posts/sync</link><guid isPermaLink="false">https://kyj7337.github.io/posts/sync</guid><pubDate>Sat, 07 Dec 2019 13:43:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;동기-vs-비동기&quot;&gt;&lt;a href=&quot;#%EB%8F%99%EA%B8%B0-vs-%EB%B9%84%EB%8F%99%EA%B8%B0&quot; aria-label=&quot;동기 vs 비동기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;동기 vs 비동기&lt;/h2&gt;
+&lt;h5 id=&quot;참고자료--httpscodevkrtistorycom52&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C--httpscodevkrtistorycom52&quot; aria-label=&quot;참고자료  httpscodevkrtistorycom52 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;참고자료&lt;/strong&gt; : &lt;a href=&quot;https://codevkr.tistory.com/52&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://codevkr.tistory.com/52&lt;/a&gt;&lt;/h5&gt;</content:encoded></item><item><title><![CDATA[그래서 비동기가 뭐 ?]]></title><description><![CDATA[비동기특집1( 개선점 & 필요성 )]]></description><link>https://kyj7337.github.io/posts/sync</link><guid isPermaLink="false">https://kyj7337.github.io/posts/sync</guid><pubDate>Sat, 07 Dec 2019 13:43:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;동기-vs-비동기&quot;&gt;&lt;a href=&quot;#%EB%8F%99%EA%B8%B0-vs-%EB%B9%84%EB%8F%99%EA%B8%B0&quot; aria-label=&quot;동기 vs 비동기 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;동기 vs 비동기&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;동기 ( Synchronous ) : 코드가 위에서부터 아래로 내려오면서 하나가 끝나면 다음 코드가 실행되는 방식, 순차적인 실행방식&lt;/p&gt;
