@@ -1,4 +1,149 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 Dec 2019 04:36:25 GMT</lastBuildDate><item><title><![CDATA[JS Class]]></title><description><![CDATA[기초다지기-1 class]]></description><link>https://kyj7337.github.io/posts/class</link><guid isPermaLink="false">https://kyj7337.github.io/posts/class</guid><pubDate>Wed, 11 Dec 2019 11:17:32 GMT</pubDate><content:encoded>&lt;h3 id=&quot;javascript-에서-class&quot;&gt;&lt;a href=&quot;#javascript-%EC%97%90%EC%84%9C-class&quot; aria-label=&quot;javascript 에서 class permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Javascript 에서 Class&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 Dec 2019 11:17:13 GMT</lastBuildDate><item><title><![CDATA[첫 면접후기]]></title><description><![CDATA[개발자로서 첫 면접]]></description><link>https://kyj7337.github.io/posts/recruit</link><guid isPermaLink="false">https://kyj7337.github.io/posts/recruit</guid><pubDate>Wed, 11 Dec 2019 18:43:32 GMT</pubDate><content:encoded>&lt;h5 id=&quot;첫-면접을-보고나서&quot;&gt;&lt;a href=&quot;#%EC%B2%AB-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%B3%B4%EA%B3%A0%EB%82%98%EC%84%9C&quot; aria-label=&quot;첫 면접을 보고나서 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;첫 면접을 보고나서…&lt;/h5&gt;
+&lt;p&gt;첫 면접을 봤다. 개발을 하기로 마음먹고 나서 처음 나를 평가 받는 자리다.&lt;/p&gt;
+&lt;p&gt;떨면서 면접본다는 생각보다 그냥 &lt;strong&gt;내 얘기를 하러 간다 ~&lt;/strong&gt; 생각하고 면접에 임했다.&lt;/p&gt;
+&lt;p&gt;면접관은 CTO로 보이는 30대 초반으로 보이는 남자분, COO라고 하시는 20대 후반 으로 보이느 여자분. 이렇게 총 2명이 계셨다. 나이를 언급하는 이유는 굉장히 회사의 나이층이 젊어 보이기 때문이다.
+우선 회사에 들어서자 테이블에 앉으라고 하시고 질문공세가 시작되었다.&lt;/p&gt;
+&lt;p&gt;기억 나는 것을 적어보자면&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;자기소개 부분&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;자기소개&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;진로변경 2달만에 어떻게 지원할 생각을 했는지&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;자신의 성격은 어떤지&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;협업할 때 본인의 성격이 어떻게 작용했는지&lt;/code&gt;,여기 까지가 일단 자기소개를 하는 얘기였던 것 같다.&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;기술질문부분&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;기술적으로 물어본 것은 &lt;code class=&quot;language-text&quot;&gt;redux가 뭔지 설명해달라&lt;/code&gt;,&lt;code class=&quot;language-text&quot;&gt;redux의 필요성&lt;/code&gt; 을 물어봤다.&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;면접관이 말하는 회사얘기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;회사는 &lt;code class=&quot;language-text&quot;&gt;즐겁게 일하는 분위기&lt;/code&gt;,&lt;code class=&quot;language-text&quot;&gt;10시 출근 6시 퇴근 (?)&lt;/code&gt;&lt;del&gt;여기서 좀 놀랐다.&lt;/del&gt;, &lt;code class=&quot;language-text&quot;&gt;자율적인 분위기&lt;/code&gt; 라고 하셨다..&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 680px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/eb882ce789fac2dd7310350472c09bc5/6af40/resume2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.61764705882354%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADRklEQVQ4y22S60/bZRTHf4km/glzXmbiC42JicbEJUyTvTD6YsxdsBOljGSIFemGOgsCUtxGHNi64RCk0WTCmGAq2yjX0gKl5bLA1jstbRm1sFHa0iIzy2JYso9PC7xw8cXJOTnP+Z7ne77nSPFZEwmfmbR/NH7UEv9TG/MO/QcnbQfJuRGS/uHNWPjEFigZGN1qYGZFWGwLvI1LBS0ktnDpnJRJCtDcRBcLM4ZMQcTZT1wUrYq34Eg7ayELUUcfzt5fWAuMEHMPEHP1kQqN4Ry8yOJMd4ZQhuE2u5n2Bhz6ZhIeI7ZzFURM7YSuX2Os7Ty+sd+ZNnbQ39qE3dzJnz0tuC/WEvcNY+1oxGFsFz02WUop8eMtAZS/d5j6U1UsWv8gMW5lfdqMqjiPI7lytN+oqDvzNUeLSjBc1qF8P5v8d/fhMV/mQM5h1JUqVtyDmyOn2UVu9LJ3Txa5skOs+i04/UFS0RDqE0d57PEnUJ9UcOnn88jzC7g1ZSDn7TfZ9fRT+IVMe3bvRlEoF7hN3aW0VmuOAbJfeZlDb7zOnZ5f+UlZgPHbCky6el54dhdXtdVcqCrluR1PMtnaQGn2W7y6cwcLeh1ZL73IF7L9/C36pBcmrXgG2Vh2UPpxAeXKQh4mAjwU1B8ErLhtfchzZUTsFlp/rOP5Z3YyazPQ2qRBtv8d/lnykCc7gPZUJRu3p4kK/aWomP3+4nWa6ivQfa+G9RDekU7mJ68ScZmoLVOw7LfiGTewN+s1brtNLLmGsHQ2kgrPUF/9GZeaz3IvPE66l5SefTnkIBqeZdmTvkEzS/Zewh4b8cWguL1RVn1DxMQktv7fuLPgIxm+KZYwQFwcdXDyGvOeaVYj3oyOUlAwCQbmSK7dxWXpytzZkr0H940J7t5/gHNiUACNQnAj3qkh1u9t4LVPiUV2Z2pdFnEVyb9YmJ8Xza8gnasqplvfgW10mLPln6JvrKLl9HF0DRo8jptoaspo03yZMY26LJNrEW+60yfoaq7hu8rjTFot9F7R01CtRKopyePzY0coL8rlpPDNagUa1TEUHx6kRplPSX4OP1QWcUGYUsTpnOKDg2jLCmnTfoW69CNqVcWcUSmpK/+EfwFOmxKU54rPYQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/eb882ce789fac2dd7310350472c09bc5/8ac56/resume2.webp 240w,
+/static/eb882ce789fac2dd7310350472c09bc5/d3be9/resume2.webp 480w,
+/static/eb882ce789fac2dd7310350472c09bc5/35037/resume2.webp 680w&quot;
+          sizes=&quot;(max-width: 680px) 100vw, 680px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/eb882ce789fac2dd7310350472c09bc5/e4891/resume2.png 240w,
+/static/eb882ce789fac2dd7310350472c09bc5/0ce91/resume2.png 480w,
+/static/eb882ce789fac2dd7310350472c09bc5/6af40/resume2.png 680w&quot;
+          sizes=&quot;(max-width: 680px) 100vw, 680px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/eb882ce789fac2dd7310350472c09bc5/6af40/resume2.png&quot;
+          alt=&quot;resume2&quot;
+          title=&quot;resume2&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;자기소개&lt;/strong&gt;를 하는 시간이 꽤나 길었던 것 같다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;진로변경 2달만에 어떻게 지원할 생각을 햇는지&lt;/code&gt;&lt;/strong&gt; 에서는 일단 배운 뒤에 직접 실전에 들어가고 싶어서 라고 했던것 같다. (&lt;del&gt;자세히 기억은 안난다.&lt;/del&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;협업할 때 본인의 성격이 어떻게 작용했는지&lt;/code&gt;&lt;/strong&gt; 에서 저는 &lt;code class=&quot;language-text&quot;&gt;명확하게 정하는 것을 원하는 성격&lt;/code&gt;이라 했다. 이 성격이 협업간에 작용할 때는 장점도 있었을 것이고, 단점도 있었을 텐데 생각나는 예시가 있냐고 물었다. 장점은 역할 분담이 딱 되서 이해가 잘된다 라는 점을 얘기 했고, 단점은 토의할 때,미팅할 때 내가 속으로 답답해 한다고 얘기했다.
+그래서 티는 못내고 속앓이를 한다고 했다. &lt;del&gt;팀원이였던 분들은 티났는지 제보바랍니다.&lt;/del&gt;&lt;/p&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;&lt;strong&gt;기술적으로 물어본 것&lt;/strong&gt;은 대답할때 머리를 쥐어짜서 열심히 했다. &lt;code class=&quot;language-text&quot;&gt;redux를 설명해달라&lt;/code&gt; 라고 말하셨을때는 순간 멍해졌다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;대답은 아래 순서대로 했다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt;란 무엇인가 -&gt; &lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt;가 왜 필요한가 -&gt; 어떻게 사용하는가&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;state&lt;/code&gt; 전역 관리를 위해 사용되는 것입니다. &lt;code class=&quot;language-text&quot;&gt;//redux란무엇인가&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;component&lt;/code&gt; 들 중에서 자식의 &lt;code class=&quot;language-text&quot;&gt;state&lt;/code&gt;를 바꾼것이 부모 뿐만 아니라 다른 &lt;code class=&quot;language-text&quot;&gt;component&lt;/code&gt; 에서도 필요할 때 &lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt;가 필요한 것이라 했다. &lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt;를 쓰지 않으면 바꾸기가 꽤나 귀찮고 어렵기 때문이다. &lt;code class=&quot;language-text&quot;&gt;//redux필요성&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt; 사용 순서를 얘기했다. &lt;code class=&quot;language-text&quot;&gt;//어떻게 사용하는가&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;액션 타입&lt;/code&gt;을 정하고 &lt;code class=&quot;language-text&quot;&gt;액션 함수&lt;/code&gt;를 만들어야 한다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;reducer&lt;/code&gt;를 만들어 줘야 한다. &lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt;에서는 &lt;code class=&quot;language-text&quot;&gt;reducer&lt;/code&gt;를 만드는 일이 주 업무라고 할 수 있을 만큼, 많은 &lt;code class=&quot;language-text&quot;&gt;reducer&lt;/code&gt; 함수가 만들어 진다.&lt;/li&gt;
+&lt;li&gt;여러개로 만들어진 &lt;code class=&quot;language-text&quot;&gt;reducer&lt;/code&gt; 함수들을 하나로 뭉쳐줘야 한다. 왜냐면 &lt;code class=&quot;language-text&quot;&gt;store&lt;/code&gt; 에는 하나의 &lt;code class=&quot;language-text&quot;&gt;reducer&lt;/code&gt; 함수가 필요하기 때문이다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt; 에는 &lt;code class=&quot;language-text&quot;&gt;presentaional component&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;container component&lt;/code&gt; 가 있는데,&lt;del&gt;&lt;code class=&quot;language-text&quot;&gt;presentational component&lt;/code&gt;라고 말은 못함, 보여주기만 하는 컴포넌트라고 함&lt;/del&gt; &lt;code class=&quot;language-text&quot;&gt;container component&lt;/code&gt; 가 &lt;code class=&quot;language-text&quot;&gt;store&lt;/code&gt; 에서 전달 받은 &lt;code class=&quot;language-text&quot;&gt;action 함수&lt;/code&gt; 와 &lt;code class=&quot;language-text&quot;&gt;state&lt;/code&gt; 들을 가져와서 &lt;code class=&quot;language-text&quot;&gt;presentational component&lt;/code&gt; 로 값을 전달 해준다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;이렇게 대답을 했다…&lt;/p&gt;
+&lt;p&gt;추가적으로 &lt;strong&gt;회사 사이트는 어땠나요&lt;/strong&gt;라는 질문도 있었다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;사이트를 보면서 개선해야될 점?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;제대로 정보를 알아볼 때는 사람들이 컴퓨터를 이용해서 웹페이지 검색을 하는데, 웹페이지에서 페이지를 볼 수 없어서 아쉬웠다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;사이트를 보면서 좋았던 점?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Javascript 기술이 화려하게 사용되서 이곳에서 일하면 자바스크립트는 정말 제대로 사용할 수 있을것 같다… 라는 엉뚱한 대답을 했다 ㅋㅋㅋㅋ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;게임툴을 이용한다고 하면 어떤점이 추가 되었으면 좋을까요 ?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;게임툴이란 단어를 처음 들어서 이해가 잘 안되, 얘기를 할 수 없을 것 같다고 얘기를 했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;면접 끝날때 쯤 회사에서 가장 내세울 만한 것을 말씀하셨는데, 바로 &lt;strong&gt;사람이 좋다&lt;/strong&gt; 라고 하셨다.. 내가 대학원에 나온 이유 중 하나가 사람 소중한지 모르고 대하는 환경 때문이였는데, 정 반대의 회사를 보니 가슴이 뭉클했다…&lt;/p&gt;
+&lt;p&gt;첫 면접에서 이런 환경인 회사를 발견한게 신기했고, 기회가 되면 가…가고…ㅅ…싶..네요…
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 750px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/78df78e064c18e7b6a02aacc9a621419/2a7f3/resume3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.13333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/aAAwDAQACEAMQAAAB0lMJlgn/xAAbEAEAAgIDAAAAAAAAAAAAAAACAQMREgAiMf/aAAgBAQABBQKHOwtyg8h+1dhrz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAABBB/9oACAECAQE/Aaf/xAAaEAACAgMAAAAAAAAAAAAAAAAAARARIVGB/9oACAEBAAY/Anoasy47H//EABoQAAIDAQEAAAAAAAAAAAAAAAABESExUUH/2gAIAQEAAT8hatxRx4s4RD0KuvIRcb2SIH//2gAMAwEAAgADAAAAEPvv/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERMf/aAAgBAwEBPxCcW//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCGP//EABwQAQEBAQACAwAAAAAAAAAAAAERIQAxwUFRsf/aAAgBAQABPxBolAieG+/XCsjQRsM397a1pqTLnRFNWZtekOaD9g50wCgfHf/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/78df78e064c18e7b6a02aacc9a621419/8ac56/resume3.webp 240w,
+/static/78df78e064c18e7b6a02aacc9a621419/d3be9/resume3.webp 480w,
+/static/78df78e064c18e7b6a02aacc9a621419/08b4d/resume3.webp 750w&quot;
+          sizes=&quot;(max-width: 750px) 100vw, 750px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/78df78e064c18e7b6a02aacc9a621419/5a194/resume3.jpg 240w,
+/static/78df78e064c18e7b6a02aacc9a621419/8a430/resume3.jpg 480w,
+/static/78df78e064c18e7b6a02aacc9a621419/2a7f3/resume3.jpg 750w&quot;
+          sizes=&quot;(max-width: 750px) 100vw, 750px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/78df78e064c18e7b6a02aacc9a621419/2a7f3/resume3.jpg&quot;
+          alt=&quot;resume3&quot;
+          title=&quot;resume3&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JS Class]]></title><description><![CDATA[기초다지기-1 class]]></description><link>https://kyj7337.github.io/posts/class</link><guid isPermaLink="false">https://kyj7337.github.io/posts/class</guid><pubDate>Wed, 11 Dec 2019 11:17:32 GMT</pubDate><content:encoded>&lt;h3 id=&quot;javascript-에서-class&quot;&gt;&lt;a href=&quot;#javascript-%EC%97%90%EC%84%9C-class&quot; aria-label=&quot;javascript 에서 class permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Javascript 에서 Class&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;class&lt;/code&gt;란 &lt;strong&gt;객체지향 프로그램&lt;/strong&gt;의 핵심이다.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;객체지향 프로그램&lt;/strong&gt; 이란 프로그램들을 객체들로 구성하고 객체들 간에 서로 상호작용하도록 작성하는 방법이다.&lt;/li&gt;
