@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Dec 2019 05:34:37 GMT</lastBuildDate><item><title><![CDATA[Hooks 란 ?]]></title><description><![CDATA[hooks]]></description><link>https://kyj7337.github.io/posts/hooks1</link><guid isPermaLink="false">https://kyj7337.github.io/posts/hooks1</guid><pubDate>Fri, 13 Dec 2019 13:43:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Dec 2019 11:03:59 GMT</lastBuildDate><item><title><![CDATA[Hooks-1]]></title><description><![CDATA[useState 사용하기]]></description><link>https://kyj7337.github.io/posts/hooks-1</link><guid isPermaLink="false">https://kyj7337.github.io/posts/hooks-1</guid><pubDate>Fri, 13 Dec 2019 17:43:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/86d0193d8ca1123913275a666a0d7721/1b18c/hooks.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.06523115896137%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABVklEQVQoz21R30uDUBR2Uza9unvFXSmdrnQ4oQmNysqCIhPKhwXVXhZElAgREfTjoRq9RNBDrOf+3I6CA8fOyz3nu3znO+c7TGMakiQhIXsFAfLGvJDKODOFSZPSJRv41HawLAM0wySEyBleJmNCEMeawYF9dNa7eugcny/2+oBgIk9pHMcFQZAkCcuyUJaUQcq7eVy9G/tvk/79hzu8hhGQKCKEMMYwLZA9zxsMBrVaDZCCDH8CD5rd00t//Lv9+bf29AV5a/ewrWu23anX67quU0odx4miCMoyWRRVu+slzyC7/vLtv09WLm7JgmYarWXLYhgmDEPf903TjOO4rJzvLFQrVnQC+huvP514aGzuCRUGgf0IZhc1TRuNRmmauq7L83yJnIsjajnG1n7TaLd3QkU3AMFFQAtFUVRVhWTeqfLNweHMJ64Kio2iff6ZeQYjzBzvHzkyOdNPbD7WAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/86d0193d8ca1123913275a666a0d7721/8ac56/hooks.webp 240w,
+/static/86d0193d8ca1123913275a666a0d7721/d3be9/hooks.webp 480w,
+/static/86d0193d8ca1123913275a666a0d7721/e46b2/hooks.webp 960w,
+/static/86d0193d8ca1123913275a666a0d7721/f992d/hooks.webp 1440w,
+/static/86d0193d8ca1123913275a666a0d7721/80113/hooks.webp 1579w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/86d0193d8ca1123913275a666a0d7721/e4891/hooks.png 240w,
+/static/86d0193d8ca1123913275a666a0d7721/0ce91/hooks.png 480w,
+/static/86d0193d8ca1123913275a666a0d7721/b7c40/hooks.png 960w,
+/static/86d0193d8ca1123913275a666a0d7721/5a2b3/hooks.png 1440w,
+/static/86d0193d8ca1123913275a666a0d7721/1b18c/hooks.png 1579w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/86d0193d8ca1123913275a666a0d7721/b7c40/hooks.png&quot;
+          alt=&quot;hooks&quot;
+          title=&quot;hooks&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;usestate&quot;&gt;&lt;a href=&quot;#usestate&quot; aria-label=&quot;usestate permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useState&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt;는 가장 기본적인 Hook 이다. 함수형 컴포넌트에서도 가변적인 상태를 지닐 수 있게 해준다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;어떻게 사용할까요 ??&lt;/strong&gt; 일단 완성된 코드를 보면서 하나하나 분석을 해보겠습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;파일위치 : src/Counter.js
+
+1   import React, {useState} from &amp;quot;react&amp;quot;;
+2
+3   const Counter = () =&amp;gt;{
+4       const [value, setValue] = useState(0);
+5   return(
+6       &amp;lt;div&amp;gt;
+7           &amp;lt;p&amp;gt;현재 카운터 값은 &amp;lt;b&amp;gt;{value}&amp;lt;/b&amp;gt;입니다.&amp;lt;/p&amp;gt;
+8       &amp;lt;button onClick={()=&amp;gt;{setValue(value+1)}} &amp;gt; +1 &amp;lt;/button&amp;gt;
+9       &amp;lt;button onClick={()=&amp;gt;{setValue(value-1)}} &amp;gt; -1 &amp;lt;/button&amp;gt;
+10       &amp;lt;/div&amp;gt;
+11     )
+12   }
+
+export default Counter;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위에 쓰여진 코드는 &lt;code class=&quot;language-text&quot;&gt;redux&lt;/code&gt; 에서도 사용된 &lt;code class=&quot;language-text&quot;&gt;Counter&lt;/code&gt; 입니다.&lt;/p&gt;
+&lt;h4 id=&quot;한줄한줄-코드-분석&quot;&gt;&lt;a href=&quot;#%ED%95%9C%EC%A4%84%ED%95%9C%EC%A4%84-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D&quot; aria-label=&quot;한줄한줄 코드 분석 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;한줄한줄 코드 분석&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1   import React, {useState} from &amp;quot;react&amp;quot;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;react&lt;/code&gt;에서 &lt;code class=&quot;language-text&quot;&gt;{useState}&lt;/code&gt;를 import 해서 사용할 수 있게 해줍니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;3   const Counter = () =&amp;gt;{
+4       const [value, setValue] = useState(0);
+5   return(
+6       &amp;lt;div&amp;gt;
+7           &amp;lt;p&amp;gt;현재 카운터 값은 &amp;lt;b&amp;gt;{value}&amp;lt;/b&amp;gt;입니다.&amp;lt;/p&amp;gt;
+8       &amp;lt;button onClick={()=&amp;gt;{setValue(value+1)}} &amp;gt;+1&amp;lt;/button&amp;gt;
+9       &amp;lt;button onClick={()=&amp;gt;{setValue(value-1)}}&amp;gt;-1&amp;lt;/button&amp;gt;
+10       &amp;lt;/div&amp;gt;
+11     )
+12   }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;line3&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;Counter&lt;/code&gt; 라는 이름으로 함수형 컴포넌트를 만들어 줍니다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;line4&lt;/code&gt; 에서 중요한 &lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt;를 사용한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;4      const [value, setValue] = useState(0);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같이 사용한다. 이 함수를 분석해보면,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt;의 파라미터에는 상태의 기본값을 넣어준다.&lt;/strong&gt; 여기서 기본값은 &lt;code class=&quot;language-text&quot;&gt;(0)&lt;/code&gt;일 것이다. 카운터의 제일 초기 값은 0 이라는 것.&lt;/li&gt;
+&lt;li&gt;이 함수(&lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt;)가 호출되면 &lt;strong&gt;배열(array)을 return&lt;/strong&gt; 하게 된다.
+&lt;code class=&quot;language-text&quot;&gt;line4&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;line5&lt;/code&gt;사이에 &lt;code class=&quot;language-text&quot;&gt;console.log(useState(0))&lt;/code&gt;를 입력한 뒤에, 새로고침 하여 console 창을 확인해 보자.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;(2) [0, ƒ]&lt;/code&gt; 라고 나올 것이다. &lt;strong&gt;첫번째 원소&lt;/strong&gt;에는 상태 값이 들어 있고, &lt;strong&gt;두번째 원소&lt;/strong&gt;는 상태를 설정하는 함수가 들어있다.&lt;/li&gt;
+&lt;li&gt;이 두번째 원소인 함수에 파라미터를 넣어서 호출하면 전달 받은 파라미터로 값이 바뀌고 컴포넌트가 정상적으로 리렌더링 된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;이제 &lt;code class=&quot;language-text&quot;&gt;line5&lt;/code&gt; ~ &lt;code class=&quot;language-text&quot;&gt;line11&lt;/code&gt;을 분석해보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;5   return(
+6       &amp;lt;div&amp;gt;
+7           &amp;lt;p&amp;gt;현재 카운터 값은 &amp;lt;b&amp;gt;{value}&amp;lt;/b&amp;gt;입니다.&amp;lt;/p&amp;gt;
+8       &amp;lt;button onClick={()=&amp;gt;{setValue(value+1)}} &amp;gt;+1&amp;lt;/button&amp;gt;
+9       &amp;lt;button onClick={()=&amp;gt;{setValue(value-1)}}&amp;gt;-1&amp;lt;/button&amp;gt;
+10       &amp;lt;/div&amp;gt;
+11     )&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;먼저 &lt;code class=&quot;language-text&quot;&gt;line8&lt;/code&gt;을 보자.
+&lt;code class=&quot;language-text&quot;&gt;&amp;lt;button onClick={ () =&amp;gt; {setValue(value+1)} } &amp;gt;+1&amp;lt;/button&amp;gt;&lt;/code&gt; 버튼을 클릭하게 되면 함수가 실행되는데, &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt;에 사용된 두번째 인자인 바로 그 함수이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;setValue(value+1)&lt;/code&gt; : &lt;code class=&quot;language-text&quot;&gt;setValue&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt;의 첫번째 인자인 &lt;code class=&quot;language-text&quot;&gt;value&lt;/code&gt;를 1씩 더해주는 함수인 셈이다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;line9&lt;/code&gt;의 빼기도 같은 방식인 셈.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;value&lt;/code&gt; = &lt;code class=&quot;language-text&quot;&gt;state&lt;/code&gt;라고 생각하고, &lt;code class=&quot;language-text&quot;&gt;setValue&lt;/code&gt; = &lt;code class=&quot;language-text&quot;&gt;setState&lt;/code&gt; 라고 생각해도 될 지 모르겠다…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;line7&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;{value}&lt;/code&gt;는 현재 &lt;code class=&quot;language-text&quot;&gt;value&lt;/code&gt;를 그대로 보여준다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;여기까지 가장 기본적인 Hook인 useState를 사용해 보았습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;정리 : &lt;code class=&quot;language-text&quot;&gt;const[value, setValue] = useState(0)&lt;/code&gt;의 형식을 눈에 익혀두자..&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Hooks 란 ?]]></title><description><![CDATA[hooks]]></description><link>https://kyj7337.github.io/posts/hooks1</link><guid isPermaLink="false">https://kyj7337.github.io/posts/hooks1</guid><pubDate>Fri, 13 Dec 2019 13:43:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
     &gt;
@@ -164,7 +273,8 @@
       &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;이제 Hooks 를 사용하게 된 이유와 필요성을 알아 봤으니 Hooks를 공부하러 가보겠습니다.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[첫 면접후기]]></title><description><![CDATA[개발자로서 첫 면접]]></description><link>https://kyj7337.github.io/posts/recruit</link><guid isPermaLink="false">https://kyj7337.github.io/posts/recruit</guid><pubDate>Wed, 11 Dec 2019 18:43:32 GMT</pubDate><content:encoded>&lt;h5 id=&quot;첫-면접을-보고나서&quot;&gt;&lt;a href=&quot;#%EC%B2%AB-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%B3%B4%EA%B3%A0%EB%82%98%EC%84%9C&quot; aria-label=&quot;첫 면접을 보고나서 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;첫 면접을 보고나서…&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;이제 Hooks 를 사용하게 된 이유와 필요성을 알아 봤으니 Hooks를 공부하러 가보겠습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;hooks를 왜 써야하는지에 대한 &lt;a href=&quot;https://www.youtube.com/watch?v=GuIiGOMJgUI&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;동영상&lt;/a&gt;도 있네요. 한번 보시는 것도 좋을 것 같습니다.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[첫 면접후기]]></title><description><![CDATA[개발자로서 첫 면접]]></description><link>https://kyj7337.github.io/posts/recruit</link><guid isPermaLink="false">https://kyj7337.github.io/posts/recruit</guid><pubDate>Wed, 11 Dec 2019 18:43:32 GMT</pubDate><content:encoded>&lt;h5 id=&quot;첫-면접을-보고나서&quot;&gt;&lt;a href=&quot;#%EC%B2%AB-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%B3%B4%EA%B3%A0%EB%82%98%EC%84%9C&quot; aria-label=&quot;첫 면접을 보고나서 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;첫 면접을 보고나서…&lt;/h5&gt;
 &lt;p&gt;첫 면접을 봤다. 개발을 하기로 마음먹고 나서 처음 나를 평가 받는 자리다.&lt;/p&gt;
 &lt;p&gt;떨면서 면접본다는 생각보다 그냥 &lt;strong&gt;내 얘기를 하러 간다 ~&lt;/strong&gt; 생각하고 면접에 임했다.&lt;/p&gt;
 &lt;p&gt;면접관은 CTO로 보이는 30대 초반으로 보이는 남자분, COO라고 하시는 20대 후반 으로 보이느 여자분. 이렇게 총 2명이 계셨다. 나이를 언급하는 이유는 굉장히 회사의 나이층이 젊어 보이기 때문이다.
@@ -8969,19 +9079,7 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;git push origin develop&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;yarn deploy&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;을 입력하여 업로드를 확인한다.&lt;/p&gt;
-&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
-&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
-&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;설치 진행중&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;1.1 static —&gt; default&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;위치가 지정된 것이 아님
 ​&lt;/p&gt;
@@ -9156,4 +9254,16 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;레이아웃 정보&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://ko.learnlayout.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://ko.learnlayout.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-layout&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-layout&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
+&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
+&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;설치 진행중&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>

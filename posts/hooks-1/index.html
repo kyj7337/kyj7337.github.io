@@ -50,91 +50,113 @@
 
         gtag('config', 'UA-73379983-2', {"send_page_view":false});
       }
-      </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=db8fed695499c336746d7216360fd2af"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=db8fed695499c336746d7216360fd2af"/><title data-react-helmet="true">구글 맵 라이브러리 사용시 위도 경도 받아오기 - Blog by YoungJun</title><meta data-react-helmet="true" name="description" content="위도경도 받아왔는데 값이 들어가지질 않아요"/><meta data-react-helmet="true" property="og:site_name" content="구글 맵 라이브러리 사용시 위도 경도 받아오기 - Blog by YoungJun"/><meta data-react-helmet="true" property="og:image" content="https://kyj7337.github.io/media/googlemap.jpg"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="구글 맵 라이브러리 사용시 위도 경도 받아오기 - Blog by YoungJun"/><meta data-react-helmet="true" name="twitter:description" content="위도경도 받아왔는데 값이 들어가지질 않아요"/><meta data-react-helmet="true" name="twitter:image" content="https://kyj7337.github.io/media/googlemap.jpg"/><link as="script" rel="preload" href="/webpack-runtime-dffa209a81cebefe6a61.js"/><link as="script" rel="preload" href="/netlify-identity-widget-acb9f9e58c1eda4b61ce.js"/><link as="script" rel="preload" href="/app-ca8ffedef470e5c9a089.js"/><link as="script" rel="preload" href="/styles-aa840c26b1d65be8accb.js"/><link as="script" rel="preload" href="/commons-cc87d4e9d70983759be9.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js"/><link as="fetch" rel="preload" href="/page-data\posts\googlemap\page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="Layout-module--layout--EpQHE"><div><a class="Post-module--post__home-button--3zx_9" href="/">All Articles</a><div><div class="Content-module--content--1tfQQ"><h1 class="Content-module--content__title--1qFLI">구글 맵 라이브러리 사용시 위도 경도 받아오기</h1><div class="Content-module--content__body--2bfha"><h2 id="구글맵-라이브러리-사용"><a href="#%EA%B5%AC%EA%B8%80%EB%A7%B5-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-%EC%82%AC%EC%9A%A9" aria-label="구글맵 라이브러리 사용 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>구글맵 라이브러리 사용</h2>
-<p>구글맵 라이브러리를 사용하고 있는데, Back 에서 분명 lat, lng 라는 위도, 경도를 받아왔는데, state에 이 값이 들어가지질 않고 또 읽히질 않을때 대처법 …</p>
-<p>​<span
+      </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=db8fed695499c336746d7216360fd2af"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=db8fed695499c336746d7216360fd2af"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=db8fed695499c336746d7216360fd2af"/><title data-react-helmet="true">Hooks-1 - Blog by YoungJun</title><meta data-react-helmet="true" name="description" content="useState 사용하기"/><meta data-react-helmet="true" property="og:site_name" content="Hooks-1 - Blog by YoungJun"/><meta data-react-helmet="true" property="og:image" content="https://kyj7337.github.io/media/hooks.png"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Hooks-1 - Blog by YoungJun"/><meta data-react-helmet="true" name="twitter:description" content="useState 사용하기"/><meta data-react-helmet="true" name="twitter:image" content="https://kyj7337.github.io/media/hooks.png"/><link as="script" rel="preload" href="/webpack-runtime-dffa209a81cebefe6a61.js"/><link as="script" rel="preload" href="/netlify-identity-widget-acb9f9e58c1eda4b61ce.js"/><link as="script" rel="preload" href="/app-ca8ffedef470e5c9a089.js"/><link as="script" rel="preload" href="/styles-aa840c26b1d65be8accb.js"/><link as="script" rel="preload" href="/commons-cc87d4e9d70983759be9.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js"/><link as="fetch" rel="preload" href="/page-data\posts\hooks-1\page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="Layout-module--layout--EpQHE"><div><a class="Post-module--post__home-button--3zx_9" href="/">All Articles</a><div><div class="Content-module--content--1tfQQ"><h1 class="Content-module--content__title--1qFLI">Hooks-1</h1><div class="Content-module--content__body--2bfha"><p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;"
     >
       <a
     class="gatsby-resp-image-link"
-    href="/static/cda0c63932c43ac04190c1de413e3bce/14e05/GoogleMap1.png"
+    href="/static/86d0193d8ca1123913275a666a0d7721/1b18c/hooks.png"
     style="display: block"
     target="_blank"
     rel="noopener"
   >
     <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABxUlEQVQoz2MoLy+NjI1MTEuJjI719fH18HD3gAFvb29fX19HR8f2jvb/////+/fvPxj8AwMgg8HHx1NGWUVFTV1eXkFaWlJCXFRUDApERUUlJCQ4ODiSk5N//fr1Hgzevn37/ft3iCkM/n5+hoa65nZOhuYWZqZGurrampqaWiCkAUS6OtpysrJFRYUPHz48f/78lStXzpw5c/Xq1c+fP4M0B/j765pYmFo5mhmZGOrpmRjr6RkYaRkY6xiZAZGesZmckmpdXf2nT59evHjx8eNHoBP+/v37588fkObAgABtQzMjUzNjfR1NbU0dHXU1DU1VLV1VLT1VbT11HX1xadnKqmqg0tevX9+9e/fx48dPnz599+4dWHNgoJ6Boa6hsbqOnqq6FtDnQKCoqKCoAEIqKipCQoLl5WVApUeOHFm1atWGDRuOHz8O9DzUzxqaWoYmJvpGevqGugZGQFfr6+jqQIC+vj7QrJKSEqDSR48e3bp16/Lly0D3QwPMzc1NSEgIGLYioiKiYiJAEoiEYQAozsbGlpiYiBxDcMBQVVEVHBQYGhoagg2EhYV5eXn19vYixzNCM1AIGHr/8IL/OADDfwoAANaQdSEbSqTYAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    style="padding-bottom: 43.06523115896137%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABVklEQVQoz21R30uDUBR2Uza9unvFXSmdrnQ4oQmNysqCIhPKhwXVXhZElAgREfTjoRq9RNBDrOf+3I6CA8fOyz3nu3znO+c7TGMakiQhIXsFAfLGvJDKODOFSZPSJRv41HawLAM0wySEyBleJmNCEMeawYF9dNa7eugcny/2+oBgIk9pHMcFQZAkCcuyUJaUQcq7eVy9G/tvk/79hzu8hhGQKCKEMMYwLZA9zxsMBrVaDZCCDH8CD5rd00t//Lv9+bf29AV5a/ewrWu23anX67quU0odx4miCMoyWRRVu+slzyC7/vLtv09WLm7JgmYarWXLYhgmDEPf903TjOO4rJzvLFQrVnQC+huvP514aGzuCRUGgf0IZhc1TRuNRmmauq7L83yJnIsjajnG1n7TaLd3QkU3AMFFQAtFUVRVhWTeqfLNweHMJ64Kio2iff6ZeQYjzBzvHzkyOdNPbD7WAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
   ></span>
   <picture>
         <source
-          srcset="/static/cda0c63932c43ac04190c1de413e3bce/8ac56/GoogleMap1.webp 240w,
-/static/cda0c63932c43ac04190c1de413e3bce/d3be9/GoogleMap1.webp 480w,
-/static/cda0c63932c43ac04190c1de413e3bce/e46b2/GoogleMap1.webp 960w,
-/static/cda0c63932c43ac04190c1de413e3bce/af3f0/GoogleMap1.webp 1280w"
+          srcset="/static/86d0193d8ca1123913275a666a0d7721/8ac56/hooks.webp 240w,
+/static/86d0193d8ca1123913275a666a0d7721/d3be9/hooks.webp 480w,
+/static/86d0193d8ca1123913275a666a0d7721/e46b2/hooks.webp 960w,
+/static/86d0193d8ca1123913275a666a0d7721/f992d/hooks.webp 1440w,
+/static/86d0193d8ca1123913275a666a0d7721/80113/hooks.webp 1579w"
           sizes="(max-width: 960px) 100vw, 960px"
           type="image/webp"
         />
         <source
-          srcset="/static/cda0c63932c43ac04190c1de413e3bce/e4891/GoogleMap1.png 240w,
-/static/cda0c63932c43ac04190c1de413e3bce/0ce91/GoogleMap1.png 480w,
-/static/cda0c63932c43ac04190c1de413e3bce/b7c40/GoogleMap1.png 960w,
-/static/cda0c63932c43ac04190c1de413e3bce/14e05/GoogleMap1.png 1280w"
+          srcset="/static/86d0193d8ca1123913275a666a0d7721/e4891/hooks.png 240w,
+/static/86d0193d8ca1123913275a666a0d7721/0ce91/hooks.png 480w,
+/static/86d0193d8ca1123913275a666a0d7721/b7c40/hooks.png 960w,
+/static/86d0193d8ca1123913275a666a0d7721/5a2b3/hooks.png 1440w,
+/static/86d0193d8ca1123913275a666a0d7721/1b18c/hooks.png 1579w"
           sizes="(max-width: 960px) 100vw, 960px"
           type="image/png"
         />
         <img
           class="gatsby-resp-image-image"
-          src="/static/cda0c63932c43ac04190c1de413e3bce/b7c40/GoogleMap1.png"
-          alt="GoogleMap1"
-          title="GoogleMap1"
-          loading="lazy"
-        />
-      </picture>
-  </a>
-    </span>
-​<span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;"
-    >
-      <a
-    class="gatsby-resp-image-link"
-    href="/static/e87e12b847237968f1f396b0b020e9c4/14e05/GoogleMap2.png"
-    style="display: block"
-    target="_blank"
-    rel="noopener"
-  >
-    <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABKElEQVQoz5WQyW7CMBRF+ZHYz9OzY2dwQlMCmy4qddMvD/wLIAYhoCi1G1ArVQJxV2/h4zuMgPPU168fn+2snZYOUXLJGReEUkISQkjXdX3fn06nr5vO5/NwjBhnyhhtDRqhLDIJTFCgERs0n88DfLlc+n8KsNDl2DZNXnkUIkkGP0Jv8GKxCO+Wy+Vut9tsNuv1+ng8XmEA5nwxfn8rpo3W+orGP4brCq9Wq8PhsN1u9/t9iP3rjFKqUFVwaZRQCoADi7WBRt2LDYxJbYqmyqs89bn1JTqLmXVVgRhaJHc7M4bWFc1E2xQk6sxRiJHj2PThYIxzITErtc2MkvCD/tUD57BZPWnrduZrD5Q8AYfOQmP6UjufKSUJeQ7mymrnWZqTGDl5Av4GzoJSebE2AqUAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <picture>
-        <source
-          srcset="/static/e87e12b847237968f1f396b0b020e9c4/8ac56/GoogleMap2.webp 240w,
-/static/e87e12b847237968f1f396b0b020e9c4/d3be9/GoogleMap2.webp 480w,
-/static/e87e12b847237968f1f396b0b020e9c4/e46b2/GoogleMap2.webp 960w,
-/static/e87e12b847237968f1f396b0b020e9c4/af3f0/GoogleMap2.webp 1280w"
-          sizes="(max-width: 960px) 100vw, 960px"
-          type="image/webp"
-        />
-        <source
-          srcset="/static/e87e12b847237968f1f396b0b020e9c4/e4891/GoogleMap2.png 240w,
-/static/e87e12b847237968f1f396b0b020e9c4/0ce91/GoogleMap2.png 480w,
-/static/e87e12b847237968f1f396b0b020e9c4/b7c40/GoogleMap2.png 960w,
-/static/e87e12b847237968f1f396b0b020e9c4/14e05/GoogleMap2.png 1280w"
-          sizes="(max-width: 960px) 100vw, 960px"
-          type="image/png"
-        />
-        <img
-          class="gatsby-resp-image-image"
-          src="/static/e87e12b847237968f1f396b0b020e9c4/b7c40/GoogleMap2.png"
-          alt="GoogleMap2"
-          title="GoogleMap2"
+          src="/static/86d0193d8ca1123913275a666a0d7721/b7c40/hooks.png"
+          alt="hooks"
+          title="hooks"
           loading="lazy"
         />
       </picture>
   </a>
     </span></p>
-<p>객체에 접근할때 무조건 <code class="language-text">.</code> 으로 접근 했는데, <code class="language-text">[&quot;&quot;]</code> 이렇게 접근하는 방법이 있다는 것을 잊고 있었다…</p>
-<p>자바스크립트 언어에 대한 기초지식이 충분해야 문제를 대처할 수 있겠다 라는 생각이 들었다..</p></div></div></div><div class="Post-module--post__footer--1BvmJ"><div><p class="Meta-module--meta__date--3FNDv">Published <!-- -->24 Nov 2019</p></div><div class="Author-module--author--2kf8a"><p>Wecode 4기 수강생 김영준 입니다.<a class="Author-module--author__bio-twitter--MufFK" href="https://www.twitter.com/#" rel="noopener noreferrer" target="_blank"><strong>Youngjun Kim</strong> on Twitter</a></p></div></div><div class="Post-module--post__comments--2T8dL"></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/googlemap";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ca8ffedef470e5c9a089.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-5efb7b8fb8a6286e0a5c.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-d18bc7fdbbbeafd2856e.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-be68217ed63783d1c1d4.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-e97b02a703e670b1d2f6.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-dcae1941bbcdff4e1c1b.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-b5c4d92b0d8fd39aec7b.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-eb2622e9ddc24503ebfc.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-6855110f1524b8830d5b.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js" async=""></script><script src="/commons-cc87d4e9d70983759be9.js" async=""></script><script src="/styles-aa840c26b1d65be8accb.js" async=""></script><script src="/app-ca8ffedef470e5c9a089.js" async=""></script><script src="/netlify-identity-widget-acb9f9e58c1eda4b61ce.js" async=""></script><script src="/webpack-runtime-dffa209a81cebefe6a61.js" async=""></script></body></html>
+<h3 id="usestate"><a href="#usestate" aria-label="usestate permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>useState</h3>
+<p><code class="language-text">useState</code>는 가장 기본적인 Hook 이다. 함수형 컴포넌트에서도 가변적인 상태를 지닐 수 있게 해준다.</p>
+<p><strong>어떻게 사용할까요 ??</strong> 일단 완성된 코드를 보면서 하나하나 분석을 해보겠습니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">파일위치 : src/Counter.js
+
+1   import React, {useState} from &quot;react&quot;;
+2
+3   const Counter = () =&gt;{
+4       const [value, setValue] = useState(0);
+5   return(
+6       &lt;div&gt;
+7           &lt;p&gt;현재 카운터 값은 &lt;b&gt;{value}&lt;/b&gt;입니다.&lt;/p&gt;
+8       &lt;button onClick={()=&gt;{setValue(value+1)}} &gt; +1 &lt;/button&gt;
+9       &lt;button onClick={()=&gt;{setValue(value-1)}} &gt; -1 &lt;/button&gt;
+10       &lt;/div&gt;
+11     )
+12   }
+
+export default Counter;</code></pre></div>
+<p>위에 쓰여진 코드는 <code class="language-text">redux</code> 에서도 사용된 <code class="language-text">Counter</code> 입니다.</p>
+<h4 id="한줄한줄-코드-분석"><a href="#%ED%95%9C%EC%A4%84%ED%95%9C%EC%A4%84-%EC%BD%94%EB%93%9C-%EB%B6%84%EC%84%9D" aria-label="한줄한줄 코드 분석 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>한줄한줄 코드 분석</h4>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">1   import React, {useState} from &quot;react&quot;;</code></pre></div>
+<p><code class="language-text">react</code>에서 <code class="language-text">{useState}</code>를 import 해서 사용할 수 있게 해줍니다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">3   const Counter = () =&gt;{
+4       const [value, setValue] = useState(0);
+5   return(
+6       &lt;div&gt;
+7           &lt;p&gt;현재 카운터 값은 &lt;b&gt;{value}&lt;/b&gt;입니다.&lt;/p&gt;
+8       &lt;button onClick={()=&gt;{setValue(value+1)}} &gt;+1&lt;/button&gt;
+9       &lt;button onClick={()=&gt;{setValue(value-1)}}&gt;-1&lt;/button&gt;
+10       &lt;/div&gt;
+11     )
+12   }</code></pre></div>
+<p><code class="language-text">line3</code> 에서 <code class="language-text">Counter</code> 라는 이름으로 함수형 컴포넌트를 만들어 줍니다.</p>
+<p><code class="language-text">line4</code> 에서 중요한 <code class="language-text">useState</code>를 사용한다.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">4      const [value, setValue] = useState(0);</code></pre></div>
+<p>위와 같이 사용한다. 이 함수를 분석해보면,</p>
+<ul>
+<li><strong><code class="language-text">useState</code>의 파라미터에는 상태의 기본값을 넣어준다.</strong> 여기서 기본값은 <code class="language-text">(0)</code>일 것이다. 카운터의 제일 초기 값은 0 이라는 것.</li>
+<li>이 함수(<code class="language-text">useState</code>)가 호출되면 <strong>배열(array)을 return</strong> 하게 된다.
+<code class="language-text">line4</code>와 <code class="language-text">line5</code>사이에 <code class="language-text">console.log(useState(0))</code>를 입력한 뒤에, 새로고침 하여 console 창을 확인해 보자.</li>
+<li><code class="language-text">(2) [0, ƒ]</code> 라고 나올 것이다. <strong>첫번째 원소</strong>에는 상태 값이 들어 있고, <strong>두번째 원소</strong>는 상태를 설정하는 함수가 들어있다.</li>
+<li>이 두번째 원소인 함수에 파라미터를 넣어서 호출하면 전달 받은 파라미터로 값이 바뀌고 컴포넌트가 정상적으로 리렌더링 된다.</li>
+</ul>
+<p>이제 <code class="language-text">line5</code> ~ <code class="language-text">line11</code>을 분석해보자.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">5   return(
+6       &lt;div&gt;
+7           &lt;p&gt;현재 카운터 값은 &lt;b&gt;{value}&lt;/b&gt;입니다.&lt;/p&gt;
+8       &lt;button onClick={()=&gt;{setValue(value+1)}} &gt;+1&lt;/button&gt;
+9       &lt;button onClick={()=&gt;{setValue(value-1)}}&gt;-1&lt;/button&gt;
+10       &lt;/div&gt;
+11     )</code></pre></div>
+<p>먼저 <code class="language-text">line8</code>을 보자.
+<code class="language-text">&lt;button onClick={ () =&gt; {setValue(value+1)} } &gt;+1&lt;/button&gt;</code> 버튼을 클릭하게 되면 함수가 실행되는데, <strong><code class="language-text">useState</code>에 사용된 두번째 인자인 바로 그 함수이다.</strong></p>
+<ul>
+<li><code class="language-text">setValue(value+1)</code> : <code class="language-text">setValue</code>는 <code class="language-text">useState</code>의 첫번째 인자인 <code class="language-text">value</code>를 1씩 더해주는 함수인 셈이다.</li>
+<li><code class="language-text">line9</code>의 빼기도 같은 방식인 셈.</li>
+</ul>
+<p><code class="language-text">value</code> = <code class="language-text">state</code>라고 생각하고, <code class="language-text">setValue</code> = <code class="language-text">setState</code> 라고 생각해도 될 지 모르겠다…</p>
+<ul>
+<li><code class="language-text">line7</code>의 <code class="language-text">{value}</code>는 현재 <code class="language-text">value</code>를 그대로 보여준다.</li>
+</ul>
+<p><strong>여기까지 가장 기본적인 Hook인 useState를 사용해 보았습니다.</strong></p>
+<ul>
+<li>정리 : <code class="language-text">const[value, setValue] = useState(0)</code>의 형식을 눈에 익혀두자..</li>
+</ul></div></div></div><div class="Post-module--post__footer--1BvmJ"><div><p class="Meta-module--meta__date--3FNDv">Published <!-- -->14 Dec 2019</p></div><div class="Author-module--author--2kf8a"><p>Wecode 4기 수강생 김영준 입니다.<a class="Author-module--author__bio-twitter--MufFK" href="https://www.twitter.com/#" rel="noopener noreferrer" target="_blank"><strong>Youngjun Kim</strong> on Twitter</a></p></div></div><div class="Post-module--post__comments--2T8dL"></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/hooks-1";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ca8ffedef470e5c9a089.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-5efb7b8fb8a6286e0a5c.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-d18bc7fdbbbeafd2856e.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-be68217ed63783d1c1d4.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-e97b02a703e670b1d2f6.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-dcae1941bbcdff4e1c1b.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-b5c4d92b0d8fd39aec7b.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-eb2622e9ddc24503ebfc.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-6855110f1524b8830d5b.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js" async=""></script><script src="/commons-cc87d4e9d70983759be9.js" async=""></script><script src="/styles-aa840c26b1d65be8accb.js" async=""></script><script src="/app-ca8ffedef470e5c9a089.js" async=""></script><script src="/netlify-identity-widget-acb9f9e58c1eda4b61ce.js" async=""></script><script src="/webpack-runtime-dffa209a81cebefe6a61.js" async=""></script></body></html>
