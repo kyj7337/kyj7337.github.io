@@ -1,4 +1,179 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Dec 2019 11:03:59 GMT</lastBuildDate><item><title><![CDATA[Hooks-1]]></title><description><![CDATA[useState 사용하기]]></description><link>https://kyj7337.github.io/posts/hooks-1</link><guid isPermaLink="false">https://kyj7337.github.io/posts/hooks-1</guid><pubDate>Fri, 13 Dec 2019 17:43:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 Dec 2019 07:44:01 GMT</lastBuildDate><item><title><![CDATA[Hooks-2]]></title><description><![CDATA[useEffect 사용하기]]></description><link>https://kyj7337.github.io/posts/hooks-2</link><guid isPermaLink="false">https://kyj7337.github.io/posts/hooks-2</guid><pubDate>Sat, 14 Dec 2019 13:43:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/86d0193d8ca1123913275a666a0d7721/1b18c/hooks.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.06523115896137%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABVklEQVQoz21R30uDUBR2Uza9unvFXSmdrnQ4oQmNysqCIhPKhwXVXhZElAgREfTjoRq9RNBDrOf+3I6CA8fOyz3nu3znO+c7TGMakiQhIXsFAfLGvJDKODOFSZPSJRv41HawLAM0wySEyBleJmNCEMeawYF9dNa7eugcny/2+oBgIk9pHMcFQZAkCcuyUJaUQcq7eVy9G/tvk/79hzu8hhGQKCKEMMYwLZA9zxsMBrVaDZCCDH8CD5rd00t//Lv9+bf29AV5a/ewrWu23anX67quU0odx4miCMoyWRRVu+slzyC7/vLtv09WLm7JgmYarWXLYhgmDEPf903TjOO4rJzvLFQrVnQC+huvP514aGzuCRUGgf0IZhc1TRuNRmmauq7L83yJnIsjajnG1n7TaLd3QkU3AMFFQAtFUVRVhWTeqfLNweHMJ64Kio2iff6ZeQYjzBzvHzkyOdNPbD7WAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/86d0193d8ca1123913275a666a0d7721/8ac56/hooks.webp 240w,
+/static/86d0193d8ca1123913275a666a0d7721/d3be9/hooks.webp 480w,
+/static/86d0193d8ca1123913275a666a0d7721/e46b2/hooks.webp 960w,
+/static/86d0193d8ca1123913275a666a0d7721/f992d/hooks.webp 1440w,
+/static/86d0193d8ca1123913275a666a0d7721/80113/hooks.webp 1579w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/86d0193d8ca1123913275a666a0d7721/e4891/hooks.png 240w,
+/static/86d0193d8ca1123913275a666a0d7721/0ce91/hooks.png 480w,
+/static/86d0193d8ca1123913275a666a0d7721/b7c40/hooks.png 960w,
+/static/86d0193d8ca1123913275a666a0d7721/5a2b3/hooks.png 1440w,
+/static/86d0193d8ca1123913275a666a0d7721/1b18c/hooks.png 1579w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/86d0193d8ca1123913275a666a0d7721/b7c40/hooks.png&quot;
+          alt=&quot;hooks&quot;
+          title=&quot;hooks&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1-useeffect-기본-사용법&quot;&gt;&lt;a href=&quot;#1-useeffect-%EA%B8%B0%EB%B3%B8-%EC%82%AC%EC%9A%A9%EB%B2%95&quot; aria-label=&quot;1 useeffect 기본 사용법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. useEffect 기본 사용법&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; 는 리엑트 컴포넌트가 렌더링될 때마다 특정 작업을 수행하도록 설정할 수 있는 Hook 이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;클래스형 컴포넌트의 &lt;code class=&quot;language-text&quot;&gt;componentDidMount&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;componentDidUpdate&lt;/code&gt; 를 합친것 이라고 생각해도 된다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;다음 파일을 새로 만든다.&lt;/p&gt;
+&lt;p&gt;앞선 포스트에서 useState를 하나만 썼다면 여기서는 2개를 사용해서 이름과 닉네임을 입력할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;파일위치 : src/Info.js
+
+1   import React, { useState } from &amp;quot;react&amp;quot;;
+2
+3   const Info = () =&amp;gt; {
+4
+5   const [name, setName] = useState(&amp;quot;&amp;quot;);
+6   const [nickname, setNickname] = useState(&amp;quot;&amp;quot;);
+7
+8   const onChangeName = e =&amp;gt; {
+9       setName(e.target.value);
+10   };
+11   const onChangeNickname = e =&amp;gt; {
+12       setNickname(e.target.value);
+13   };
+14   return (
+15       &amp;lt;div&amp;gt;
+16       &amp;lt;div&amp;gt;
+17           &amp;lt;input value={name} onChange={onChangeName} /&amp;gt;
+18           &amp;lt;input value={nickname} onChange={onChangeNickname} /&amp;gt;
+19       &amp;lt;/div&amp;gt;
+20       &amp;lt;div&amp;gt;
+21           &amp;lt;div&amp;gt;
+22           &amp;lt;b&amp;gt;이름 :&amp;lt;/b&amp;gt;
+23           {name}
+24           &amp;lt;/div&amp;gt;
+25           &amp;lt;div&amp;gt;
+26           &amp;lt;b&amp;gt;닉네임 :&amp;lt;/b&amp;gt;
+27           {nickname}
+28           &amp;lt;/div&amp;gt;
+29       &amp;lt;/div&amp;gt;
+30       &amp;lt;/div&amp;gt;
+31      );
+32   };
+
+export default Info;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이곳에 이제 &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; 를 사용해 볼 것이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;useEffect(()=&amp;gt;{
+    console.log(&amp;#39;렌더링되었다.&amp;#39;)
+    console.log({
+        name,
+        nickname
+    });
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 함수&lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt;를 &lt;code class=&quot;language-text&quot;&gt;line7&lt;/code&gt;에 넣어주도록 해보자.&lt;/p&gt;
+&lt;p&gt;그러면 &lt;code class=&quot;language-text&quot;&gt;input&lt;/code&gt; 창에 값을 입력할 때마다 &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; 함수가 실행되어 &lt;code class=&quot;language-text&quot;&gt;console.log&lt;/code&gt;가 찍힐 것이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;렌더링될 때마다 (&lt;code class=&quot;language-text&quot;&gt;state&lt;/code&gt;가 변화될 때마다) &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; 함수 실행&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;2-마운트될-때만-실행&quot;&gt;&lt;a href=&quot;#2-%EB%A7%88%EC%9A%B4%ED%8A%B8%EB%90%A0-%EB%95%8C%EB%A7%8C-%EC%8B%A4%ED%96%89&quot; aria-label=&quot;2 마운트될 때만 실행 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 마운트될 때만 실행&lt;/h3&gt;
+&lt;p&gt;마운트가 될 때만 이라는 것은, 가장 처음 화면이 렌더링 될 때 실행한다는 것이다.
+&lt;strong&gt;여기서 해볼 것은 업데이트될(렌더링될때) 때는 실행되지 않게 하려는 것이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;바로 &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; 함수의 두번째 파라미터로 &lt;strong&gt;빈 배열&lt;/strong&gt;을 넣어주는 것이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;useEffect(()=&amp;gt;{
+    console.log(&amp;#39;마운트 되었어요.&amp;#39;)
+},[])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;두번째 인자로 빈 배열&lt;code class=&quot;language-text&quot;&gt;[]&lt;/code&gt;이 들어간 것을 볼 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;가장 처음 화면을 나타낼 때만 실행되고 렌더 될 때는 실행되지 않는다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;3-특정-값-업데이트-될-때만-실행&quot;&gt;&lt;a href=&quot;#3-%ED%8A%B9%EC%A0%95-%EA%B0%92-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%90%A0-%EB%95%8C%EB%A7%8C-%EC%8B%A4%ED%96%89&quot; aria-label=&quot;3 특정 값 업데이트 될 때만 실행 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 특정 값 업데이트 될 때만 실행&lt;/h3&gt;
+&lt;p&gt;예를들어, name값이 바뀔 때만 실행하고 싶을 때, &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt;의 두번째 파라미터의 배열에 검사하고 싶은 값을 넣어주면 된다.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;useEffect(()=&amp;gt;{
+    console.log(&amp;#39;name바뀔때마다 실행되요&amp;#39;)
+},[name])&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;name&lt;/code&gt; 값이 바뀔 때만 &lt;code class=&quot;language-text&quot;&gt;console.log&lt;/code&gt;가 실행 될 것이다.&lt;/p&gt;
+&lt;h3 id=&quot;4-뒷정리하기cleanup-&quot;&gt;&lt;a href=&quot;#4-%EB%92%B7%EC%A0%95%EB%A6%AC%ED%95%98%EA%B8%B0cleanup-&quot; aria-label=&quot;4 뒷정리하기cleanup  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 뒷정리하기(&lt;code class=&quot;language-text&quot;&gt;cleanup&lt;/code&gt;) ?&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; 는 렌더링 된 직후 마다 실행된다. 렌더링되고 직전에, 어떠한 작업을 하고 싶을 때는 &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt;에서 &lt;code class=&quot;language-text&quot;&gt;cleanup&lt;/code&gt;함수를 반환해야 한다.&lt;/p&gt;
+&lt;p&gt;이해가 쉽지 않다.. 아래 정리를 보고 천천히 이해해보자&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/Etc/hooks/effect1.png&quot;&gt;
+&lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; 함수를 통해 마운트 될 때, 처리를 해줄 수 있다.
+&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/Etc/hooks/effect2.png&quot;&gt;
+state 값이 바뀌어, 다시 렌더가 되어 &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt;가 실행된다.
+&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/Etc/hooks/effect3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;여기서 중요한것은 &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; 함수 내부에 &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt; 으로 함수를 입력해준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;1   useEffect(()=&amp;gt;{
+2       console.log(&amp;quot;렌더링될 값,&amp;quot;, state) // 1
+3       return ()=&amp;gt;{
+4           console.log(&amp;quot;렌더링 되기 전의 값&amp;quot;, state) // 0
+5            }
+6       })&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;line3&lt;/code&gt; ~ &lt;code class=&quot;language-text&quot;&gt;line5&lt;/code&gt; 까지의 &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt; 내부에 &lt;strong&gt;render 되기 직전에 해야할 일을 적어 놓을 수 있다.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;여기까지 &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt;를 통해 마운트 될때, 렌더 될때 처리할 수 있는 방법에 대해 알아 봤다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;훅스의 자세한 사용법은 아직 시작도 안했지만, 기본적인 것만 알아도 함수형에서 state와 componentdidmount 를 사용할 수 있는 상황을 알아보았습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 244px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/32fbe5f7f3578880c2998a031c6a219e/b9b34/thumb.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 84.8360655737705%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAMBAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAfd5eicXZVLYKA//xAAaEAACAwEBAAAAAAAAAAAAAAAAAQIDMREh/9oACAEBAAEFAmK1dWSEvSwjp//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABsQAAEEAwAAAAAAAAAAAAAAAAEAEBEhEnHw/9oACAEBAAY/AlGJFwH6mG0W/8QAHBABAAICAwEAAAAAAAAAAAAAAQARMVEgIWFx/9oACAEBAAE/Icg3E7j6zFYYmysncT2/bgKK4If/2gAMAwEAAgADAAAAEKsAAP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABYRAQEBAAAAAAAAAAAAAAAAAAERIP/aAAgBAgEBPxBZj//EACAQAQACAgEEAwAAAAAAAAAAAAEAESExYRBRgfCRobH/2gAIAQEAAT8Qs2ULKnEWJysAo3h9T4jMbSVCtDk14ig2MWJsdueYAAwYJt7aZ90/On//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/32fbe5f7f3578880c2998a031c6a219e/8ac56/thumb.webp 240w,
+/static/32fbe5f7f3578880c2998a031c6a219e/d4674/thumb.webp 244w&quot;
+          sizes=&quot;(max-width: 244px) 100vw, 244px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/32fbe5f7f3578880c2998a031c6a219e/5a194/thumb.jpg 240w,
+/static/32fbe5f7f3578880c2998a031c6a219e/b9b34/thumb.jpg 244w&quot;
+          sizes=&quot;(max-width: 244px) 100vw, 244px&quot;
+          type=&quot;image/jpeg&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/32fbe5f7f3578880c2998a031c6a219e/b9b34/thumb.jpg&quot;
+          alt=&quot;thumb&quot;
+          title=&quot;thumb&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그럼 이제부터는 JS 의 기본적인 것을 더 공부해보겠습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hooks-1]]></title><description><![CDATA[useState 사용하기]]></description><link>https://kyj7337.github.io/posts/hooks-1</link><guid isPermaLink="false">https://kyj7337.github.io/posts/hooks-1</guid><pubDate>Fri, 13 Dec 2019 17:43:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
     &gt;
@@ -227,7 +402,7 @@ export default Counter;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;1~2번째 까지는 당연히 클래스형 컴포넌트가 더 좋아 보인다. 코드 가독성이야 안좋을지 몰라도 장점이 더 많으니 이해할 순 있다.&lt;/p&gt;
-&lt;p&gt;하지만 4번째 &lt;strong&gt;오류를 일으킬 확률 ?????&lt;/strong&gt; 둘간의 차이점을 찾아보는 중에 한 &lt;a href=&quot;https://boxfoxs.tistory.com/395&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;블로그&lt;/a&gt; 글을 발견했다. 클래스형에서는 props를 재활용 한다는 것이였다.&lt;/p&gt;
+&lt;p&gt;하지만 4번째 &lt;strong&gt;오류를 일으킬 확률 ?????&lt;/strong&gt; 둘간의 차이점을 찾아보는 중에 한 &lt;a href=&quot;https://overreacted.io/ko/how-are-function-components-different-from-classes/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;블로그&lt;/a&gt; 글을 발견했다. 블로그 글을 읽고 이 &lt;a href=&quot;https://codesandbox.io/s/pjqnl16lm7&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예제&lt;/a&gt;를 확인해보자.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;클래스 컴포넌트는 props를 재사용하기 때문에 개발자의 예상과 다르게 동작할 수 있는 문제점이 존재합니다. 따라서 별도의 예방 작업을 해 주어야 하지만 함수형 컴포넌트는 이러한 문제점이 발생하지 않습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -274,7 +449,22 @@ export default Counter;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;이제 Hooks 를 사용하게 된 이유와 필요성을 알아 봤으니 Hooks를 공부하러 가보겠습니다.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;hooks를 왜 써야하는지에 대한 &lt;a href=&quot;https://www.youtube.com/watch?v=GuIiGOMJgUI&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;동영상&lt;/a&gt;도 있네요. 한번 보시는 것도 좋을 것 같습니다.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[첫 면접후기]]></title><description><![CDATA[개발자로서 첫 면접]]></description><link>https://kyj7337.github.io/posts/recruit</link><guid isPermaLink="false">https://kyj7337.github.io/posts/recruit</guid><pubDate>Wed, 11 Dec 2019 18:43:32 GMT</pubDate><content:encoded>&lt;h5 id=&quot;첫-면접을-보고나서&quot;&gt;&lt;a href=&quot;#%EC%B2%AB-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%B3%B4%EA%B3%A0%EB%82%98%EC%84%9C&quot; aria-label=&quot;첫 면접을 보고나서 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;첫 면접을 보고나서…&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;hooks를 왜 써야하는지에 대한 &lt;a href=&quot;https://www.youtube.com/watch?v=GuIiGOMJgUI&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;동영상&lt;/a&gt;도 있네요. 한번 보시는 것도 좋을 것 같습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;p&gt;&lt;strong&gt;class는 오류를 일으킨다. 의 추가 설명&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;블로그 글의 설명과 예제를 보고 읽으시길 바랍니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;클래스형 컴포넌트 에서 this는 불가피하게 사용된다. this는 &lt;code class=&quot;language-text&quot;&gt;mutable&lt;/code&gt;하다. 즉, 계속 변할 수 있다는 것이다.&lt;/li&gt;
+&lt;li&gt;props는 변경될 수 없다. 위에서 언급했듯이 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;는 바뀔 수가 있다!!&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;class 에서는 값을 받아 alert을 띄울 때, &lt;code class=&quot;language-text&quot;&gt;this.props.user&lt;/code&gt;로 받아온다는 것을 알 수 있다.&lt;/li&gt;
+&lt;li&gt;하지만 여기서 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;의 값이 Dan, Sophie, Sunil 을 바라보고 있어서 &lt;code class=&quot;language-text&quot;&gt;setTimeout&lt;/code&gt;이 끝나기 직전의 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;값을 alert 하는 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그에반해 함수형은 &lt;code class=&quot;language-text&quot;&gt;follow&lt;/code&gt; 을 눌러 &lt;code class=&quot;language-text&quot;&gt;setTimeout&lt;/code&gt; 이 호출될 때, 그때 &lt;code class=&quot;language-text&quot;&gt;props&lt;/code&gt;값을 넘기게 된다. 그래서 사람을 바꿔도 alert 창 누를때 현재 사람이름이 뜬다. 더 정확하게 말하면, &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt;가 없기 때문에 바뀔 여지가 없는 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;제가 이해한 내용대로 적었기 때문에, 이게 정답은 아닐 수 있습니다.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[첫 면접후기]]></title><description><![CDATA[개발자로서 첫 면접]]></description><link>https://kyj7337.github.io/posts/recruit</link><guid isPermaLink="false">https://kyj7337.github.io/posts/recruit</guid><pubDate>Wed, 11 Dec 2019 18:43:32 GMT</pubDate><content:encoded>&lt;h5 id=&quot;첫-면접을-보고나서&quot;&gt;&lt;a href=&quot;#%EC%B2%AB-%EB%A9%B4%EC%A0%91%EC%9D%84-%EB%B3%B4%EA%B3%A0%EB%82%98%EC%84%9C&quot; aria-label=&quot;첫 면접을 보고나서 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;첫 면접을 보고나서…&lt;/h5&gt;
 &lt;p&gt;첫 면접을 봤다. 개발을 하기로 마음먹고 나서 처음 나를 평가 받는 자리다.&lt;/p&gt;
 &lt;p&gt;떨면서 면접본다는 생각보다 그냥 &lt;strong&gt;내 얘기를 하러 간다 ~&lt;/strong&gt; 생각하고 면접에 임했다.&lt;/p&gt;
 &lt;p&gt;면접관은 CTO로 보이는 30대 초반으로 보이는 남자분, COO라고 하시는 20대 후반 으로 보이느 여자분. 이렇게 총 2명이 계셨다. 나이를 언급하는 이유는 굉장히 회사의 나이층이 젊어 보이기 때문이다.
@@ -2514,7 +2704,8 @@ case INCREASE: action의 type이 위에서 선언한 INCREASE 이면 return 하�
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;npm install cross-env&lt;/code&gt;을 해준다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;package.json&lt;/code&gt; 파일에 들어간다.&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;start&lt;/code&gt;부분과 &lt;code class=&quot;language-text&quot;&gt;&amp;quot;build&amp;quot;&lt;/code&gt;부분을 다음과 같이 바꿔준다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;start&amp;quot;: &amp;quot;cross-env NODE_PATH=src react-scripts start&amp;quot;, &amp;quot;build&amp;quot;: &amp;quot;cross-env NODE_PATH=src react-scripts build&amp;quot;,&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;“start”: “cross-env NODE&lt;em&gt;PATH=src react-scripts start”,
+“build”: “cross-env NODE&lt;/em&gt;PATH=src react-scripts build”,&lt;/li&gt;
 &lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Promise]]></title><description><![CDATA[promise 설명]]></description><link>https://kyj7337.github.io/posts/promise</link><guid isPermaLink="false">https://kyj7337.github.io/posts/promise</guid><pubDate>Mon, 25 Nov 2019 23:05:32 GMT</pubDate><content:encoded>&lt;h2 id=&quot;promise-란-&quot;&gt;&lt;a href=&quot;#promise-%EB%9E%80-&quot; aria-label=&quot;promise 란  permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Promise 란 ?&lt;/h2&gt;
 &lt;p&gt;​&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
