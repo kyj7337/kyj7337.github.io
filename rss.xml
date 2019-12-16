@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 Dec 2019 12:32:50 GMT</lastBuildDate><item><title><![CDATA[SSR? CSR?]]></title><description><![CDATA[Server Side Rendering , Client Side Rendering]]></description><link>https://kyj7337.github.io/posts/SSRCSR</link><guid isPermaLink="false">https://kyj7337.github.io/posts/SSRCSR</guid><pubDate>Sat, 14 Dec 2019 20:43:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[hello.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 Dec 2019 07:44:07 GMT</lastBuildDate><item><title><![CDATA[Scope, closure]]></title><description><![CDATA[Scope, Closure]]></description><link>https://kyj7337.github.io/posts/scope</link><guid isPermaLink="false">https://kyj7337.github.io/posts/scope</guid><pubDate>Mon, 16 Dec 2019 13:36:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0e4fdce8ac22e09688c580e5bc4dcd7d/f0628/javascript_logo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAAB3UlEQVQ4y2P4fl+ObMQwqnmQaP7xAIQg7K93QexfD+W+3QMhwpq/3AXpgbD/vZQHct9dl/39VP7vM3mIfiyagRK/Hsm9vy5rZ8ER6Mn16bbsv6fyU9qENFRYxUSYgzy5Lu6R/PMYpB+75t+P5F5fkWVjY5SRYAbq3LhAjIGBQUqC2cqUHchIieL5/1we6Cicmt9cleXkZJSTZvn/RqG2kB+oZ3af8P/vihvniz4+Iw30PE5nQzVzMMpJsfx/IT+vTxioWVudbfk0ke9P5IHGfbuL188QzYqyLJ9vg4ItzJeLAQxUFFk2LxLF7uyv90Dx8euh/KvLshxAzXIsH2/KAoP35wv5tbNFXe05gPp5eRjP7JD8/0weVfM9uX8v5J+clwGSXx/IATUryLIAbXh1RQak+rvS/59Kxel8QP099YL/PyggNAMVAb03t08YaHBfg+DUNiGgIntLjp8P5G3N2dnZGPsbhfasFHexAVm+cKLw/7cYmjfMF+XmYoR4j5mZYcV0kf/vFKa1C/FwgwSZmEDi7g4cH27I/nyA6mdgUP1/JX/rmPTUdiGg5ad3SP4DJyaI4Kxu4a5awfVzRT/flf39WA5LIgEK/QFGxlsFoIXwZAh0FFwQaBAwkUPEAUiGpWGNv+yDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/0e4fdce8ac22e09688c580e5bc4dcd7d/8ac56/javascript_logo.webp 240w,
+/static/0e4fdce8ac22e09688c580e5bc4dcd7d/d3be9/javascript_logo.webp 480w,
+/static/0e4fdce8ac22e09688c580e5bc4dcd7d/e46b2/javascript_logo.webp 960w,
+/static/0e4fdce8ac22e09688c580e5bc4dcd7d/92f8c/javascript_logo.webp 1200w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/0e4fdce8ac22e09688c580e5bc4dcd7d/e4891/javascript_logo.png 240w,
+/static/0e4fdce8ac22e09688c580e5bc4dcd7d/0ce91/javascript_logo.png 480w,
+/static/0e4fdce8ac22e09688c580e5bc4dcd7d/b7c40/javascript_logo.png 960w,
+/static/0e4fdce8ac22e09688c580e5bc4dcd7d/f0628/javascript_logo.png 1200w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/0e4fdce8ac22e09688c580e5bc4dcd7d/b7c40/javascript_logo.png&quot;
+          alt=&quot;javascript logo&quot;
+          title=&quot;javascript logo&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;우선 Scope에 대해 알아보자.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;에는 무슨 값이 들어있을까 하고 무슨 값이 들어 있는지 찾는 &lt;strong&gt;곳&lt;/strong&gt;이 바로 &lt;code class=&quot;language-text&quot;&gt;Scope&lt;/code&gt;다. 일종의 표가 있다고 하자.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/Etc/scope/scope1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위 표가 &lt;code class=&quot;language-text&quot;&gt;function outer&lt;/code&gt; 의 scope가 된다. 여러 함수가 들어 있다면 scope에 추가 될 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;※ scope는 함수 단위로 적용된다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;예를 들어 &lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;함수 내부에 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;라는 함수를 넣었을 때는 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt;는 어떻게 될까 ?&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/media/Etc/scope/scope2.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위 그림 처럼 될 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;가 a를 찾을 때, 들여다보는 표가 바로 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt;이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;조금-더-나아가보자&quot;&gt;&lt;a href=&quot;#%EC%A1%B0%EA%B8%88-%EB%8D%94-%EB%82%98%EC%95%84%EA%B0%80%EB%B3%B4%EC%9E%90&quot; aria-label=&quot;조금 더 나아가보자 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;조금 더 나아가보자.&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;영준&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;안에 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;가 선언되었고, &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;안에서 &lt;code class=&quot;language-text&quot;&gt;console.log(b)&lt;/code&gt;를 입력했다.
+그러면 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;를 어떻게 찾을까?&lt;/p&gt;
+&lt;p&gt;먼저 그림과 같이&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/Etc/scope/scope3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt;에 b가 들어가 있을 것이고, &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;에서는 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;가 없다.
+어떻게 b를 찾는지 순서를 보면,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;가 있는지 찾아본다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;가 없으니 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;가 태어난 곳 바로 윗단계인 &lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt; 에서 찾는다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt;에는 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;가 있으니, &lt;code class=&quot;language-text&quot;&gt;console.log(b)&lt;/code&gt;를 실행.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;위 순서대로 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt;를 조사하여 찾는다. 그럼 만약에&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;병민&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;영준&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같은 상태면 어떻게 될까 ?? 여기서 &lt;code class=&quot;language-text&quot;&gt;c&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt; 함수안에 있지도 않다.&lt;/p&gt;
+&lt;p&gt;그림으로 그려보면,&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/media/Etc/scope/scope4.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;inner scope&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;outer scope&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;global scope&lt;/code&gt; 순서대로 찾게 된다.
+이렇게 연결된 것이 바로 &lt;code class=&quot;language-text&quot;&gt;scope chain&lt;/code&gt;이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;이제 closure를 살펴보자.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;병민&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; b &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;영준&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;    &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;8&lt;/span&gt;      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;      console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;11&lt;/span&gt;    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; inner&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt;  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;13&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; test &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;14&lt;/span&gt;  &lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;코드해석 : &lt;code class=&quot;language-text&quot;&gt;outer()&lt;/code&gt; 가 하는 일은 &lt;code class=&quot;language-text&quot;&gt;line3 ~ line10&lt;/code&gt;을 지나 &lt;code class=&quot;language-text&quot;&gt;line 11&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;를 &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt; 하고, 그 다음 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt; 에서는 &lt;code class=&quot;language-text&quot;&gt;line9&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;console.log(b)&lt;/code&gt;를 실행하는데, 이때 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;에 있는 &lt;code class=&quot;language-text&quot;&gt;영준&lt;/code&gt;이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;line13&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;test&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;outer()&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;를 받게된다.&lt;/li&gt;
+&lt;li&gt;그다음, 받게 된 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;를 &lt;code class=&quot;language-text&quot;&gt;test()&lt;/code&gt;에서 실행하게 된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;클로저-설명&quot;&gt;&lt;a href=&quot;#%ED%81%B4%EB%A1%9C%EC%A0%80-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;클로저 설명 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;클로저 설명&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;가 사라지는게 아니고, &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;가 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;를 사용할 때에도 &lt;code class=&quot;language-text&quot;&gt;scope chain&lt;/code&gt;을 가지고 다닌다. 라는게 &lt;code class=&quot;language-text&quot;&gt;closure&lt;/code&gt; 이다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;즉, &lt;code class=&quot;language-text&quot;&gt;line13&lt;/code&gt;에서 &lt;code class=&quot;language-text&quot;&gt;outer()&lt;/code&gt;를 &lt;code class=&quot;language-text&quot;&gt;test&lt;/code&gt;라는 이름에 담은 뒤에도, &lt;code class=&quot;language-text&quot;&gt;scope chain&lt;/code&gt; 이 살아있다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;밖으로 꺼낸 뒤에도, outer 가 실행되고 끝난 뒤에도 scope에 접근할 수 있는 것.&lt;/strong&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SSR? CSR?]]></title><description><![CDATA[Server Side Rendering , Client Side Rendering]]></description><link>https://kyj7337.github.io/posts/SSRCSR</link><guid isPermaLink="false">https://kyj7337.github.io/posts/SSRCSR</guid><pubDate>Sat, 14 Dec 2019 20:43:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 367px;&quot;
     &gt;
@@ -2072,8 +2203,8 @@ func.apply(null, [1, 2]) // 3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id=&quot;this&quot;&gt;&lt;a href=&quot;#this&quot; aria-label=&quot;this permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;this&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;JavaScript 의 this 키워드는 다른 언어들과 비교하여 조금 다르게 동작한다.
-대부분의 경우 this의 값은 함수를 호출하는 방법에 의해 결정된다.
-선언하는 것에서 결정되는것이 아니라, 호.출 할때 결정된다.&lt;/li&gt;
+대부분의 경우 &lt;strong&gt;this의 값은 함수를 호출하는 방법에 의해 결정&lt;/strong&gt;된다.
+선언하는 것에서 결정되는것이 아니라, &lt;strong&gt;호.출&lt;/strong&gt; 할때 결정된다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;호출&quot;&gt;&lt;a href=&quot;#%ED%98%B8%EC%B6%9C&quot; aria-label=&quot;호출 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;호.출.&lt;/h2&gt;
 &lt;p&gt;하는 방법에 의해 결정된다는 것.&lt;/p&gt;
