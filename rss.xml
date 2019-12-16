@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[김영준의 기술블로그 입니다.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 Dec 2019 11:27:28 GMT</lastBuildDate><item><title><![CDATA[Scope, closure]]></title><description><![CDATA[Scope, Closure]]></description><link>https://kyj7337.github.io/posts/scope</link><guid isPermaLink="false">https://kyj7337.github.io/posts/scope</guid><pubDate>Mon, 16 Dec 2019 13:36:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by YoungJun]]></title><description><![CDATA[김영준의 기술블로그 입니다.]]></description><link>https://kyj7337.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 Dec 2019 11:39:41 GMT</lastBuildDate><item><title><![CDATA[Scope, closure]]></title><description><![CDATA[Scope, Closure]]></description><link>https://kyj7337.github.io/posts/scope</link><guid isPermaLink="false">https://kyj7337.github.io/posts/scope</guid><pubDate>Mon, 16 Dec 2019 13:36:32 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
     &gt;
@@ -47,7 +47,48 @@
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;에는 무슨 값이 들어있을까 하고 무슨 값이 들어 있는지 찾는 &lt;strong&gt;곳&lt;/strong&gt;이 바로 &lt;code class=&quot;language-text&quot;&gt;Scope&lt;/code&gt;다. 일종의 표가 있다고 하자.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/media/Etc/scope/scope_1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/58971e0f184907f4f8316e26aa07d882/14e05/scope_1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABdElEQVQoz3WSWWsCQRCE96d6kOj6EwWfjPgaIsKyiCJ43/e1uhW/Di0qZKCY3u6e6pqaDZbLpdbrtY7Ho3q9njqdjk6nk2azmeX3+72iKJL37XY7bbdbXa9XvS/qwWQysWZWvV5XuVy2mBzErEqlosViYSSr1UqbzUbn89lqaZrqdrtZTE8wnU5NDZNpdlXj8di+iSGHhAPE7wohdRGmkEPvCwu80RdKGMxQyPm+XC6PuhE+K2QyeFboeXZXSEwdz7vdrtWxYD6f/ynkOqjhGoCYHNPdI3Y8JQ8hGAwGD+J+vy/EmUKYUeWNh8NBDHI/PYc69/D5qi9X9oOoSJLE4K+JImJy1PGVXn9lV+8PZISoQ4Gb7g8BWXJLlXr+vkPy33/YbrcVx7GC4XBozPiB2larpVqtpmr1S73oW4P4R6PR+I6R6EW5PxY2AOJGo6Fms6kgm82qVCo9UCgUlMlkDOFHXuFn/qUehqGhWCw+wBmQy+X0Cy8cK+EB2j4hAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/58971e0f184907f4f8316e26aa07d882/8ac56/scope_1.webp 240w,
+/static/58971e0f184907f4f8316e26aa07d882/d3be9/scope_1.webp 480w,
+/static/58971e0f184907f4f8316e26aa07d882/e46b2/scope_1.webp 960w,
+/static/58971e0f184907f4f8316e26aa07d882/af3f0/scope_1.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/58971e0f184907f4f8316e26aa07d882/e4891/scope_1.png 240w,
+/static/58971e0f184907f4f8316e26aa07d882/0ce91/scope_1.png 480w,
+/static/58971e0f184907f4f8316e26aa07d882/b7c40/scope_1.png 960w,
+/static/58971e0f184907f4f8316e26aa07d882/14e05/scope_1.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/58971e0f184907f4f8316e26aa07d882/b7c40/scope_1.png&quot;
+          alt=&quot;scope 1&quot;
+          title=&quot;scope 1&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;위 표가 &lt;code class=&quot;language-text&quot;&gt;function outer&lt;/code&gt; 의 scope가 된다. 여러 함수가 들어 있다면 scope에 추가 될 것이다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;※ scope는 함수 단위로 적용된다.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;예를 들어 &lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;함수 내부에 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;라는 함수를 넣었을 때는 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt;는 어떻게 될까 ?&lt;/p&gt;
@@ -61,7 +102,48 @@
   &lt;span class=&quot;token function&quot;&gt;inner&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/media/Etc/scope/scope_2.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5e4bfa1b4883d4030fb0d6989cab416f/14e05/scope_2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABoklEQVQoz12S2Y7aAAxF86dQlhkFvopnnviDDnSeyjy0UBUQEISgCavCFnbuzHGbKB1LVhzf62vHjjMcDnW5XNRqtRQEgfb7vVarlbbbrZrNpj2Xy6Xm87mOx6M6nY69r9drHQ4H9Xo9zWYznc9neZ4np9/vC6vVakIcQxShSqWi+/1uYhRh1WpV4/HYxLB6va7pdGoxWk6327XOCCAUhqEJ8L5YLAybTCbmiIDDowFx7KfTSWg5o9FIaXs8HiaSNj4PTxscuGlDy2EnnyekO9OQi6IomZCYHFg8YbweNGzCeG+32806ciAIxOQwPh1P8+DATfPQsh1yod1uZ503m43tkGnoTmeWjhOTA4MDlxpq0eDizmAwMHW60YmicBPada/Xq2EU42ne30McLSaHoZUcBYHYokP0X47/Ev98lOsH/Pi3huQoqNKdpTcaDb1+e1W7+0O/vZ8K/EC+7yf/Ic92u62vLy96e2tq+uu7/ng9+R8YuE2Yz+dVLpfluq6y2ax54amg4nNepVIpcXB4xWJRmUxGuVxObuGL3Ocnw8HQegctaSKp770jnQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/5e4bfa1b4883d4030fb0d6989cab416f/8ac56/scope_2.webp 240w,
+/static/5e4bfa1b4883d4030fb0d6989cab416f/d3be9/scope_2.webp 480w,
+/static/5e4bfa1b4883d4030fb0d6989cab416f/e46b2/scope_2.webp 960w,
+/static/5e4bfa1b4883d4030fb0d6989cab416f/af3f0/scope_2.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/5e4bfa1b4883d4030fb0d6989cab416f/e4891/scope_2.png 240w,
+/static/5e4bfa1b4883d4030fb0d6989cab416f/0ce91/scope_2.png 480w,
+/static/5e4bfa1b4883d4030fb0d6989cab416f/b7c40/scope_2.png 960w,
+/static/5e4bfa1b4883d4030fb0d6989cab416f/14e05/scope_2.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/5e4bfa1b4883d4030fb0d6989cab416f/b7c40/scope_2.png&quot;
+          alt=&quot;scope 2&quot;
+          title=&quot;scope 2&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;위 그림 처럼 될 것이다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;가 a를 찾을 때, 들여다보는 표가 바로 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt;이다.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&quot;조금-더-나아가보자&quot;&gt;&lt;a href=&quot;#%EC%A1%B0%EA%B8%88-%EB%8D%94-%EB%82%98%EC%95%84%EA%B0%80%EB%B3%B4%EC%9E%90&quot; aria-label=&quot;조금 더 나아가보자 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;조금 더 나아가보자.&lt;/h3&gt;
@@ -79,7 +161,48 @@
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;안에 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;가 선언되었고, &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;안에서 &lt;code class=&quot;language-text&quot;&gt;console.log(b)&lt;/code&gt;를 입력했다.
 그러면 &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;를 어떻게 찾을까?&lt;/p&gt;
 &lt;p&gt;먼저 그림과 같이&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/media/Etc/scope/scope_3.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ede9b10fed3a2c014a05563017cfe8fe/14e05/scope_3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABwUlEQVQoz2VSWW7CUAzMTaGERYE/bsMn4gCIGxQoiwR8UChhBwlowh62sDNlrAalqiUrfh6/8dgvSr/fx+VyQa1Wg2ma2O/3WC6X2G63KJfL8l0sFpjNZjgej9B1Xc6r1Qq73Q7T6VRy5CCX0u12QUulUpKgkZRE8Xgc9/tdyHiRlkwmMRqNYNu2nDebDTKZjMTtdhtKq9WSziQgkWVZQsDzfD4XbDweYzKZCE4BxDgF7xYKBZmu0Wig0+lAGQ6HcNvj8RASt3G89XotcSKRQLValTifzyMajcoksVhMGivNZvOfQo53OBwkx9FYSGddr9cTnAqZo8JisYhSqSTqFWdvt9tN1HG5JGLMHI2j093GGgd3jM1kh+fzWV6Mqrhk7pDKqJiquD86Y9YRYw1reSY5MXkUstKojB0JWBtLXvd6vQrGy3R3HVdzOh0lZu6l0HkUEjhmH+w/Oe6L7jY2vj7hx++6aOQShezOBWezWeQ+cqi3qtAHnzANE4ZhvP5Dfuv1Ot7TaVQqZUy+SvgetGE8MeKiUFVVRCIRaJoGr9cr7g/6EQipCIfDLyfOukAgAI/HA5/PB83/Bi0UFJwYuX4Ai+QZGaaGAWUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/ede9b10fed3a2c014a05563017cfe8fe/8ac56/scope_3.webp 240w,
+/static/ede9b10fed3a2c014a05563017cfe8fe/d3be9/scope_3.webp 480w,
+/static/ede9b10fed3a2c014a05563017cfe8fe/e46b2/scope_3.webp 960w,
+/static/ede9b10fed3a2c014a05563017cfe8fe/af3f0/scope_3.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/ede9b10fed3a2c014a05563017cfe8fe/e4891/scope_3.png 240w,
+/static/ede9b10fed3a2c014a05563017cfe8fe/0ce91/scope_3.png 480w,
+/static/ede9b10fed3a2c014a05563017cfe8fe/b7c40/scope_3.png 960w,
+/static/ede9b10fed3a2c014a05563017cfe8fe/14e05/scope_3.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/ede9b10fed3a2c014a05563017cfe8fe/b7c40/scope_3.png&quot;
+          alt=&quot;scope 3&quot;
+          title=&quot;scope 3&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;scope&lt;/code&gt;에 b가 들어가 있을 것이고, &lt;code class=&quot;language-text&quot;&gt;inner&lt;/code&gt;에서는 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;가 없다.
 어떻게 b를 찾는지 순서를 보면,&lt;/p&gt;
 &lt;ol&gt;
@@ -103,7 +226,48 @@
 &lt;span class=&quot;token function&quot;&gt;outer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위와 같은 상태면 어떻게 될까 ?? 여기서 &lt;code class=&quot;language-text&quot;&gt;c&lt;/code&gt;는 &lt;code class=&quot;language-text&quot;&gt;outer&lt;/code&gt; 함수안에 있지도 않다.&lt;/p&gt;
 &lt;p&gt;그림으로 그려보면,&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/media/Etc/scope/scope_4.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 960px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b0396f93ee61b317322641ffb6525390/14e05/scope_4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABiUlEQVQoz62SO7KCYAyF2aqVuhyXYGdv4wK00BkbH8XViyIqD+UtIAjOuTkp7gIc/5kMISRfTv5gZFmGbx2yDMdxEEURPM8D/clkgsVigePxiMfjAdu2cb/fNceyLIRhqIWM8VuapvB9X+PX6xUGC+lsNhstGAwGGI1GmM/nSJIE0+lU42w4m81wPp8VQNhqtVJ/t9upANM0YTC5qiq832/EcYymafB8PlUB33mKolA4vzFGtQRRBJ/D4RDj8VibGYfDAakk53muKlhIc10Xt9tNxw6CQH2C+WQeoRyTwESaUABZOjITa+keSFJRlsjlnUUsoCpCk1gUvpp/SCl5nERz2lZ9BZ5OJx0jFRWeSI6kUyjmixKqoTouy3EdxEmkMaqhEXy5XJDGIaIwkHu0YISiqhV6vVzitd/jtd2iFnWt3F1d13LhP9hutrh4NrzERlVXeq+cYL1eyyJ+UbommixAGMUwuPZvHbL0P+SWeXflh8YdkEGW0el00O/30e120ev1PjLWkkHWH2Y/H1Ji5s/IAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+        &lt;source
+          srcset=&quot;/static/b0396f93ee61b317322641ffb6525390/8ac56/scope_4.webp 240w,
+/static/b0396f93ee61b317322641ffb6525390/d3be9/scope_4.webp 480w,
+/static/b0396f93ee61b317322641ffb6525390/e46b2/scope_4.webp 960w,
+/static/b0396f93ee61b317322641ffb6525390/af3f0/scope_4.webp 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/webp&quot;
+        /&gt;
+        &lt;source
+          srcset=&quot;/static/b0396f93ee61b317322641ffb6525390/e4891/scope_4.png 240w,
+/static/b0396f93ee61b317322641ffb6525390/0ce91/scope_4.png 480w,
+/static/b0396f93ee61b317322641ffb6525390/b7c40/scope_4.png 960w,
+/static/b0396f93ee61b317322641ffb6525390/14e05/scope_4.png 1280w&quot;
+          sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+          type=&quot;image/png&quot;
+        /&gt;
+        &lt;img
+          class=&quot;gatsby-resp-image-image&quot;
+          src=&quot;/static/b0396f93ee61b317322641ffb6525390/b7c40/scope_4.png&quot;
+          alt=&quot;scope 4&quot;
+          title=&quot;scope 4&quot;
+          loading=&quot;lazy&quot;
+        /&gt;
+      &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;inner scope&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;outer scope&lt;/code&gt; -&gt; &lt;code class=&quot;language-text&quot;&gt;global scope&lt;/code&gt; 순서대로 찾게 된다.
 이렇게 연결된 것이 바로 &lt;code class=&quot;language-text&quot;&gt;scope chain&lt;/code&gt;이다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;이제 closure를 살펴보자.&lt;/strong&gt;&lt;/p&gt;
@@ -9685,19 +9849,7 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;git push origin develop&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;yarn deploy&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;을 입력하여 업로드를 확인한다.&lt;/p&gt;
-&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
-&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
-&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;설치 진행중&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;혹시 어려울 경우 &lt;a href=&quot;https://yeri-kim.github.io/posts/how-to-install-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;예리님 블로그&lt;/a&gt; 참고&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차]]></title><description><![CDATA[Wecode 1일차 정리!]]></description><link>https://kyj7337.github.io/posts/wecodeday1/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;1-position&quot;&gt;&lt;a href=&quot;#1-position&quot; aria-label=&quot;1 position permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;1. position&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;1.1 static —&gt; default&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;위치가 지정된 것이 아님
 ​&lt;/p&gt;
@@ -9872,4 +10024,16 @@ loginButton.disabled = true;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&amp;#x3C;레이아웃 정보&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://ko.learnlayout.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;http://ko.learnlayout.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-layout&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-layout&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;https://poiemaweb.com/css3-box-model&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://poiemaweb.com/css3-box-model&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Wecode 1일차-2]]></title><description><![CDATA[Wecode 1일차 정리-2]]></description><link>https://kyj7337.github.io/posts/wecodeday1-2/</link><guid isPermaLink="false">https://kyj7337.github.io/posts/wecodeday1-2/</guid><pubDate>Tue, 01 Oct 2019 23:46:37 GMT</pubDate><content:encoded>&lt;h2 id=&quot;nodejs-업데이트&quot;&gt;&lt;a href=&quot;#nodejs-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;nodejs 업데이트 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;nodejs 업데이트&lt;/h2&gt;
+&lt;p&gt;git 을 이용하여 블로그를 작성하기 위해 nodejs 를 설치해야 하는데, sudo apt get install -y nodejs 를 입력했더니 설치가 된다. 하지만 버전을 확인해 보니 낮았다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjkg/MDAxNTY5ODk1MDkzMjkz.Jj1ZTu782qapgXepUc8YBVvI8MZW8iFtcpzjM-7fC2gg.bfyDRPkTo5doTuqvmn5NOJbTCVXx9FBxUWKy8Btm5vog.PNG.zkj9404/1.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;낮은 버전의 node js&lt;/p&gt;
+&lt;p&gt;인터넷을 뒤져 높은 버전으로 업데이트 하는 과정을 알게 되었다. curl 설치를 해주고&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMjc3/MDAxNTY5ODk1MDkzMjk2.eNdnupL3U-LKtSyeyX6wngIUguXHzKXOXzCO9sidr9Yg.8i5eHNBVe0TrLmiyR_auU_StEfYPhcvIR0tvFyWOmwkg.PNG.zkj9404/2.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;설치 진행중&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTMw/MDAxNTY5ODk1MDkzMjk2.o_PXnsR5vYwv9vHW5Zihxh97G7DbyRjwnOhhJ96XnH0g.2otLZGYWtlWkCWclUKkRLTR0tAb3OpfPjQmLgIWI2VIg.PNG.zkj9404/3.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;다시 nodejs 를 설치? 한다&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfMTY0/MDAxNTY5ODk1MDkzMjk4.PsPvW-DbQEMXlxqhDchAET4uhN6EXeZpp1tiCX6J4HUg.C3a59gYcIXgGIYVMj64xC6KbT2MFdNK9IKZ1DV6GPekg.PNG.zkj9404/4.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;그리고 버전을 확인해 보니 원하는 버전으로 설치완료.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNDAg/MDAxNTY5ODk1MDkzMjk2.3htOhTS7St6-9AugbqeEB5VY9DFtJT_yNiTPN6zc_28g.Uq6HAovvOBGSu_VrP3xc0XEIZG0O30gEX8A6cWqTHSQg.PNG.zkj9404/5.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.naver.com/PostView.nhn?blogId=zkj9404&amp;#x26;logNo=221664652479&amp;#x26;categoryNo=1&amp;#x26;parentCategoryNo=0&amp;#x26;viewDate=&amp;#x26;currentPage=1&amp;#x26;postListTopCurrentPage=&amp;#x26;from=postList&amp;#x26;userTopListOpen=true&amp;#x26;userTopListCount=5&amp;#x26;userTopListManageOpen=false&amp;#x26;userTopListCurrentPage=1#&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;&lt;img src=&quot;https://postfiles.pstatic.net/MjAxOTEwMDFfNTgg/MDAxNTY5ODk1MDkzMjk3.PW5opP5bulKPDqoZeFtsH2bBQXjtFL_NQTjBlt0xvKgg.Xgh7LJzVrDoq_oraAVL45YiAuPwtUAjOHnln3zs_im0g.PNG.zkj9404/6.png?type=w773&quot;&gt;&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
