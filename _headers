@@ -91,16 +91,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-page-template-js-dcae1941bbcdff4e1c1b.js>; rel=preload; as=script
-/pages/contacts/
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-page-template-js-dcae1941bbcdff4e1c1b.js>; rel=preload; as=script
-/posts/wecodeday1/
+/posts/githubupload/
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -109,7 +100,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/wecodeday5
+/posts/wecodeday1/
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -127,7 +118,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/wecodeday3/
+/pages/contacts/
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -135,26 +126,8 @@
   Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+  Link: </component---src-templates-page-template-js-dcae1941bbcdff4e1c1b.js>; rel=preload; as=script
 /posts/instagram2
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/ReactSummary
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/howtogituplad
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -172,7 +145,16 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/githubupload/
+/posts/wecodeday3/
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/howtogituplad
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -182,6 +164,15 @@
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
 /posts/ReactWestagram
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/wecodeday5
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -208,7 +199,16 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/git_detail
+/posts/ReactSummary
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/React-router
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -235,7 +235,16 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/Scrum
+/posts/git_detail
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/HTTP
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -253,7 +262,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/React-router
+/posts/Scrum
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -262,7 +271,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/HTTP
+/posts/rebase
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -289,7 +298,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/npmerror
+/posts/scrollfix
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -298,7 +307,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/rebase
+/posts/npmerror
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -325,51 +334,6 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/scrollfix
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/mapfunc
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/window
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/googlemap
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/CRA
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
 /posts/popup
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
@@ -388,7 +352,34 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/mapfunc
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/googlemap
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
 /posts/promise
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/window
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -406,6 +397,15 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/CRA
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
 /posts/redux1
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
@@ -415,25 +415,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/FrontStudy2-2
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/FrontStudy2-3
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/callback
+/posts/redux3
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -451,7 +433,34 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/FrontStudy2-3
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
 /posts/FrontStudy2
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/FrontStudy2-2
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/callback
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -478,34 +487,7 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/recruit
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/redux4
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
 /posts/class
-  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
-  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
-  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
-/posts/redux3
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
@@ -523,7 +505,25 @@
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/redux4
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
 /posts/hooks1
+  Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ca8ffedef470e5c9a089.js>; rel=preload; as=script
+  Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
+  Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6fe82ce3ec2fed85f4eb.js>; rel=preload; as=script
+/posts/recruit
   Link: </webpack-runtime-dffa209a81cebefe6a61.js>; rel=preload; as=script
   Link: </styles-aa840c26b1d65be8accb.js>; rel=preload; as=script
   Link: </commons-76c391bf0f087fb21cc7.js>; rel=preload; as=script
